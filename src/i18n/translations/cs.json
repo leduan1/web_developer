@@ -1,0 +1,598 @@
+{
+  "meta": {
+    "title": "LEDU - Web Developer | Tvorba webů a e-shopů",
+    "description": "Jsem web developer a designér specializující se na vytváření moderních, výkonných webů a e-shopů. Tvorba na míru vašemu podnikání."
+  },
+  "common": {
+    "scroll": "SCROLL"
+  },
+  "header": {
+    "navigation": {
+      "uvod": "Úvod",
+      "reference": "Reference",
+      "oMne": "O mně",
+      "blog": "Blog",
+      "kontakt": "Kontakt"
+    },
+    "kontaktButton": "Kontakt",
+    "menu": "Menu"
+  },
+  "hero": {
+    "outline": "POSOUVÁM HRANICE",
+    "main": "PŘI TVORBĚ",
+    "rotatingWords": [
+      "WEBOVÝCH STRÁNEK",
+      "WORDPRESS WEBŮ",
+      "NÁVRHŮ",
+      "ADS KAMPANÍ",
+      "OPTIMALIZACÍ"
+    ]
+  },
+  "services": {
+    "heading": "SLUŽBY",
+    "tabs": [
+      {
+        "id": "vyvoj",
+        "label": "VÝVOJ WEBU"
+      },
+      {
+        "id": "eshop",
+        "label": "E-SHOP"
+      },
+      {
+        "id": "design",
+        "label": "WEB DESIGN"
+      },
+      {
+        "id": "sprava",
+        "label": "SPRÁVA WEBU"
+      },
+      {
+        "id": "marketing",
+        "label": "MARKETING"
+      }
+    ],
+    "vyvoj": {
+      "title": "Vývoj webu",
+      "description": "Jestli máte na webové stránky extrémní nároky, jste tu správně. Můžete ode mě očekávat promyšlený, intuitivní a designově atraktivní web který je vždy přizpůsobený na následný online marketing, ušitý na míru vaší cílové skupině.",
+      "features": [
+        {
+          "title": "Stabilita",
+          "description": "Při vývoji webových stránek dbám na to, abych využíval moderní, ale hlavně ověřené technologie, které jsou spolehlivé."
+        },
+        {
+          "title": "Responzivita",
+          "description": "Ať už si Váš web bude návštěvník prohlížet na mobilu, tabletu, počítači nebo jiném zařízení, přizpůsobí se obsah webu na dané zařízení."
+        },
+        {
+          "title": "Rychlost",
+          "description": "Výzkumy ukázaly, že 75 % zákazníků se už na stránky, které se načítají déle než 4 sekundy, prakticky nevrací."
+        },
+        {
+          "title": "Kvalita",
+          "description": "Ke špičkové práci využívám nejmodernější technologie a postupy. Vše důkladně testuji a vylepšuji."
+        }
+      ]
+    },
+    "eshop": {
+      "title": "E-Shop / E-Commerce",
+      "subtitle": "Bezpečná a škálovatelná řešení e-Commerce",
+      "description": "Nastavení prodeje online zní jako skličující a velmi drahý úkol, ale nemusí to tak být. Mohu vám poradit, jaké e-commerce řešení bude nejlépe vyhovovat vašemu rozpočtu."
+    },
+    "design": {
+      "title": "Web design / návrh webu",
+      "subtitle": "Vy máte představu, já ji umím vdechnout život.",
+      "description": "Věřím, že pozornost věnovaná detailům je při navrhování webových stránek prvořadá. Dosažení dokonalé rovnováhy mezi funkčností a estetikou znamená, že váš web bude nejen krásně vypadat, ale také přivede uživatele ke konverzi.",
+      "listItems": [
+        "Branding a firemní identita",
+        "Wireframy a prototyping",
+        "User experience design (UX)",
+        "User interface design (UI)",
+        "Design mobilní aplikace",
+        "Bannery a obsah pro sociální sítě",
+        "Animace",
+        "Tiskový materiál"
+      ]
+    },
+    "sprava": {
+      "title": "Správa webu / Údržba webu",
+      "subtitle": "Balíčky údržby bez starostí od 1 000 Kč",
+      "description": "Zabezpečení vašeho WordPress webu je časově náročný úkol, tudíž veškerou práci rád udělám za vás."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "subtitle": "Reklama na internetu",
+      "description": "Oslovte nejrychlejší cestou tisíce potenciálních zákazníků ve vyhledávačích a navštěvovaných portálech.",
+      "features": [
+        {
+          "title": "PPC Reklama",
+          "description": "Připravím Vám účinné kampaně v PPC systémech Google Ads a Sklik."
+        },
+        {
+          "title": "SEO",
+          "description": "Váš web zpracuji vždy tak, aby byl dobře indexovatelný vyhledávači."
+        },
+        {
+          "title": "Sociální sítě",
+          "description": "Vybudujte si přátelštější vztahy se svými zákazníky díky sociálním sítím."
+        }
+      ]
+    },
+    "ctaButton": "Mám zájem"
+  },
+  "references": {
+    "heading": "REFERENCE",
+    "visitWebButton": "Navštívit web",
+    "contactButton": "KONTAKT",
+    "allReferencesButton": "VŠECHNY REFERENCE",
+    "projects": [
+      {
+        "title": "JAGR WEDDINGS",
+        "description": "Pro fotografa Filipa Jagra jsem vytvořil web na míru, který je moderní, přehledný a reprezentuje jeho práci.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "SCHLIEGER.CZ, SCHLIEGER.DE",
+        "description": "Pro firmu Schlieger.cz jsem kompletně redesignoval web od A do Z, včetně všech funkcionalit a designu, což pomohlo firmě vydělat v roce 2024 přes 4 miliardy korun.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS",
+          "E-SHOP"
+        ]
+      },
+      {
+        "title": "DOMY SOBĚ",
+        "description": "Pro firmu Domy Sobě, která pomáhá bytovým domům šetřit, jsem vytvořil moderní a přehledný informační web.",
+        "tags": [
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "DENIS FUECO & WORKSHOP",
+        "description": "Po vytvoření informativního webu před pár lety se mi Denis opět ozval s rozšířením webu o novou podstránku Workshop se zakomponováním funkce e-shopu.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS",
+          "E-SHOP"
+        ]
+      },
+      {
+        "title": "SUKOVÁ PHOTOGRAPHY",
+        "description": "Pro fotografku Lucii jsem navrhl logo a vytvořil přehlednou prezentační webovou stránku s funkcí jazykové mutace.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "LEVITATE",
+        "description": "Pro fine dining restauraci L E V I T A T E jsem vytvořil přehlednou prezentační webovou stránku s e-shopem, rezervačním systémem a jazykovými mutacemi.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS",
+          "REZERVAČNÍ SYSTÉM",
+          "E-SHOP"
+        ]
+      },
+      {
+        "title": "WOLLEM",
+        "description": "Pro Wollem nabízející drahé šperky v centru Prahy jsem vytvořil přehledný e-shop s animacemi, platební bránou a formuláři.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS",
+          "E-SHOP"
+        ]
+      },
+      {
+        "title": "HASÚ RESTAURANT & SUSHI BAR",
+        "description": "Pro restauraci Hasú jsem vytvořil přehledný prezentační web s rezervačním systémem a jazykovými mutacemi.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS",
+          "REZERVAČNÍ SYSTÉM"
+        ]
+      },
+      {
+        "title": "KATKA MALINOVÁ",
+        "description": "Pro fotografku Katku Malinovou jsem vytvořil prezentační web, kde nabízí své podnikatelské služby a zobrazuje své portfólio.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "BOHEMIA DIRECT",
+        "description": "Pro obchodní firmu Bohemia Direct jsem vytvořil responzivní prezentační web s galerií, kalkulačkou a animacemi.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ"
+        ]
+      },
+      {
+        "title": "PHAMILY RESIDENCE",
+        "description": "Pro rezidenci sídlící v Da Nang ve Vietnamu jsem vytvořil prezentační web s rezervačním systémem pro rezervaci pokojů.",
+        "tags": [
+          "NÁVRH WEBU A LOGA",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "TĀST",
+        "description": "Pro fine dining restauraci tāst v centru Prahy jsem vytvořil přehlednou prezentační webovou stránku s rezervačním systémem a jazykovými mutacemi.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "YORI RESTAURANT",
+        "description": "Pro asijskou restauraci Yori na Masarykově nábřeží v Praze jsem vytvořil přehledný web s podporou vícejazyčnosti.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "STUDIO DETOXIKACE",
+        "description": "Pro paní Dagmar Císařovou jsem vytvořil prezentační web, kde nabízí své podnikatelské služby a alternativní způsoby léčení.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS",
+          "E-SHOP"
+        ]
+      },
+      {
+        "title": "DENIS FUECO",
+        "description": "Pro známého fotografa jsem vytvořil prezentační web nabízející své služby s portfóliem a e-shopem, díky čemuž má Denis možnost prodávat své presety online.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS",
+          "E-SHOP"
+        ]
+      },
+      {
+        "title": "MAJI",
+        "description": "Pro více než 10 let působící firmu Maji s několika pobočkami jsem vytvořil E-shop nabízející malířské produkty.",
+        "tags": [
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS",
+          "E-SHOP"
+        ]
+      },
+      {
+        "title": "LILI BEAUTY",
+        "description": "Pro makeup a hairstyle artistku jsem vytvořil webovou stránku s portfóliem a e-shopem.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "ATALIAN",
+        "description": "Pro globální firmu působící ve více než 20 zemích na světě zaměřující se na údržbu, čištění, bezpečnost, katering, atp. jsem vytvořil plně responzivní prezentační web s jazykovými mutacemi.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "DIGITÁLNÍTREND",
+        "description": "Pro klienta jsem vytvořil online magazín/news web zabývající se kryptoměnami, akciemi, investováním apod.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "CRYPTOSVĚT",
+        "description": "Pro klienta jsem vytvořil aktuálně jeden z nejčtenějších online magazínů zabývajících se kryptoměnami a investováním.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "INSIGHTLAB",
+        "description": "Pro InsightLab jsem vytvořil plně responzivní prezentační web nabízející chytrá řešení pro firmy, které chtějí porozumět zákazníkovi.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "AK NGUYEN",
+        "description": "Pro advokátní kancelář AK Nguyen jsem vytvořil informativní web.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ"
+        ]
+      },
+      {
+        "title": "MYMILLENIUM",
+        "description": "Pro MyMillenium jsem vytvořil responzivní webovou stránku dle návrhu klienta nabízející moderní a stylové prostory v Liberci.",
+        "tags": [
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "YGOLFTRAVEL",
+        "description": "Pro YGolfTravel jsem vytvořil responzivní web nabízející pobytové balíčky plné zážitků.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WORDPRESS"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "RECENZE",
+    "testimonials": [
+      {
+        "text": "Duy je profesionál na svém místě. Přišli jsme za ním s minimální znalostí problematiky a omezeným rozpočtem. Vše nám vysvětlil a přišel s řešením, které vyhovovalo jak našemu rozpočtu, tak našemu podnikání. Spolupráce byla bezproblémová, vše šlo hladce. Má zkušenosti, ví co je zrovna IN a dovede poradit. Pokud ale klient trvá na svém, nemá problém změny zapracovat. Výsledkem je skvělý web. Určitě spolupráci doporučuji, až budeme plánovat rozšíření služeb, Le bude první volba. Děkujeme!",
+        "author": "ZUZANA Z.",
+        "company": "CEO, ONLINEWORKOUT"
+      },
+      {
+        "text": "\"The most impressive aspect is his proactiveness. He brings ideas to the table and is very experienced. I'd say Duy deserves a 10 out of 10.\"",
+        "author": "MIREK",
+        "company": "CEO, MYMILLENIUM"
+      },
+      {
+        "text": "Duy je profesionální designér a vývojář. Pracovat s ním bylo příjemné - jeho návrhy jsou kreativní, moderní a vždy odpovídají zadání. Komunikace probíhala plynule a výsledky přesáhly naše očekávání.",
+        "author": "FILIP J.",
+        "company": "PHOTOGRAPHER"
+      },
+      {
+        "text": "Skvělá spolupráce! Duy rozumí tomu, co dělá a dokáže to aplikovat na reálné projekty. Web, který nám vytvořil, vypadá fantasticky a funguje skvěle na všech zařízeních.",
+        "author": "DENIS",
+        "company": "DENIS FUEGO"
+      },
+      {
+        "text": "Redesign našeho webu předčil veškerá očekávání. Obrat firmy po spuštění nového webu výrazně vzrostl. Duy chápe, že web není jen vizitka, ale prodejní nástroj.",
+        "author": "TOMÁŠ K.",
+        "company": "SCHLIEGER.CZ"
+      },
+      {
+        "text": "Potřebovali jsme web s rezervačním systémem a jazykovými mutacemi. Duy vše dodal rychle a bez komplikací. Hosté nám často říkají, že máme krásný web.",
+        "author": "MARTIN P.",
+        "company": "LEVITATE RESTAURANT"
+      },
+      {
+        "text": "Profesionální přístup od začátku do konce. E-shop funguje bezchybně, design je elegantní a zákazníci se v něm snadno orientují. Jednoznačně doporučuji.",
+        "author": "PETRA N.",
+        "company": "WOLLEM JEWELLERY"
+      },
+      {
+        "text": "Duy nám vytvořil web, který perfektně reprezentuje naši firmu. Komunikace byla rychlá, návrhy přesné a výsledek nad očekávání. Rádi se na něj obrátíme znovu.",
+        "author": "DAGMAR C.",
+        "company": "STUDIO DETOXIKACE"
+      },
+      {
+        "text": "Spolupráce na webu pro naši advokátní kancelář proběhla hladce. Duy rozumí tomu, co klient potřebuje, a dokáže to přetavit v moderní a funkční web.",
+        "author": "DAVID N.",
+        "company": "AK NGUYEN"
+      },
+      {
+        "text": "Jako fotografka jsem potřebovala web, který ukáže moji práci v tom nejlepším světle. Duy to zvládl na jedničku — rychle, kreativně a s citem pro detail.",
+        "author": "LUCIE S.",
+        "company": "SUKOVÁ PHOTOGRAPHY"
+      },
+      {
+        "text": "Web i logo na jednom místě. Duy má oko pro design a zároveň technické znalosti, aby vše fungovalo. Naši hosté ve Vietnamu jsou z webu nadšení.",
+        "author": "TRANG L.",
+        "company": "PHAMILY RESIDENCE"
+      },
+      {
+        "text": "Hledali jsme někoho, kdo zvládne e-shop s platební bránou a pěkným designem. Duy dodal obojí a ještě poradil s marketingem. Skvělý profesionál.",
+        "author": "JAN M.",
+        "company": "MAJI"
+      }
+    ]
+  },
+  "aboutMe": {
+    "heading": "O MNĚ",
+    "greeting": "AHOJ 👋 JMENUJI SE DUY",
+    "bio": "Tvorbě kompletních webů nebo jejich částí se profesionálně věnuji již šestým rokem. Zkušenosti jsem získal ve velkých korporátních firmách, kde jsem pracoval jako kodér/front-end developer, programátor a designér. Později jsem se také začal specializovat na PPC reklamy s přesahem do webové analytiky a SEO. Tyto zkušenosti nyní využívám jako freelancer v Praze.",
+    "faqHeading": "FAQ",
+    "faqItems": [
+      {
+        "question": "Proč zvolit webdesignéra na volné noze?",
+        "answer": "Webdesignér na volné noze může nabídnout velkou hodnotu za rozumnou cenu ve srovnání s agenturami a zároveň nabízí špičkové webové stránky a osobnější přístup."
+      },
+      {
+        "question": "Jaké lokality pokrýváte?",
+        "answer": "Již roky pracuji remote/vzdálenou spoluprací s podniky všech velikostí. Pracoval jsem s klienty se sídlem v Praze, Brně, Londýně, Saigonu, Da Nang, Bruchsal, Berlíně."
+      },
+      {
+        "question": "Jaký je rozdíl mezi webovým designérem na volné noze a webovým vývojářem na volné noze?",
+        "answer": "Webdesignér navrhuje, jak věci budou vypadat a působit, obvykle v aplikacích jako Figma nebo Sketch. Vývojář to posléze zrealizuje do internetového prohlížeče v interaktivní podobě. Mám dlouholeté zkušenosti a znalosti v obou oblastech, takže se mohu stát velkým přínosem pro podniky, které chtějí spojit mezeru mezi designem a vývojem."
+      },
+      {
+        "question": "Jaké služby nabízíte?",
+        "answer": "PPC reklamy, SEO, Branding a firemní identita, Wireframy a prototyping, User experience design (UX), User interface design (UI), Design mobilní aplikace, Bannery a obsah pro sociální sítě, Animace, Tiskový materiál, Kódování, Programování, Správa webu, E-shopy"
+      }
+    ],
+    "stats": [
+      {
+        "number": "6",
+        "label": "LET ZKUŠENOSTÍ"
+      },
+      {
+        "number": "100+",
+        "label": "VYTVOŘENÝCH WEBŮ"
+      },
+      {
+        "number": "70+",
+        "label": "NÁVRHŮ"
+      },
+      {
+        "number": "14",
+        "label": "MARKETINGOVÝCH KAMPANÍ"
+      }
+    ]
+  },
+  "footer": {
+    "heading": "POJĎME TO PROBRAT",
+    "email": "INFO@LEDU.CZ",
+    "availability": "Mám aktuálně volné kapacity pro nové projekty.",
+    "writeMe": "NAPIŠTE MI",
+    "copyright": "© 2025 LEDU. Všechna práva vyhrazena.",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn"
+  },
+  "contactForm": {
+    "heading": "Kontaktní formulář",
+    "nameLabel": "Jméno",
+    "namePlaceholder": "Vaše jméno",
+    "emailLabel": "Email",
+    "emailPlaceholder": "vas@email.cz",
+    "phoneLabel": "Telefonní číslo",
+    "phonePlaceholder": "123 456 789",
+    "countryCodes": {
+      "cz": "+420 (CZ)",
+      "sk": "+421 (SK)",
+      "at": "+43 (AT)",
+      "de": "+49 (DE)",
+      "fr": "+33 (FR)"
+    },
+    "servicesLabel": "Jaké služby vás zajímají?",
+    "services": [
+      "Webová stránka",
+      "E-shop",
+      "Marketingová kampaň",
+      "Správa webu",
+      "Optimalizace"
+    ],
+    "messageLabel": "Vaše zpráva",
+    "messagePlaceholder": "Popište váš projekt...",
+    "fileLabel": "Příloha (volitelně)",
+    "submitButton": "Odeslat",
+    "submittingButton": "Odesílání...",
+    "successMessage": "Děkujeme! Vaše zpráva byla odeslána. Brzy se vám ozveme.",
+    "errorMessage": "Došlo k chybě. Prosím, zkuste to později, nebo napište na info@ledu.cz."
+  },
+  "pages": {
+    "kontakt": {
+      "title": "Kontakt | LEDU",
+      "heading": "NAPIŠTE",
+      "headingContinued": "MI",
+      "nameLabel": "JMÉNO *",
+      "emailLabel": "EMAIL *",
+      "phoneLabel": "TELEFONNÍ ČÍSLO",
+      "servicesLabel": "O JAKÉ SLUŽBY MÁTE ZÁJEM?",
+      "messageLabel": "VAŠE ZPRÁVA *",
+      "fileLabel": "NAHRÁT SOUBOR",
+      "fileHint": "Nahrajte ve formátu ZIP",
+      "submitButton": "ODESLAT",
+      "successAlert": "Děkujeme za zprávu! Brzy se vám ozveme."
+    },
+    "oMne": {
+      "title": "O mně | LEDU",
+      "heading": "O MNĚ",
+      "subheading1": "WEBY, DESIGN,",
+      "subheading2": "STREET WORKOUT",
+      "briefHeading": "STRUČNĚ A JASNĚ",
+      "valuesHeading": "MÉ HODNOTY",
+      "bio": [
+        "Dělám promyšlené, přehledné, graficky zajímavé a jedinečné webové stránky postavené na redakčním systému WordPress.",
+        "Tvorbě kompletních webů nebo jejich částí se profesionálně věnuji šestým rokem.",
+        "Zkušenosti jsem získal ve velkých korporátních firmách, kde jsem pracoval jako kodér/front-end developer (HTML, CSS, JS, WordPress) v Infonia, MagicWare, Web4All. Tyto zkušenosti využívám jako freelancer při tvorbě prezentačních webů a E-shopů postavených na redakčním systému WordPress, kterými se v současné době zabývám nejvíc.",
+        "Narodil jsem se v Praze a zde také žiju celý život.",
+        "Ve volném čase rád posiluji venku, rád fotím venku a chodím po horách."
+      ],
+      "values": [
+        {
+          "title": "KVALITA",
+          "description": "Ke špičkové práci využívám nejmodernější technologie a postupy. Vše důkladně testuji a vylepšuji, dokud výsledek není perfektní."
+        },
+        {
+          "title": "ODBORNOST",
+          "description": "Mám hluboké znalosti a zkušenosti v oboru webového vývoje a designu. Neustále se vzdělávám a držím krok s nejnovějšími trendy."
+        },
+        {
+          "title": "KOMUNIKACE",
+          "description": "Věřím v otevřenou a transparentní komunikaci. Pravidelně informuji o průběhu projektu a jsem vždy dostupný pro vaše dotazy."
+        }
+      ]
+    },
+    "reference": {
+      "title": "Reference | LEDU",
+      "heading1": "MÉ PRÁCE",
+      "heading2": "PRO KLIENTY"
+    },
+    "blog": {
+      "title": "Blog | LEDU",
+      "heading": "Blog",
+      "description": "Články, tipy a postřehy z oblasti webového designu a vývoje.",
+      "posts": [
+        {
+          "title": "Jak vytvořit kvalitní web",
+          "date": "15. února 2025",
+          "excerpt": "Komplexní průvodce tvorbou webu, který přinese vašemu podnikání skutečné výsledky.",
+          "slug": "jak-vytvorit-kvalitni-web"
+        },
+        {
+          "title": "SEO optimalizace pro malé firmy",
+          "date": "10. února 2025",
+          "excerpt": "Praktické tipy na optimalizaci pro vyhledávače bez velkých investic.",
+          "slug": "seo-optimalizace-male-firmy"
+        },
+        {
+          "title": "Trendy ve web designu 2025",
+          "date": "1. února 2025",
+          "excerpt": "Jaké jsou nejnovější trendy ve web designu a jak je aplikovat do vašeho projektu.",
+          "slug": "trendy-web-design-2025"
+        }
+      ],
+      "readMoreButton": "Přečíst článek"
+    }
+  }
+}

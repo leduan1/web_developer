@@ -1,0 +1,10 @@
+export { default as Header } from './Header';
+export { default as Hero } from './Hero';
+export { default as Testimonials } from './Testimonials';
+export { default as Services } from './Services';
+export { default as References } from './References';
+export { default as AboutMe } from './AboutMe';
+export { default as Footer } from './Footer';
+export { default as ContactForm } from './ContactForm';
+export { default as SideLabels } from './SideLabels';
+export { default as LocalizedLink } from './LocalizedLink';

@@ -1,0 +1,598 @@
+{
+  "meta": {
+    "title": "LEDU - Web Developer | Website & E-shop Creation",
+    "description": "I'm a web developer and designer specializing in creating modern, high-performance websites and e-shops. Custom work tailored to your business."
+  },
+  "common": {
+    "scroll": "SCROLL"
+  },
+  "header": {
+    "navigation": {
+      "uvod": "Home",
+      "reference": "References",
+      "oMne": "About Me",
+      "blog": "Blog",
+      "kontakt": "Contact"
+    },
+    "kontaktButton": "Contact",
+    "menu": "Menu"
+  },
+  "hero": {
+    "outline": "PUSHING BOUNDARIES",
+    "main": "IN CREATING",
+    "rotatingWords": [
+      "WEBSITES",
+      "WORDPRESS SITES",
+      "DESIGNS",
+      "AD CAMPAIGNS",
+      "OPTIMIZATIONS"
+    ]
+  },
+  "services": {
+    "heading": "SERVICES",
+    "tabs": [
+      {
+        "id": "vyvoj",
+        "label": "WEB DEVELOPMENT"
+      },
+      {
+        "id": "eshop",
+        "label": "E-SHOP"
+      },
+      {
+        "id": "design",
+        "label": "WEB DESIGN"
+      },
+      {
+        "id": "sprava",
+        "label": "WEB MAINTENANCE"
+      },
+      {
+        "id": "marketing",
+        "label": "MARKETING"
+      }
+    ],
+    "vyvoj": {
+      "title": "Web Development",
+      "description": "If you have high demands for your website, you're in the right place. You can expect a well-thought-out, intuitive, and visually attractive website that's always tailored for online marketing and designed specifically for your target audience.",
+      "features": [
+        {
+          "title": "Stability",
+          "description": "When developing websites, I focus on using modern yet proven technologies that are reliable and trustworthy."
+        },
+        {
+          "title": "Responsiveness",
+          "description": "Whether your visitors view your website on a mobile device, tablet, computer, or any other device, the content adapts seamlessly to the screen size."
+        },
+        {
+          "title": "Speed",
+          "description": "Research has shown that 75% of customers rarely return to pages that take longer than 4 seconds to load."
+        },
+        {
+          "title": "Quality",
+          "description": "For top-tier work, I use the latest technologies and methods. Everything is thoroughly tested and continuously improved."
+        }
+      ]
+    },
+    "eshop": {
+      "title": "E-Shop / E-Commerce",
+      "subtitle": "Secure and scalable e-commerce solutions",
+      "description": "Setting up online sales may sound daunting and expensive, but it doesn't have to be. I can advise you on which e-commerce solution will best fit your budget and business needs."
+    },
+    "design": {
+      "title": "Web Design",
+      "subtitle": "You have the vision, I bring it to life.",
+      "description": "I believe that attention to detail is paramount when designing websites. Achieving the perfect balance between functionality and aesthetics means your website will not only look beautiful but also drive users to conversion.",
+      "listItems": [
+        "Branding and corporate identity",
+        "Wireframes and prototyping",
+        "User experience design (UX)",
+        "User interface design (UI)",
+        "Mobile app design",
+        "Banners and social media content",
+        "Animations",
+        "Print materials"
+      ]
+    },
+    "sprava": {
+      "title": "Website Maintenance",
+      "subtitle": "Hassle-free maintenance packages from 1000 CZK",
+      "description": "Securing your WordPress website is a time-consuming task, so I'm happy to do all the work for you."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "subtitle": "Internet advertising",
+      "description": "Reach thousands of potential customers quickly through search engines and popular portals.",
+      "features": [
+        {
+          "title": "PPC Advertising",
+          "description": "I'll set up effective campaigns in PPC systems like Google Ads and Sklik."
+        },
+        {
+          "title": "SEO",
+          "description": "I optimize your website to ensure it's easily indexed by search engines."
+        },
+        {
+          "title": "Social Media",
+          "description": "Build stronger relationships with your customers through social media engagement."
+        }
+      ]
+    },
+    "ctaButton": "I'm Interested"
+  },
+  "references": {
+    "heading": "REFERENCES",
+    "visitWebButton": "Visit Website",
+    "contactButton": "CONTACT",
+    "allReferencesButton": "ALL REFERENCES",
+    "projects": [
+      {
+        "title": "JAGR WEDDINGS",
+        "description": "I created a custom website for photographer Filip Jagr that's modern and user-friendly, showcasing his work effectively.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "SCHLIEGER.CZ, SCHLIEGER.DE",
+        "description": "I completely redesigned the website for Schlieger.cz from scratch, including all functionality and design. This helped the company earn over 4 billion CZK in 2024.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS",
+          "E-SHOP"
+        ]
+      },
+      {
+        "title": "DOMY SOBĚ",
+        "description": "I created a modern and user-friendly informational website for Domy Sobě, a company that helps residential buildings save costs.",
+        "tags": [
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "DENIS FUECO & WORKSHOP",
+        "description": "After creating an informational website a few years ago, Denis approached me again to expand it with a new Workshop page and e-shop functionality.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS",
+          "E-SHOP"
+        ]
+      },
+      {
+        "title": "SUKOVÁ PHOTOGRAPHY",
+        "description": "I designed a logo and created a clear presentation website for photographer Lucy, featuring language switching functionality.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "LEVITATE",
+        "description": "I created a clear presentation website for the fine dining restaurant LEVITATE with e-shop, reservation system, and language options.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS",
+          "BOOKING SYSTEM",
+          "E-SHOP"
+        ]
+      },
+      {
+        "title": "WOLLEM",
+        "description": "I created a user-friendly e-shop for Wollem, which offers luxury jewelry in downtown Prague, featuring animations, payment gateway, and forms.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS",
+          "E-SHOP"
+        ]
+      },
+      {
+        "title": "HASÚ RESTAURANT & SUSHI BAR",
+        "description": "I created a clear presentation website for Hasú restaurant with a reservation system and language options.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS",
+          "BOOKING SYSTEM"
+        ]
+      },
+      {
+        "title": "KATKA MALINOVÁ",
+        "description": "I created a presentation website for photographer Katka Malinová where she offers her business services and displays her portfolio.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "BOHEMIA DIRECT",
+        "description": "I created a responsive presentation website for Bohemia Direct trading company featuring a gallery, calculator, and animations.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING"
+        ]
+      },
+      {
+        "title": "PHAMILY RESIDENCE",
+        "description": "I created a presentation website with a room booking system for a residence located in Da Nang, Vietnam.",
+        "tags": [
+          "WEB DESIGN AND LOGO",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "TĀST",
+        "description": "I created a clear presentation website for the fine dining restaurant tāst in downtown Prague, featuring a reservation system and language options.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "YORI RESTAURANT",
+        "description": "I created a user-friendly website for Asian restaurant Yori on Masaryk Embankment in Prague with multi-language functionality.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "STUDIO DETOXIKACE",
+        "description": "I created a presentation website for Dagmar Císařová where she offers her business services and alternative healing methods.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS",
+          "E-SHOP"
+        ]
+      },
+      {
+        "title": "DENIS FUECO",
+        "description": "I created a presentation website for renowned photographer Denis offering his services with portfolio and e-shop, enabling him to sell his presets online.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS",
+          "E-SHOP"
+        ]
+      },
+      {
+        "title": "MAJI",
+        "description": "I created an e-shop for Maji, a company with over 10 years of experience and multiple branches, offering painting products.",
+        "tags": [
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS",
+          "E-SHOP"
+        ]
+      },
+      {
+        "title": "LILI BEAUTY",
+        "description": "I created a website with portfolio and e-shop for makeup and hairstyle artist Lili Beauty.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "ATALIAN",
+        "description": "I created a fully responsive presentation website with language options for Atalian, a global company operating in over 20 countries worldwide, specializing in maintenance, cleaning, security, catering, and more.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "DIGITÁLNÍTREND",
+        "description": "I created an online magazine/news website for a client covering cryptocurrencies, stocks, investing, and more.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "CRYPTOSVĚT",
+        "description": "I created one of the most widely-read online magazine/news websites covering cryptocurrencies and investing.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "INSIGHTLAB",
+        "description": "I created a fully responsive presentation website for InsightLab offering smart solutions for companies that want to understand their customers.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "AK NGUYEN",
+        "description": "I created an informative website for the law firm AK Nguyen.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING"
+        ]
+      },
+      {
+        "title": "MYMILLENIUM",
+        "description": "I created a responsive website for MyMillenium following the client's design, showcasing modern and stylish spaces in Liberec.",
+        "tags": [
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "YGOLFTRAVEL",
+        "description": "I created a responsive website for YGolfTravel offering vacation packages full of memorable experiences.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WORDPRESS"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "TESTIMONIALS",
+    "testimonials": [
+      {
+        "text": "Duy is a professional in his field. We came to him with minimal knowledge and a limited budget. He explained everything clearly and came up with a solution that fit both our budget and our business needs. The collaboration was seamless and everything went smoothly. He has experience, knows what's current, and gives great advice. If a client insists on something, he has no problem implementing changes. The result is an excellent website. I definitely recommend his work, and when we plan to expand our services, Duy will be our first choice. Thank you!",
+        "author": "ZUZANA Z.",
+        "company": "CEO, ONLINEWORKOUT"
+      },
+      {
+        "text": "\"The most impressive aspect is his proactiveness. He brings ideas to the table and is very experienced. I'd say Duy deserves a 10 out of 10.\"",
+        "author": "MIREK",
+        "company": "CEO, MYMILLENIUM"
+      },
+      {
+        "text": "Duy is a professional designer and developer. Working with him was a pleasure - his designs are creative, modern, and always meet the requirements. Communication was smooth and the results exceeded our expectations.",
+        "author": "FILIP J.",
+        "company": "PHOTOGRAPHER"
+      },
+      {
+        "text": "Great collaboration! Duy understands what he does and knows how to apply it to real projects. The website he created for us looks fantastic and works great on all devices.",
+        "author": "DENIS",
+        "company": "DENIS FUEGO"
+      },
+      {
+        "text": "The redesign of our website exceeded all expectations. Revenue increased significantly after the launch. Duy understands that a website is not just a business card, but a sales tool.",
+        "author": "TOMÁŠ K.",
+        "company": "SCHLIEGER.CZ"
+      },
+      {
+        "text": "We needed a website with a reservation system and multiple language versions. Duy delivered everything quickly and without complications. Our guests often tell us we have a beautiful website.",
+        "author": "MARTIN P.",
+        "company": "LEVITATE RESTAURANT"
+      },
+      {
+        "text": "Professional approach from start to finish. The e-shop works flawlessly, the design is elegant, and customers find it easy to navigate. I definitely recommend.",
+        "author": "PETRA N.",
+        "company": "WOLLEM JEWELLERY"
+      },
+      {
+        "text": "Duy created a website that perfectly represents our company. Communication was fast, proposals were accurate, and the result exceeded expectations. We'll gladly work with him again.",
+        "author": "DAGMAR C.",
+        "company": "STUDIO DETOXIKACE"
+      },
+      {
+        "text": "The collaboration on our law firm's website went smoothly. Duy understands what the client needs and can turn it into a modern and functional website.",
+        "author": "DAVID N.",
+        "company": "AK NGUYEN"
+      },
+      {
+        "text": "As a photographer, I needed a website that showcases my work in the best light. Duy nailed it — fast, creative, and with an eye for detail.",
+        "author": "LUCIE S.",
+        "company": "SUKOVÁ PHOTOGRAPHY"
+      },
+      {
+        "text": "Website and logo in one place. Duy has an eye for design and the technical skills to make everything work. Our guests in Vietnam love the website.",
+        "author": "TRANG L.",
+        "company": "PHAMILY RESIDENCE"
+      },
+      {
+        "text": "We were looking for someone who could handle an e-shop with a payment gateway and nice design. Duy delivered both and even helped with marketing. A great professional.",
+        "author": "JAN M.",
+        "company": "MAJI"
+      }
+    ]
+  },
+  "aboutMe": {
+    "heading": "ABOUT ME",
+    "greeting": "HI 👋 MY NAME IS DUY",
+    "bio": "I have been professionally creating complete websites or parts of them for six years. I gained experience at large corporations where I worked as a coder/front-end developer, programmer, and designer. Later, I specialized in PPC advertising with expertise in web analytics and SEO. I now use these experiences as a freelancer in Prague.",
+    "faqHeading": "FAQ",
+    "faqItems": [
+      {
+        "question": "Why choose a freelance web designer?",
+        "answer": "A freelance web designer can offer great value at a reasonable price compared to agencies while providing top-quality websites and a more personal approach."
+      },
+      {
+        "question": "What areas do you cover?",
+        "answer": "I've been working remotely for years with businesses of all sizes. I've worked with clients based in Prague, Brno, London, Saigon, Da Nang, Bruchsal, and Berlin."
+      },
+      {
+        "question": "What's the difference between a freelance web designer and a freelance web developer?",
+        "answer": "A web designer designs how things will look and feel, usually in applications like Figma or Sketch. A developer then implements that design into an interactive form in a web browser. I have years of experience and knowledge in both areas, so I can be a great asset for businesses wanting to bridge the gap between design and development."
+      },
+      {
+        "question": "What services do you offer?",
+        "answer": "PPC advertising, SEO, Branding and corporate identity, Wireframes and prototyping, User experience design (UX), User interface design (UI), Mobile app design, Banners and social media content, Animations, Print materials, Coding, Programming, Web maintenance, E-shops"
+      }
+    ],
+    "stats": [
+      {
+        "number": "6",
+        "label": "YEARS OF EXPERIENCE"
+      },
+      {
+        "number": "100+",
+        "label": "WEBSITES CREATED"
+      },
+      {
+        "number": "70+",
+        "label": "DESIGNS"
+      },
+      {
+        "number": "14",
+        "label": "MARKETING CAMPAIGNS"
+      }
+    ]
+  },
+  "footer": {
+    "heading": "LET'S TALK ABOUT IT",
+    "email": "INFO@LEDU.CZ",
+    "availability": "I currently have capacity available for new projects.",
+    "writeMe": "WRITE ME",
+    "copyright": "© 2025 LEDU. All rights reserved.",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn"
+  },
+  "contactForm": {
+    "heading": "Contact Form",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "123 456 789",
+    "countryCodes": {
+      "cz": "+420 (CZ)",
+      "sk": "+421 (SK)",
+      "at": "+43 (AT)",
+      "de": "+49 (DE)",
+      "fr": "+33 (FR)"
+    },
+    "servicesLabel": "What services are you interested in?",
+    "services": [
+      "Website",
+      "E-shop",
+      "Marketing Campaign",
+      "Web Maintenance",
+      "Optimization"
+    ],
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "Describe your project...",
+    "fileLabel": "Attachment (optional)",
+    "submitButton": "Send",
+    "submittingButton": "Sending...",
+    "successMessage": "Thank you! Your message has been sent. I'll get back to you soon.",
+    "errorMessage": "An error occurred. Please try again later or write to info@ledu.cz."
+  },
+  "pages": {
+    "kontakt": {
+      "title": "Contact | LEDU",
+      "heading": "WRITE",
+      "headingContinued": "TO ME",
+      "nameLabel": "NAME *",
+      "emailLabel": "EMAIL *",
+      "phoneLabel": "PHONE NUMBER",
+      "servicesLabel": "WHAT SERVICES ARE YOU INTERESTED IN?",
+      "messageLabel": "YOUR MESSAGE *",
+      "fileLabel": "UPLOAD FILE",
+      "fileHint": "Upload in ZIP format",
+      "submitButton": "SEND",
+      "successAlert": "Thank you for your message! I'll get back to you soon."
+    },
+    "oMne": {
+      "title": "About Me | LEDU",
+      "heading": "ABOUT ME",
+      "subheading1": "WEBSITES, DESIGN,",
+      "subheading2": "STREET WORKOUT",
+      "briefHeading": "BRIEFLY AND CLEARLY",
+      "valuesHeading": "MY VALUES",
+      "bio": [
+        "I create thoughtful, clear, graphically interesting, and unique websites built on the WordPress CMS platform.",
+        "I have been professionally creating complete websites or parts of them for six years.",
+        "I gained experience at large corporations where I worked as a coder/front-end developer (HTML, CSS, JS, WordPress) at Infonia, MagicWare, and Web4All. I now use this experience as a freelancer creating presentation websites and e-shops built on the WordPress CMS platform, which is currently my main focus.",
+        "I was born in Prague and have lived here my entire life.",
+        "In my free time, I enjoy working out outdoors, photography, and hiking in the mountains."
+      ],
+      "values": [
+        {
+          "title": "QUALITY",
+          "description": "I use the latest technologies and methods for top-tier work. Everything is thoroughly tested and improved until the result is perfect."
+        },
+        {
+          "title": "EXPERTISE",
+          "description": "I have deep knowledge and experience in web development and design. I continuously educate myself and stay up-to-date with the latest trends."
+        },
+        {
+          "title": "COMMUNICATION",
+          "description": "I believe in open and transparent communication. I regularly keep you informed about project progress and am always available for your questions."
+        }
+      ]
+    },
+    "reference": {
+      "title": "References | LEDU",
+      "heading1": "MY WORK",
+      "heading2": "FOR CLIENTS"
+    },
+    "blog": {
+      "title": "Blog | LEDU",
+      "heading": "Blog",
+      "description": "Articles, tips, and insights from web design and development.",
+      "posts": [
+        {
+          "title": "How to Create a Quality Website",
+          "date": "February 15, 2025",
+          "excerpt": "A comprehensive guide to creating a website that delivers real results for your business.",
+          "slug": "jak-vytvorit-kvalitni-web"
+        },
+        {
+          "title": "SEO Optimization for Small Businesses",
+          "date": "February 10, 2025",
+          "excerpt": "Practical tips for search engine optimization without large investments.",
+          "slug": "seo-optimalizace-male-firmy"
+        },
+        {
+          "title": "Web Design Trends 2025",
+          "date": "February 1, 2025",
+          "excerpt": "What are the latest web design trends and how to apply them to your project.",
+          "slug": "trendy-web-design-2025"
+        }
+      ],
+      "readMoreButton": "Read Article"
+    }
+  }
+}

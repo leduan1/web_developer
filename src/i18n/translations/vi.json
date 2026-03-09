@@ -1,0 +1,598 @@
+{
+  "meta": {
+    "title": "LEDU - Nhà phát triển Web | Thiết kế website & thương mại điện tử",
+    "description": "Tôi là một nhà phát triển web và nhà thiết kế chuyên về tạo các website hiện đại, hiệu suất cao và cửa hàng trực tuyến. Công việc được tùy chỉnh cho nhu cầu kinh doanh của bạn."
+  },
+  "common": {
+    "scroll": "CUỘN"
+  },
+  "header": {
+    "navigation": {
+      "uvod": "Giới thiệu",
+      "reference": "Dự án",
+      "oMne": "Về tôi",
+      "blog": "Blog",
+      "kontakt": "Liên hệ"
+    },
+    "kontaktButton": "Liên hệ",
+    "menu": "Menu"
+  },
+  "hero": {
+    "outline": "TÔI ĐẨY GIỚI HẠN",
+    "main": "TRONG VIỆC TẠO",
+    "rotatingWords": [
+      "TRANG WEB",
+      "TRANG WEB WORDPRESS",
+      "THIẾT KẾ",
+      "CHIẾN DỊCH QUẢNG CÁO",
+      "TỐI ƯU HÓA"
+    ]
+  },
+  "services": {
+    "heading": "DỊCH VỤ",
+    "tabs": [
+      {
+        "id": "vyvoj",
+        "label": "PHÁT TRIỂN WEB"
+      },
+      {
+        "id": "eshop",
+        "label": "CỬA HÀNG TRỰC TUYẾN"
+      },
+      {
+        "id": "design",
+        "label": "THIẾT KẾ WEB"
+      },
+      {
+        "id": "sprava",
+        "label": "QUẢN LÝ TRANG WEB"
+      },
+      {
+        "id": "marketing",
+        "label": "MARKETING"
+      }
+    ],
+    "vyvoj": {
+      "title": "Phát triển web",
+      "description": "Nếu bạn có những yêu cầu cao về trang web, bạn đã đến đúng nơi. Bạn có thể mong đợi một website sáng tạo, trực quan và hấp dẫn về mặt thiết kế, luôn được tối ưu hóa cho các chiến dịch tiếp theo và phù hợp với nhóm mục tiêu của bạn.",
+      "features": [
+        {
+          "title": "Độ ổn định",
+          "description": "Khi phát triển trang web, tôi đảm bảo sử dụng các công nghệ hiện đại nhưng đã được chứng minh và đáng tin cậy."
+        },
+        {
+          "title": "Tính đáp ứng",
+          "description": "Dù khách truy cập xem trang web của bạn trên điện thoại, máy tính bảng, máy tính hay bất kỳ thiết bị nào, nội dung sẽ tự động điều chỉnh theo kích thước màn hình."
+        },
+        {
+          "title": "Tốc độ",
+          "description": "Các nghiên cứu cho thấy rằng 75% khách hàng sẽ không quay lại những trang tải chậm hơn 4 giây."
+        },
+        {
+          "title": "Chất lượng",
+          "description": "Để đạt được công việc chất lượng cao, tôi sử dụng các công nghệ và quy trình hiện đại nhất. Tôi kiểm tra và cải thiện tất cả một cách kỹ lưỡng."
+        }
+      ]
+    },
+    "eshop": {
+      "title": "E-Shop / E-Commerce",
+      "subtitle": "Giải pháp E-Commerce an toàn và có khả năng mở rộng",
+      "description": "Thiết lập bán hàng trực tuyến nghe có vẻ khó khăn và rất tốn kém, nhưng không nhất thiết phải vậy. Tôi có thể tư vấn cho bạn giải pháp e-commerce nào sẽ phù hợp nhất với ngân sách của bạn."
+    },
+    "design": {
+      "title": "Thiết kế web / Thiết kế trang web",
+      "subtitle": "Bạn có ý tưởng, tôi có thể biến nó thành hiện thực.",
+      "description": "Tôi tin rằng sự chú ý đến chi tiết là điều tối quan trọng trong thiết kế trang web. Đạt được sự cân bằng hoàn hảo giữa chức năng và tính thẩm mỹ có nghĩa là trang web của bạn không chỉ trông đẹp mà còn dẫn người dùng đến chuyển đổi.",
+      "listItems": [
+        "Branding và nhận dạng thương hiệu",
+        "Wireframes và prototyping",
+        "Thiết kế trải nghiệm người dùng (UX)",
+        "Thiết kế giao diện người dùng (UI)",
+        "Thiết kế ứng dụng di động",
+        "Banner và nội dung cho mạng xã hội",
+        "Hoạt ảnh",
+        "Ấn phẩm in"
+      ]
+    },
+    "sprava": {
+      "title": "Quản lý trang web / Bảo trì trang web",
+      "subtitle": "Gói bảo trì không lo lắng từ 1.000 CZK",
+      "description": "Bảo mật trang web WordPress của bạn là một công việc tốn thời gian, vì vậy tôi sẽ làm tất cả công việc đó cho bạn."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "subtitle": "Quảng cáo trên Internet",
+      "description": "Tiếp cận hàng nghìn khách hàng tiềm năng theo cách nhanh nhất thông qua các công cụ tìm kiếm và các trang web được truy cập nhiều.",
+      "features": [
+        {
+          "title": "Quảng cáo PPC",
+          "description": "Tôi sẽ chuẩn bị các chiến dịch hiệu quả cho bạn trong các hệ thống PPC Google Ads và Sklik."
+        },
+        {
+          "title": "SEO",
+          "description": "Tôi luôn xử lý trang web của bạn sao cho nó dễ dàng được các công cụ tìm kiếm lập chỉ mục."
+        },
+        {
+          "title": "Mạng xã hội",
+          "description": "Xây dựng mối quan hệ thân thiện hơn với khách hàng của bạn thông qua các mạng xã hội."
+        }
+      ]
+    },
+    "ctaButton": "Tôi quan tâm"
+  },
+  "references": {
+    "heading": "DỰ ÁN",
+    "visitWebButton": "Truy cập trang web",
+    "contactButton": "LIÊN HỆ",
+    "allReferencesButton": "TẤT CẢ DỰ ÁN",
+    "projects": [
+      {
+        "title": "JAGR WEDDINGS",
+        "description": "Cho nhiếp ảnh gia Filip Jagr, tôi đã tạo một trang web tùy chỉnh hiện đại và dễ hiểu thể hiện công việc của anh ấy.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "SCHLIEGER.CZ, SCHLIEGER.DE",
+        "description": "Cho công ty Schlieger.cz, tôi đã thiết kế lại hoàn toàn trang web từ A đến Z, bao gồm tất cả các chức năng và thiết kế, giúp công ty kiếm được hơn 4 tỷ korun vào năm 2024.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS",
+          "CỬA HÀNG TRỰC TUYẾN"
+        ]
+      },
+      {
+        "title": "DOMY SOBĚ",
+        "description": "Cho công ty Domy Sobě giúp các tòa nhà tiết kiệm tiền, tôi đã tạo một trang web thông tin hiện đại và dễ hiểu.",
+        "tags": [
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "DENIS FUECO & WORKSHOP",
+        "description": "Sau khi tạo một trang web thông tin cách đây vài năm, Denis lại liên hệ với tôi để mở rộng trang web với trang con Workshop mới có tích hợp chức năng cửa hàng trực tuyến.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS",
+          "CỬA HÀNG TRỰC TUYẾN"
+        ]
+      },
+      {
+        "title": "SUKOVÁ PHOTOGRAPHY",
+        "description": "Cho nhiếp ảnh gia Lucia, tôi đã thiết kế logo và tạo một trang web trình bày rõ ràng có tính năng chuyển ngôn ngữ.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "LEVITATE",
+        "description": "Cho nhà hàng fine dining L E V I T A T E, tôi đã tạo một trang web trình bày rõ ràng với cửa hàng trực tuyến, hệ thống đặt phòng và các phiên bản ngôn ngữ.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS",
+          "HỆ THỐNG ĐẶT PHÒNG",
+          "CỬA HÀNG TRỰC TUYẾN"
+        ]
+      },
+      {
+        "title": "WOLLEM",
+        "description": "Cho Wollem chuyên về trang sức cao cấp tại trung tâm Prague, tôi đã tạo một E-shop rõ ràng có hoạt ảnh, cổng thanh toán và biểu mẫu.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS",
+          "CỬA HÀNG TRỰC TUYẾN"
+        ]
+      },
+      {
+        "title": "HASÚ RESTAURANT & SUSHI BAR",
+        "description": "Cho nhà hàng Hasú, tôi đã tạo một trang web trình bày rõ ràng với hệ thống đặt phòng và các phiên bản ngôn ngữ.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS",
+          "HỆ THỐNG ĐẶT PHÒNG"
+        ]
+      },
+      {
+        "title": "KATKA MALINOVÁ",
+        "description": "Cho nhiếp ảnh gia Katka Malinová, tôi đã tạo một trang web trình bày nơi cô ấy cung cấp các dịch vụ kinh doanh của mình và hiển thị portfolio của mình.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "BOHEMIA DIRECT",
+        "description": "Cho công ty thương mại Bohemia Direct, tôi đã tạo một trang web responsive với bộ sưu tập, máy tính và hoạt ảnh.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA"
+        ]
+      },
+      {
+        "title": "PHAMILY RESIDENCE",
+        "description": "Cho khu nghỉ dưỡng tọa lạc ở Da Nang, Việt Nam, tôi đã tạo một trang web trình bày với hệ thống đặt phòng trực tuyến.",
+        "tags": [
+          "THIẾT KẾ WEB VÀ LOGO",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "TĀST",
+        "description": "Cho nhà hàng fine dining tāst ở trung tâm Prague, tôi đã tạo một trang web trình bày rõ ràng với hệ thống đặt phòng và các phiên bản ngôn ngữ.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "YORI RESTAURANT",
+        "description": "Cho nhà hàng châu Á Yori trên Masarykov Embankment ở Prague, tôi đã tạo một trang web rõ ràng có tính năng đa ngôn ngữ.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "STUDIO DETOXIKACE",
+        "description": "Cho bà Dagmar Císařová, tôi đã tạo một trang web trình bày nơi bà ấy cung cấp các dịch vụ kinh doanh và các liệu pháp thay thế.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS",
+          "CỬA HÀNG TRỰC TUYẾN"
+        ]
+      },
+      {
+        "title": "DENIS FUECO",
+        "description": "Cho nhiếp ảnh gia nổi tiếng, tôi đã tạo một trang web trình bày cung cấp các dịch vụ của anh ấy với portfolio và E-shop, nhờ đó Denis có cơ hội bán các preset của mình trực tuyến.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS",
+          "CỬA HÀNG TRỰC TUYẾN"
+        ]
+      },
+      {
+        "title": "MAJI",
+        "description": "Cho công ty Maji hoạt động hơn 10 năm với nhiều chi nhánh, tôi đã tạo một E-shop cung cấp các sản phẩm sơn.",
+        "tags": [
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS",
+          "CỬA HÀNG TRỰC TUYẾN"
+        ]
+      },
+      {
+        "title": "LILI BEAUTY",
+        "description": "Cho nghệ sĩ trang điểm và kiểu tóc, tôi đã tạo một trang web với portfolio và cửa hàng trực tuyến.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "ATALIAN",
+        "description": "Cho công ty toàn cầu hoạt động ở hơn 20 quốc gia tập trung vào bảo trì, vệ sinh, bảo mật, cung cấp thức ăn, v.v., tôi đã tạo một trang web responsive hoàn toàn có các phiên bản ngôn ngữ.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "DIGITÁLNÍTREND",
+        "description": "Cho một khách hàng, tôi đã tạo một tạp chí trực tuyến/trang web tin tức về tiền điện tử, cổ phiếu, đầu tư, v.v.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "CRYPTOSVĚT",
+        "description": "Cho một khách hàng, tôi đã tạo một trong những tạp chí trực tuyến được đọc nhiều nhất hiện nay về tiền điện tử và đầu tư.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "INSIGHTLAB",
+        "description": "Cho InsightLab, tôi đã tạo một trang web responsive hoàn toàn cung cấp các giải pháp thông minh cho các công ty muốn hiểu khách hàng của họ.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "AK NGUYEN",
+        "description": "Cho công ty luật AK Nguyen, tôi đã tạo một trang web thông tin.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA"
+        ]
+      },
+      {
+        "title": "MYMILLENIUM",
+        "description": "Cho MyMillenium, tôi đã tạo một trang web responsive theo thiết kế của khách hàng cung cấp các không gian hiện đại và phong cách ở Liberec.",
+        "tags": [
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS"
+        ]
+      },
+      {
+        "title": "YGOLFTRAVEL",
+        "description": "Cho YGolfTravel, tôi đã tạo một trang web responsive cung cấp các gói lưu trú đầy những trải nghiệm.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "MÃ HÓA",
+          "WORDPRESS"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "ĐÁNH GIÁ",
+    "testimonials": [
+      {
+        "text": "Duy là một chuyên gia trong lĩnh vực của mình. Chúng tôi đến gặp anh ấy với kiến thức tối thiểu về vấn đề và ngân sách hạn chế. Anh ấy đã giải thích mọi thứ cho chúng tôi và đưa ra một giải pháp phù hợp với cả ngân sách của chúng tôi lẫn doanh nghiệp của chúng tôi. Sự hợp tác là không có vấn đề gì, mọi thứ đều suôn sẻ. Anh ấy có kinh nghiệm, biết những gì đang hiện hành và có thể tư vấn. Nhưng nếu khách hàng kiên quyết giữ ý kiến của họ, anh ấy không có vấn đề gì khi thực hiện các thay đổi. Kết quả là một trang web tuyệt vời. Tôi chắc chắn sẽ giới thiệu sự hợp tác này, khi chúng tôi lên kế hoạch mở rộng các dịch vụ, Le sẽ là lựa chọn đầu tiên. Cảm ơn!",
+        "author": "ZUZANA Z.",
+        "company": "CEO, ONLINEWORKOUT"
+      },
+      {
+        "text": "Điều ấn tượng nhất là sự chủ động của anh ấy. Anh ấy đưa ra ý tưởng và rất giàu kinh nghiệm. Tôi cho rằng Duy xứng đáng được 10 trên 10 điểm.",
+        "author": "MIREK",
+        "company": "CEO, MYMILLENIUM"
+      },
+      {
+        "text": "Duy là một nhà thiết kế và nhà phát triển chuyên nghiệp. Làm việc với anh ấy rất thoải mái - các thiết kế của anh ấy sáng tạo, hiện đại và luôn đáp ứng các yêu cầu. Giao tiếp diễn ra suôn sẻ và kết quả vượt quá mong đợi của chúng tôi.",
+        "author": "FILIP J.",
+        "company": "PHOTOGRAPHER"
+      },
+      {
+        "text": "Sự hợp tác tuyệt vời! Duy hiểu những gì anh ấy làm và có thể áp dụng nó cho các dự án thực tế. Trang web mà anh ấy tạo cho chúng tôi trông tuyệt vời và hoạt động hoàn hảo trên tất cả các thiết bị.",
+        "author": "DENIS",
+        "company": "DENIS FUEGO"
+      },
+      {
+        "text": "Thiết kế lại website của chúng tôi vượt xa mọi kỳ vọng. Doanh thu tăng đáng kể sau khi ra mắt. Duy hiểu rằng website không chỉ là danh thiếp mà còn là công cụ bán hàng.",
+        "author": "TOMÁŠ K.",
+        "company": "SCHLIEGER.CZ"
+      },
+      {
+        "text": "Chúng tôi cần website có hệ thống đặt chỗ và đa ngôn ngữ. Duy giao hàng nhanh chóng và không có vấn đề gì. Khách hàng thường khen website của chúng tôi đẹp.",
+        "author": "MARTIN P.",
+        "company": "LEVITATE RESTAURANT"
+      },
+      {
+        "text": "Chuyên nghiệp từ đầu đến cuối. Cửa hàng trực tuyến hoạt động hoàn hảo, thiết kế sang trọng và khách hàng dễ dàng tìm kiếm. Chắc chắn giới thiệu.",
+        "author": "PETRA N.",
+        "company": "WOLLEM JEWELLERY"
+      },
+      {
+        "text": "Duy đã tạo ra website đại diện hoàn hảo cho công ty chúng tôi. Giao tiếp nhanh, đề xuất chính xác và kết quả vượt mong đợi. Chúng tôi sẽ sẵn lòng hợp tác lại.",
+        "author": "DAGMAR C.",
+        "company": "STUDIO DETOXIKACE"
+      },
+      {
+        "text": "Hợp tác làm website cho văn phòng luật sư diễn ra suôn sẻ. Duy hiểu khách hàng cần gì và biến nó thành website hiện đại, chức năng.",
+        "author": "DAVID N.",
+        "company": "AK NGUYEN"
+      },
+      {
+        "text": "Là nhiếp ảnh gia, tôi cần website thể hiện tác phẩm ở ánh sáng tốt nhất. Duy làm xuất sắc — nhanh, sáng tạo và tinh tế trong từng chi tiết.",
+        "author": "LUCIE S.",
+        "company": "SUKOVÁ PHOTOGRAPHY"
+      },
+      {
+        "text": "Website và logo cùng một nơi. Duy có con mắt thiết kế và kỹ năng kỹ thuật để mọi thứ hoạt động. Khách của chúng tôi ở Việt Nam rất thích website.",
+        "author": "TRANG L.",
+        "company": "PHAMILY RESIDENCE"
+      },
+      {
+        "text": "Chúng tôi tìm người làm cửa hàng trực tuyến với cổng thanh toán và thiết kế đẹp. Duy đáp ứng cả hai và còn tư vấn marketing. Chuyên gia tuyệt vời.",
+        "author": "JAN M.",
+        "company": "MAJI"
+      }
+    ]
+  },
+  "aboutMe": {
+    "heading": "VỀ TÔI",
+    "greeting": "XIN CHÀO 👋 TÊN TÔI LÀ DUY",
+    "bio": "Tôi đã dành sáu năm làm việc chuyên nghiệp trong việc tạo các website hoàn chỉnh hoặc các phần của chúng. Tôi đã có được kinh nghiệm trong các công ty doanh nghiệp lớn, nơi tôi làm việc như một lập trình viên/nhà phát triển front-end, lập trình viên và nhà thiết kế. Sau đó, tôi cũng bắt đầu chuyên môn hóa vào quảng cáo PPC với những khía cạnh về phân tích web và SEO. Tôi hiện đang sử dụng những kinh nghiệm này như một freelancer ở Prague.",
+    "faqHeading": "FAQ",
+    "faqItems": [
+      {
+        "question": "Tại sao nên chọn một nhà thiết kế web freelance?",
+        "answer": "Một nhà thiết kế web freelance có thể cung cấp giá trị lớn với giá hợp lý so với các công ty thiết kế và đồng thời cung cấp các trang web chất lượng cao và cách tiếp cận cá nhân hơn."
+      },
+      {
+        "question": "Bạn phục vụ những địa phương nào?",
+        "answer": "Tôi đã làm việc từ xa trong nhiều năm với các doanh nghiệp ở mọi quy mô. Tôi đã làm việc với các khách hàng có trụ sở ở Prague, Brno, London, Saigon, Da Nang, Bruchsal, Berlin."
+      },
+      {
+        "question": "Sự khác biệt giữa nhà thiết kế web freelance và nhà phát triển web freelance là gì?",
+        "answer": "Một nhà thiết kế web thiết kế giao diện và trải nghiệm của trang web, thường trong các ứng dụng như Figma hoặc Sketch. Nhà phát triển sau đó sẽ triển khai nó vào trình duyệt web dưới dạng tương tác. Tôi có kinh nghiệm và kiến thức dài hạn trong cả hai lĩnh vực, vì vậy tôi có thể trở thành một lợi ích lớn cho các doanh nghiệp muốn thu hẹp khoảng cách giữa thiết kế và phát triển."
+      },
+      {
+        "question": "Bạn cung cấp những dịch vụ nào?",
+        "answer": "Quảng cáo PPC, SEO, Branding và nhận dạng thương hiệu, Wireframes và prototyping, Thiết kế trải nghiệm người dùng (UX), Thiết kế giao diện người dùng (UI), Thiết kế ứng dụng di động, Banner và nội dung cho mạng xã hội, Hoạt ảnh, Ấn phẩm in, Mã hóa, Lập trình, Quản lý trang web, Cửa hàng trực tuyến"
+      }
+    ],
+    "stats": [
+      {
+        "number": "6",
+        "label": "NĂM KINH NGHIỆM"
+      },
+      {
+        "number": "100+",
+        "label": "TRANG WEB ĐƯỢC TẠO"
+      },
+      {
+        "number": "70+",
+        "label": "THIẾT KẾ"
+      },
+      {
+        "number": "14",
+        "label": "CHIẾN DỊCH MARKETING"
+      }
+    ]
+  },
+  "footer": {
+    "heading": "HÃY THẢO LUẬN VỀ ĐIỀU ĐÓ",
+    "email": "INFO@LEDU.CZ",
+    "availability": "Tôi hiện đang sẵn sàng nhận các dự án mới.",
+    "writeMe": "VIẾT CHO TÔI",
+    "copyright": "© 2025 LEDU. Bảo lưu tất cả các quyền.",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn"
+  },
+  "contactForm": {
+    "heading": "Biểu mẫu liên hệ",
+    "nameLabel": "Tên",
+    "namePlaceholder": "Tên của bạn",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.cz",
+    "phoneLabel": "Số điện thoại",
+    "phonePlaceholder": "123 456 789",
+    "countryCodes": {
+      "cz": "+420 (CZ)",
+      "sk": "+421 (SK)",
+      "at": "+43 (AT)",
+      "de": "+49 (DE)",
+      "fr": "+33 (FR)"
+    },
+    "servicesLabel": "Bạn quan tâm đến những dịch vụ nào?",
+    "services": [
+      "Trang Web",
+      "Cửa hàng trực tuyến",
+      "Chiến dịch marketing",
+      "Quản lý trang web",
+      "Tối ưu hóa"
+    ],
+    "messageLabel": "Tin nhắn của bạn",
+    "messagePlaceholder": "Mô tả dự án của bạn...",
+    "fileLabel": "Tệp đính kèm (tùy chọn)",
+    "submitButton": "Gửi",
+    "submittingButton": "Đang gửi...",
+    "successMessage": "Cảm ơn! Tin nhắn của bạn đã được gửi. Chúng tôi sẽ sớm liên hệ với bạn.",
+    "errorMessage": "Đã xảy ra lỗi. Vui lòng thử lại sau hoặc viết đến info@ledu.cz."
+  },
+  "pages": {
+    "kontakt": {
+      "heading": "VIẾT",
+      "headingContinued": "CHO TÔI",
+      "nameLabel": "TÊN *",
+      "emailLabel": "EMAIL *",
+      "phoneLabel": "SỐ ĐIỆN THOẠI",
+      "servicesLabel": "BẠN QUAN TÂM ĐẾN NHỮNG DỊCH VỤ NÀO?",
+      "messageLabel": "TIN NHẮN CỦA BẠN *",
+      "fileLabel": "TẢI LÊN TỆP",
+      "fileHint": "Tải lên ở định dạng ZIP",
+      "submitButton": "GỬI",
+      "successAlert": "Cảm ơn bạn về tin nhắn! Chúng tôi sẽ sớm liên hệ với bạn.",
+      "title": "Liên hệ | LEDU"
+    },
+    "oMne": {
+      "heading": "VỀ TÔI",
+      "subheading1": "TRANG WEB, THIẾT KẾ,",
+      "subheading2": "STREET WORKOUT",
+      "briefHeading": "TÓM TẮT VÀ RÕ RÀNG",
+      "valuesHeading": "GIÁ TRỊ CỦA TÔI",
+      "bio": [
+        "Tôi tạo các trang web sáng tạo, rõ ràng, thú vị về mặt đồ họa và độc đáo được xây dựng trên nền tảng WordPress.",
+        "Tôi đã dành sáu năm làm việc chuyên nghiệp trong việc tạo các website hoàn chỉnh hoặc các phần của chúng.",
+        "Tôi đã có được kinh nghiệm trong các công ty doanh nghiệp lớn, nơi tôi làm việc như một lập trình viên/nhà phát triển front-end (HTML, CSS, JS, WordPress) tại Infonia, MagicWare, Web4All. Tôi sử dụng các kinh nghiệm này như một freelancer khi tạo các trang web trình bày và E-shop được xây dựng trên nền tảng WordPress, hiện tại tôi quan tâm nhất.",
+        "Tôi được sinh ra ở Prague và đã sống cả đời ở đây.",
+        "Trong thời gian rảnh, tôi thích tập luyện ngoài trời, thích chụp ảnh ngoài trời và leo núi."
+      ],
+      "values": [
+        {
+          "title": "CHẤT LƯỢNG",
+          "description": "Để đạt được công việc chất lượng cao, tôi sử dụng các công nghệ và quy trình hiện đại nhất. Tôi kiểm tra và cải thiện mọi thứ một cách kỹ lưỡng cho đến khi kết quả hoàn hảo."
+        },
+        {
+          "title": "CHUYÊN MÔN",
+          "description": "Tôi có kiến thức và kinh nghiệm sâu rộng trong lĩnh vực phát triển web và thiết kế. Tôi luôn học hỏi và theo kịp các xu hướng mới nhất."
+        },
+        {
+          "title": "GIAO TIẾP",
+          "description": "Tôi tin vào giao tiếp cởi mở và minh bạch. Tôi thường xuyên cập nhật tiến độ dự án và luôn sẵn sàng trả lời các câu hỏi của bạn."
+        }
+      ],
+      "title": "Về tôi | LEDU"
+    },
+    "reference": {
+      "heading1": "CÔNG VIỆC CỦA TÔI",
+      "heading2": "CHO KHÁCH HÀNG",
+      "title": "Dự án | LEDU"
+    },
+    "blog": {
+      "heading": "Blog",
+      "description": "Các bài viết, mẹo và hiểu biết từ lĩnh vực thiết kế web và phát triển.",
+      "posts": [
+        {
+          "title": "Cách tạo một trang web chất lượng",
+          "date": "15. tháng 2 năm 2025",
+          "excerpt": "Hướng dẫn toàn diện để tạo một trang web sẽ mang lại kết quả thực sự cho doanh nghiệp của bạn.",
+          "slug": "jak-vytvorit-kvalitni-web"
+        },
+        {
+          "title": "Tối ưu hóa SEO cho các công ty nhỏ",
+          "date": "10. tháng 2 năm 2025",
+          "excerpt": "Các mẹo thực tế để tối ưu hóa cho các công cụ tìm kiếm mà không cần đầu tư lớn.",
+          "slug": "seo-optimalizace-male-firmy"
+        },
+        {
+          "title": "Xu hướng trong thiết kế web 2025",
+          "date": "1. tháng 2 năm 2025",
+          "excerpt": "Những xu hướng mới nhất trong thiết kế web là gì và cách áp dụng chúng cho dự án của bạn.",
+          "slug": "trendy-web-design-2025"
+        }
+      ],
+      "readMoreButton": "Đọc bài viết",
+      "title": "Blog | LEDU"
+    }
+  }
+}
