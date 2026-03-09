@@ -69,13 +69,20 @@ const ContactForm: React.FC<{
     setIsSubmitting(true);
 
     try {
-      // In a real implementation, you would:
-      // 1. Upload file to storage if present
-      // 2. Save contact data to Supabase
-      // 3. Send confirmation email
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          countryCode: formData.countryCode,
+          services: formData.services,
+          message: formData.message,
+        }),
+      });
 
-      // Simulating API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      if (!response.ok) throw new Error('Failed to send');
 
       setSubmitStatus('success');
       setTimeout(() => {
