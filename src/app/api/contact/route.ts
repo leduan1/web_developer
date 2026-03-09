@@ -9,18 +9,22 @@ export async function POST(request: NextRequest) {
     const data = await request.json();
     const { name, email, phone, countryCode, services, message } = data;
 
-    // Save to Supabase
-    await saveContactSubmission({
-      name,
-      email,
-      phone,
-      countryCode,
-      services,
-      message,
-    });
+    // Save to Supabase (non-blocking - don't let it prevent email)
+    try {
+      await saveContactSubmission({
+        name,
+        email,
+        phone,
+        countryCode,
+        services,
+        message,
+      });
+    } catch (dbError) {
+      console.error('Supabase save error:', dbError);
+    }
 
     // Send email notification
-    await resend.emails.send({
+    const { data: emailData, error: emailError } = await resend.emails.send({
       from: 'Web kontakt <onboarding@resend.dev>',
       to: 'jirka.leanh@gmail.com',
       subject: `Nová zpráva z webu od ${name}`,
@@ -36,11 +40,19 @@ export async function POST(request: NextRequest) {
       `,
     });
 
+    if (emailError) {
+      console.error('Resend error:', emailError);
+      return NextResponse.json(
+        { success: false, error: emailError.message },
+        { status: 500 }
+      );
+    }
+
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Contact form error:', error);
     return NextResponse.json(
-      { success: false, error: 'Failed to send message' },
+      { success: false, error: String(error) },
       { status: 500 }
     );
   }
