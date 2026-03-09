@@ -118,7 +118,7 @@ const Services: React.FC = () => {
             <div className="hidden lg:flex items-center justify-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={`https://ledu.cz/wp-content/uploads/${tabImages[activeTab]}`}
+                src={`/images/${tabImages[activeTab]}`}
                 alt={content.title as string}
                 className="w-full max-w-sm"
                 style={{ animation: 'float 6s ease-in-out infinite' }}

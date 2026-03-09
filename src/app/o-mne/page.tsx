@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import { Header, SideLabels, Footer } from '@/components';
 import PageTitle from '@/components/PageTitle';
 import { useTranslation } from '@/i18n/LanguageContext';
@@ -38,11 +38,9 @@ export default function AboutPage() {
             {/* Photo */}
             <div className="flex justify-center">
               <div className="w-full max-w-md">
-                <Image
-                  src="https://ledu.cz/wp-content/uploads/me.jpg"
+                <img
+                  src="/images/me.jpg"
                   alt="Duy - Web Developer"
-                  width={500}
-                  height={600}
                   className="w-full h-auto rounded-lg"
                 />
               </div>

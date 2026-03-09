@@ -47,7 +47,7 @@ const AboutMe: React.FC = () => {
             <div className="w-full max-w-md">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://ledu.cz/wp-content/uploads/me.jpg"
+                src="/images/me.jpg"
                 alt="Duy - Web Designer"
                 className="w-full h-auto"
               />

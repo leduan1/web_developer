@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
                 loop
                 playsInline
               >
-                <source src="https://ledu.cz/wp-content/uploads/yt-bg-min.mp4" type="video/mp4" />
+                <source src="/images/yt-bg-min.mp4" type="video/mp4" />
               </video>
             </div>
           </div>

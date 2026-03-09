@@ -144,7 +144,7 @@ export const allProjects: Project[] = [
     tags: ['PROGRAMOVÁNÍ', 'KÓDOVÁNÍ', 'WORDPRESS', 'E-SHOP'],
     description: 'Pro více než 10 let působící firmu Maji s několika pobočkami jsem vytvořil E-shop nabízející malířské produkty.',
     website: 'https://maji.cz',
-    image: 'Sni%CC%81mek-obrazovky-2022-04-04-v-15.41.19.png',
+    image: 'Snímek-obrazovky-2022-04-04-v-15.41.19.png',
     bgColor: '#2C3E50',
   },
   {
@@ -482,7 +482,7 @@ const References: React.FC<{ projects?: Project[] }> = ({ projects = homepagePro
                 {/* Image Container */}
                 <ScrollReveal animation={isEven ? 'left' : 'right'} className={isEven ? 'lg:order-1' : 'lg:order-2'}>
                   <ScrollableThumbnail
-                    src={`https://ledu.cz/wp-content/uploads/${project.image}`}
+                    src={`/images/${project.image}`}
                     alt={translatedProject.title}
                     website={project.website}
                   />
