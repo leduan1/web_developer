@@ -65,14 +65,6 @@ const Footer: React.FC = () => {
           <p className="text-white/30 text-xs">
             {t('footer.copyright') as string}
           </p>
-          <div className="flex gap-6">
-            <a href="https://www.instagram.com/ledu.cz/" target="_blank" rel="noopener noreferrer" className="text-white/30 hover:text-white text-xs uppercase tracking-wider transition-colors">
-              Instagram
-            </a>
-            <a href="https://www.linkedin.com/in/ledu/" target="_blank" rel="noopener noreferrer" className="text-white/30 hover:text-white text-xs uppercase tracking-wider transition-colors">
-              LinkedIn
-            </a>
-          </div>
         </div>
       </div>
     </footer>
