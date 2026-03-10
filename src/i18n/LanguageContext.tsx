@@ -45,7 +45,7 @@ function getLanguageFromPathname(pathname: string): Language {
 
 /** Strip locale prefix: /en/reference -> /reference, /vi -> / */
 function stripLocalePrefix(pathname: string): string {
-  const stripped = pathname.replace(/^\/(en|vi|ru)(\/|$)/, '/$2');
+  const stripped = pathname.replace(/^\/(en|vi|ru)(?=\/|$)/, '');
   return stripped || '/';
 }
 
