@@ -522,8 +522,8 @@
   "pages": {
     "kontakt": {
       "title": "Contact | LEDU",
-      "heading": "WRITE",
-      "headingContinued": "TO ME",
+      "heading": "MESSAGE",
+      "headingContinued": "ME",
       "nameLabel": "NAME *",
       "emailLabel": "EMAIL *",
       "phoneLabel": "PHONE NUMBER",

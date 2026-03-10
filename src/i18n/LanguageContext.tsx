@@ -96,7 +96,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     setLanguageState(lang);
     languageRef.current = lang;
     document.documentElement.lang = lang;
-    router.push(newPath);
+
+    // Use hard navigation when switching to/from localized paths
+    // to avoid stale rewrites from middleware
+    if (lang === 'cs' && LOCALE_PREFIXES.some(l => browserPath.startsWith(`/${l}/`) || browserPath === `/${l}`)) {
+      window.location.href = newPath;
+    } else {
+      router.push(newPath);
+    }
   }, [router]);
 
   /** Prefix href with current language for Link components */
