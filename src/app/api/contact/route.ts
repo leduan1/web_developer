@@ -25,11 +25,9 @@ export async function POST(request: NextRequest) {
 
     // Send email notification
     const { data: emailData, error: emailError } = await resend.emails.send({
-      from: 'Web kontakt <onboarding@resend.dev>',
-      // NOTE: info@ledu.cz can be added here once a domain is verified in
-      // Resend and the `from` address uses that domain. With the test sender
-      // (onboarding@resend.dev) Resend only delivers to the account owner.
-      to: ['jirka.leanh@gmail.com'],
+      from: 'LEDU web <web@ledu.cz>',
+      to: ['info@ledu.cz', 'jirka.leanh@gmail.com'],
+      replyTo: email,
       subject: `Nová zpráva z webu od ${name}`,
       html: `
         <h2>Nová zpráva z kontaktního formuláře</h2>
