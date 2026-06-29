@@ -127,6 +127,44 @@
     "allReferencesButton": "VŠECHNY REFERENCE",
     "projects": [
       {
+        "title": "CLOUD BEAUTY STUDIO",
+        "description": "Pro pražské nehtové a kosmetické studio dvou sester jsem vytvořil elegantní prezentační web s přehledem služeb, ceníkem a online objednáním.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "REZERVAČNÍ SYSTÉM"
+        ]
+      },
+      {
+        "title": "CYKEL",
+        "description": "Pro technologickou platformu CYKEL jsem vytvořil moderní prezentační web představující jejich end-to-end řešení, které mění elektrické flotily v chytré a výdělečné služby.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ"
+        ]
+      },
+      {
+        "title": "PAADEL.CZ",
+        "description": "Pro českou padelovou komunitu jsem navrhl a naprogramoval webovou aplikaci s ELO žebříčkem, kde hráči zaznamenávají zápasy, sledují svůj ranking a hledají spoluhráče na své úrovni.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ",
+          "WEBOVÁ APLIKACE"
+        ]
+      },
+      {
+        "title": "LIBOR KVEREK",
+        "description": "Pro online fitness kouče Libora Kvereka jsem vytvořil moderní prodejní web, který představuje jeho coaching, proměny klientů a přeměňuje návštěvníky v zákazníky.",
+        "tags": [
+          "NÁVRH WEBU",
+          "PROGRAMOVÁNÍ",
+          "KÓDOVÁNÍ"
+        ]
+      },
+      {
         "title": "JAGR WEDDINGS",
         "description": "Pro fotografa Filipa Jagra jsem vytvořil web na míru, který je moderní, přehledný a reprezentuje jeho práci.",
         "tags": [

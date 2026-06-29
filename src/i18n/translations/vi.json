@@ -127,6 +127,44 @@
     "allReferencesButton": "TẤT CẢ DỰ ÁN",
     "projects": [
       {
+        "title": "CLOUD BEAUTY STUDIO",
+        "description": "Cho một studio làm móng và làm đẹp tại Praha do hai chị em điều hành, tôi đã xây dựng một website giới thiệu thanh lịch với tổng quan dịch vụ, bảng giá và đặt lịch trực tuyến.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "CODE",
+          "HỆ THỐNG ĐẶT LỊCH"
+        ]
+      },
+      {
+        "title": "CYKEL",
+        "description": "Cho nền tảng công nghệ CYKEL, tôi đã tạo một website giới thiệu hiện đại trình bày giải pháp end-to-end của họ, biến các đội xe điện thành dịch vụ thông minh và sinh lợi nhuận.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "CODE"
+        ]
+      },
+      {
+        "title": "PAADEL.CZ",
+        "description": "Cho cộng đồng padel Séc, tôi đã thiết kế và lập trình một ứng dụng web với bảng xếp hạng ELO, nơi người chơi ghi lại các trận đấu, theo dõi thứ hạng và tìm đồng đội cùng trình độ.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "CODE",
+          "ỨNG DỤNG WEB"
+        ]
+      },
+      {
+        "title": "LIBOR KVEREK",
+        "description": "Cho huấn luyện viên thể hình trực tuyến Libor Kverek, tôi đã xây dựng một website bán hàng hiện đại giới thiệu dịch vụ coaching, sự thay đổi của khách hàng và biến khách truy cập thành khách hàng.",
+        "tags": [
+          "THIẾT KẾ WEB",
+          "LẬP TRÌNH",
+          "CODE"
+        ]
+      },
+      {
         "title": "JAGR WEDDINGS",
         "description": "Cho nhiếp ảnh gia Filip Jagr, tôi đã tạo một trang web tùy chỉnh hiện đại và dễ hiểu thể hiện công việc của anh ấy.",
         "tags": [

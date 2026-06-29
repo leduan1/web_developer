@@ -127,6 +127,44 @@
     "allReferencesButton": "ALL REFERENCES",
     "projects": [
       {
+        "title": "CLOUD BEAUTY STUDIO",
+        "description": "For a Prague nail and beauty studio run by two sisters I built an elegant presentation website with a service overview, price list and online booking.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "BOOKING SYSTEM"
+        ]
+      },
+      {
+        "title": "CYKEL",
+        "description": "For the technology platform CYKEL I created a modern presentation website showcasing their end-to-end solution that turns electric fleets into smart, revenue-generating services.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING"
+        ]
+      },
+      {
+        "title": "PAADEL.CZ",
+        "description": "For the Czech padel community I designed and developed a web app with an ELO ranking where players log their matches, track their rating and find teammates at their level.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING",
+          "WEB APP"
+        ]
+      },
+      {
+        "title": "LIBOR KVEREK",
+        "description": "For online fitness coach Libor Kverek I built a modern sales website that showcases his coaching and client transformations and converts visitors into customers.",
+        "tags": [
+          "WEB DESIGN",
+          "PROGRAMMING",
+          "CODING"
+        ]
+      },
+      {
         "title": "JAGR WEDDINGS",
         "description": "I created a custom website for photographer Filip Jagr that's modern and user-friendly, showcasing his work effectively.",
         "tags": [

@@ -16,6 +16,38 @@ export interface Project {
 
 export const homepageProjects: Project[] = [
   {
+    title: 'CLOUD BEAUTY STUDIO',
+    tags: ['NÁVRH WEBU', 'PROGRAMOVÁNÍ', 'KÓDOVÁNÍ', 'REZERVAČNÍ SYSTÉM'],
+    description: 'Pro pražské nehtové a kosmetické studio dvou sester jsem vytvořil elegantní prezentační web s přehledem služeb, ceníkem a online objednáním.',
+    website: 'https://cloudbeauty.cz',
+    image: 'cloudbeauty-cz.jpg',
+    bgColor: '#9C8478',
+  },
+  {
+    title: 'CYKEL',
+    tags: ['NÁVRH WEBU', 'PROGRAMOVÁNÍ', 'KÓDOVÁNÍ'],
+    description: 'Pro technologickou platformu CYKEL jsem vytvořil moderní prezentační web představující jejich end-to-end řešení, které mění elektrické flotily v chytré a výdělečné služby.',
+    website: 'https://www.cykel.io',
+    image: 'cykel-io.jpg',
+    bgColor: '#1E2A2E',
+  },
+  {
+    title: 'PAADEL.CZ',
+    tags: ['NÁVRH WEBU', 'PROGRAMOVÁNÍ', 'KÓDOVÁNÍ', 'WEBOVÁ APLIKACE'],
+    description: 'Pro českou padelovou komunitu jsem navrhl a naprogramoval webovou aplikaci s ELO žebříčkem, kde hráči zaznamenávají zápasy, sledují svůj ranking a hledají spoluhráče na své úrovni.',
+    website: 'https://paadel.cz',
+    image: 'paadel-cz.jpg',
+    bgColor: '#0E2A1E',
+  },
+  {
+    title: 'LIBOR KVEREK',
+    tags: ['NÁVRH WEBU', 'PROGRAMOVÁNÍ', 'KÓDOVÁNÍ'],
+    description: 'Pro online fitness kouče Libora Kvereka jsem vytvořil moderní prodejní web, který představuje jeho coaching, proměny klientů a přeměňuje návštěvníky v zákazníky.',
+    website: 'https://liborkverek.cz',
+    image: 'liborkverek-cz.jpg',
+    bgColor: '#171310',
+  },
+  {
     title: 'JAGR WEDDINGS',
     tags: ['NÁVRH WEBU', 'PROGRAMOVÁNÍ', 'KÓDOVÁNÍ', 'WORDPRESS'],
     description: 'Pro fotografa Filipa Jagra jsem vytvořil web na míru, který je moderní, přehledný a reprezentuje jeho práci.',
