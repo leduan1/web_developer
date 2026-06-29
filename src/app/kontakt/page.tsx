@@ -9,6 +9,7 @@ export default function ContactPage() {
   const { t } = useTranslation();
   const serviceOptions = t('contactForm.services') as string[];
   const pk = t('pages.kontakt') as Record<string, string>;
+  const cf = t('contactForm') as Record<string, string>;
 
   const [formData, setFormData] = useState({
     name: '',
@@ -17,6 +18,9 @@ export default function ContactPage() {
     services: [] as string[],
     message: '',
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleServiceToggle = (service: string) => {
     setFormData((prev) => ({
@@ -27,9 +31,34 @@ export default function ContactPage() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert(pk.successAlert);
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          countryCode: '',
+          services: formData.services,
+          message: formData.message,
+        }),
+      });
+
+      if (!response.ok) throw new Error('Failed to send');
+
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', phone: '', services: [], message: '' });
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -151,12 +180,25 @@ export default function ContactPage() {
               </div>
             </div>
 
+            {/* Status messages */}
+            {submitStatus === 'success' && (
+              <div className="bg-green-500/20 border border-green-500 rounded p-4 text-green-400">
+                {cf.successMessage}
+              </div>
+            )}
+            {submitStatus === 'error' && (
+              <div className="bg-red-500/20 border border-red-500 rounded p-4 text-red-400">
+                {cf.errorMessage}
+              </div>
+            )}
+
             {/* Submit */}
             <button
               type="submit"
-              className="bg-red-500 text-white px-8 py-3 font-bold uppercase hover:bg-red-600 transition tracking-wider"
+              disabled={isSubmitting}
+              className="bg-red-500 text-white px-8 py-3 font-bold uppercase hover:bg-red-600 transition tracking-wider disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {pk.submitButton}
+              {isSubmitting ? cf.submittingButton : pk.submitButton}
             </button>
           </form>
         </div>
