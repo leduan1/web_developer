@@ -524,7 +524,9 @@
     "writeMe": "NAPIŠTE MI",
     "copyright": "© 2026 LEDU. Všechna práva vyhrazena.",
     "instagram": "Instagram",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "callMe": "ZAVOLEJTE MI",
+    "phone": "+420 777 224 577"
   },
   "contactForm": {
     "heading": "Kontaktní formulář",
@@ -570,7 +572,9 @@
       "fileLabel": "NAHRÁT SOUBOR",
       "fileHint": "Nahrajte ve formátu ZIP",
       "submitButton": "ODESLAT",
-      "successAlert": "Děkujeme za zprávu! Brzy se vám ozveme."
+      "successAlert": "Děkujeme za zprávu! Brzy se vám ozveme.",
+      "callLabel": "Nebo mi rovnou zavolejte",
+      "phone": "+420 777 224 577"
     },
     "oMne": {
       "title": "O mně | LEDU",

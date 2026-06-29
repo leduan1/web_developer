@@ -524,7 +524,9 @@
     "writeMe": "VIẾT CHO TÔI",
     "copyright": "© 2026 LEDU. Bảo lưu tất cả các quyền.",
     "instagram": "Instagram",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "callMe": "GỌI CHO TÔI",
+    "phone": "+420 777 224 577"
   },
   "contactForm": {
     "heading": "Biểu mẫu liên hệ",
@@ -570,7 +572,9 @@
       "fileHint": "Tải lên ở định dạng ZIP",
       "submitButton": "GỬI",
       "successAlert": "Cảm ơn bạn về tin nhắn! Chúng tôi sẽ sớm liên hệ với bạn.",
-      "title": "Liên hệ | LEDU"
+      "title": "Liên hệ | LEDU",
+      "callLabel": "Hoặc gọi trực tiếp cho tôi",
+      "phone": "+420 777 224 577"
     },
     "oMne": {
       "heading": "VỀ TÔI",

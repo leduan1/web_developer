@@ -524,7 +524,9 @@
     "writeMe": "НАПИШИТЕ МНЕ",
     "copyright": "© 2026 LEDU. Все права защищены.",
     "instagram": "Instagram",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "callMe": "ПОЗВОНИТЕ МНЕ",
+    "phone": "+420 777 224 577"
   },
   "contactForm": {
     "heading": "Контактная форма",
@@ -570,7 +572,9 @@
       "fileHint": "Загрузить в формате ZIP",
       "submitButton": "ОТПРАВИТЬ",
       "successAlert": "Спасибо за сообщение! Я скоро свяжусь с вами.",
-      "title": "Контакты | LEDU"
+      "title": "Контакты | LEDU",
+      "callLabel": "Или позвоните мне напрямую",
+      "phone": "+420 777 224 577"
     },
     "oMne": {
       "heading": "ОБО МНЕ",

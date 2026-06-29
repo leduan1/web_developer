@@ -524,7 +524,9 @@
     "writeMe": "WRITE ME",
     "copyright": "© 2026 LEDU. All rights reserved.",
     "instagram": "Instagram",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "callMe": "CALL ME",
+    "phone": "+420 777 224 577"
   },
   "contactForm": {
     "heading": "Contact Form",
@@ -570,7 +572,9 @@
       "fileLabel": "UPLOAD FILE",
       "fileHint": "Upload in ZIP format",
       "submitButton": "SEND",
-      "successAlert": "Thank you for your message! I'll get back to you soon."
+      "successAlert": "Thank you for your message! I'll get back to you soon.",
+      "callLabel": "Or call me directly",
+      "phone": "+420 777 224 577"
     },
     "oMne": {
       "title": "About Me | LEDU",

@@ -38,6 +38,21 @@ const Footer: React.FC = () => {
               </a>
             </div>
 
+            {/* Phone - call me */}
+            <div className="mb-8">
+              <a
+                href="tel:+420777224577"
+                className="inline-flex items-baseline gap-3 group"
+              >
+                <span className="text-white/40 text-xs font-bold uppercase tracking-widest">
+                  {t('footer.callMe') as string}
+                </span>
+                <span className="font-condensed text-2xl md:text-3xl text-white uppercase tracking-wide transition-colors duration-300 group-hover:text-red-400">
+                  {t('footer.phone') as string}
+                </span>
+              </a>
+            </div>
+
             {/* Availability indicator */}
             <div className="flex items-center gap-3">
               <div className="w-2.5 h-2.5 rounded-full bg-blue-400" />
