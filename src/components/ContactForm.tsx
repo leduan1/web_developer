@@ -33,6 +33,10 @@ const ContactForm: React.FC<{
     'idle' | 'success' | 'error'
   >('idle');
 
+  // Anti-spam: honeypot field + time the form was opened
+  const [honeypot, setHoneypot] = useState('');
+  const [openedAt] = useState(() => Date.now());
+
   const services = t('contactForm.services') as string[];
   const countryCodes = t('contactForm.countryCodes') as Record<string, string>;
 
@@ -79,6 +83,9 @@ const ContactForm: React.FC<{
           countryCode: formData.countryCode,
           services: formData.services,
           message: formData.message,
+          // anti-spam
+          company: honeypot,
+          elapsed: Date.now() - openedAt,
         }),
       });
 
@@ -146,6 +153,30 @@ const ContactForm: React.FC<{
         )}
 
         <form onSubmit={handleSubmit} className="space-y-4">
+          {/* Honeypot - hidden from humans, bots fill it in */}
+          <div
+            aria-hidden="true"
+            style={{
+              position: 'absolute',
+              left: '-9999px',
+              width: '1px',
+              height: '1px',
+              overflow: 'hidden',
+            }}
+          >
+            <label>
+              Company
+              <input
+                type="text"
+                name="company"
+                tabIndex={-1}
+                autoComplete="off"
+                value={honeypot}
+                onChange={(e) => setHoneypot(e.target.value)}
+              />
+            </label>
+          </div>
+
           {/* Name */}
           <div>
             <label className="block text-white text-sm font-bold mb-2">
