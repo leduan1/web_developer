@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "LEDU - Nhà phát triển Web | Thiết kế website & thương mại điện tử",
-    "description": "Tôi là một nhà phát triển web và nhà thiết kế chuyên về tạo các website hiện đại, hiệu suất cao và cửa hàng trực tuyến. Công việc được tùy chỉnh cho nhu cầu kinh doanh của bạn."
+    "title": "Thiết kế website, SEO và PPC | LEDU",
+    "description": "Thiết kế website và cửa hàng trực tuyến trên WordPress, Next.js và React. SEO, PPC, thiết kế đồ họa và tự động hóa (n8n, Supabase, AI)."
   },
   "common": {
     "scroll": "CUỘN"
@@ -15,11 +15,15 @@
       "kontakt": "Liên hệ"
     },
     "kontaktButton": "Liên hệ",
-    "menu": "Menu"
+    "menu": "Menu",
+    "languageLabel": "Ngôn ngữ"
   },
   "hero": {
     "outline": "TÔI ĐẨY GIỚI HẠN",
     "main": "TRONG VIỆC TẠO",
+    "seoTitle": "Thiết kế website, SEO và PPC cho doanh nghiệp",
+    "cta": "Tư vấn không ràng buộc",
+    "posterAlt": "Một người đang thiết kế website trên máy tính, laptop và máy tính bảng",
     "rotatingWords": [
       "TRANG WEB",
       "TRANG WEB WORDPRESS",
@@ -118,10 +122,12 @@
         }
       ]
     },
-    "ctaButton": "Tôi quan tâm"
+    "ctaButton": "Tôi quan tâm",
+    "illustrationAlt": "Minh họa dịch vụ"
   },
   "references": {
     "heading": "DỰ ÁN",
+    "imageAlt": "xem trước website",
     "visitWebButton": "Truy cập trang web",
     "contactButton": "LIÊN HỆ",
     "allReferencesButton": "TẤT CẢ DỰ ÁN",
@@ -477,6 +483,7 @@
   },
   "aboutMe": {
     "heading": "VỀ TÔI",
+    "photoAlt": "Chân dung Duy, nhà phát triển web và nhà thiết kế tại LEDU",
     "greeting": "XIN CHÀO 👋 TÊN TÔI LÀ DUY",
     "bio": "Tôi đã dành sáu năm làm việc chuyên nghiệp trong việc tạo các website hoàn chỉnh hoặc các phần của chúng. Tôi đã có được kinh nghiệm trong các công ty doanh nghiệp lớn, nơi tôi làm việc như một lập trình viên/nhà phát triển front-end, lập trình viên và nhà thiết kế. Sau đó, tôi cũng bắt đầu chuyên môn hóa vào quảng cáo PPC với những khía cạnh về phân tích web và SEO. Tôi hiện đang sử dụng những kinh nghiệm này như một freelancer ở Prague.",
     "faqHeading": "FAQ",
@@ -572,7 +579,8 @@
       "fileHint": "Tải lên ở định dạng ZIP",
       "submitButton": "GỬI",
       "successAlert": "Cảm ơn bạn về tin nhắn! Chúng tôi sẽ sớm liên hệ với bạn.",
-      "title": "Liên hệ | LEDU",
+      "title": "Liên hệ — tư vấn không ràng buộc | LEDU",
+      "seoDescription": "Đặt lịch tư vấn không ràng buộc. Website, e-shop, SEO, PPC, thiết kế đồ họa và tự động hóa (n8n, Supabase, AI).",
       "callLabel": "Hoặc gọi trực tiếp cho tôi",
       "phone": "+420 777 224 577"
     },
@@ -603,12 +611,14 @@
           "description": "Tôi tin vào giao tiếp cởi mở và minh bạch. Tôi thường xuyên cập nhật tiến độ dự án và luôn sẵn sàng trả lời các câu hỏi của bạn."
         }
       ],
-      "title": "Về tôi | LEDU"
+      "title": "Về tôi — lập trình viên web | LEDU",
+      "seoDescription": "Tôi là Duy, lập trình viên web và nhà thiết kế. Website trên WordPress, Next.js và React, cùng SEO, PPC, đồ họa và tự động hóa."
     },
     "reference": {
       "heading1": "CÔNG VIỆC CỦA TÔI",
       "heading2": "CHO KHÁCH HÀNG",
-      "title": "Dự án | LEDU"
+      "title": "Dự án — website và e-shop | LEDU",
+      "seoDescription": "Các website và cửa hàng trực tuyến tôi đã thiết kế và lập trình. WordPress, Next.js, React và ứng dụng web."
     },
     "blog": {
       "heading": "Blog",
@@ -634,7 +644,9 @@
         }
       ],
       "readMoreButton": "Đọc bài viết",
-      "title": "Blog | LEDU"
+      "title": "Blog về thiết kế website và SEO | LEDU",
+      "seoDescription": "Bài viết về thiết kế website, SEO, web design, PPC và marketing trực tuyến.",
+      "backToBlog": "Quay lại blog"
     }
   }
 }

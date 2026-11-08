@@ -4,15 +4,53 @@ import React, { useState, useEffect } from 'react';
 import LocalizedLink from './LocalizedLink';
 import { useTranslation, Language } from '@/i18n/LanguageContext';
 
-const languages: { code: Language; label: string }[] = [
-  { code: 'cs', label: 'CZ' },
-  { code: 'en', label: 'EN' },
-  { code: 'vi', label: 'VI' },
-  { code: 'ru', label: 'RU' },
+const languages: { code: Language; label: string; name: string }[] = [
+  { code: 'cs', label: 'CZ', name: 'Čeština' },
+  { code: 'en', label: 'EN', name: 'English' },
+  { code: 'vi', label: 'VI', name: 'Tiếng Việt' },
+  { code: 'ru', label: 'RU', name: 'Русский' },
 ];
 
-const Header: React.FC = () => {
+function LanguageSwitcher({ stretch = false }: { stretch?: boolean }) {
   const { t, language, setLanguage } = useTranslation();
+
+  return (
+    <div
+      role="group"
+      aria-label={t('header.languageLabel') as string}
+      className={
+        stretch
+          ? 'flex md:hidden w-full border-t border-white/10'
+          : 'hidden md:flex items-center'
+      }
+    >
+      {languages.map((lang) => {
+        const active = language === lang.code;
+        return (
+          <button
+            key={lang.code}
+            type="button"
+            onClick={() => setLanguage(lang.code)}
+            aria-pressed={active}
+            aria-label={lang.name}
+            className={`inline-flex items-center justify-center min-h-[44px] min-w-[44px] px-2 text-sm font-semibold tracking-wider focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${
+              stretch ? 'flex-1' : ''
+            } ${
+              active
+                ? 'text-white underline decoration-[#ED0D32] decoration-2 underline-offset-4'
+                : 'text-[#e6e6e6] hover:text-white'
+            }`}
+          >
+            {lang.label}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+const Header: React.FC = () => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -73,26 +111,7 @@ const Header: React.FC = () => {
           </LocalizedLink>
 
           <div className="flex items-center gap-4 md:gap-6 z-50 relative">
-            {/* Language switcher */}
-            <div className="flex items-center gap-1">
-              {languages.map((lang, i) => (
-                <React.Fragment key={lang.code}>
-                  <button
-                    onClick={() => setLanguage(lang.code)}
-                    className={`text-[10px] md:text-xs font-medium tracking-wider transition-colors ${
-                      language === lang.code
-                        ? 'text-red-500'
-                        : 'text-white/40 hover:text-white/80'
-                    }`}
-                  >
-                    {lang.label}
-                  </button>
-                  {i < languages.length - 1 && (
-                    <span className="text-white/20 text-[10px]">|</span>
-                  )}
-                </React.Fragment>
-              ))}
-            </div>
+            <LanguageSwitcher />
 
             {/* Kontakt button */}
             <LocalizedLink
@@ -105,8 +124,9 @@ const Header: React.FC = () => {
             {/* Menu button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="flex items-center gap-3 text-white"
-              aria-label="Toggle menu"
+              className="flex items-center gap-3 text-white min-h-[44px] px-1"
+              aria-expanded={isMenuOpen}
+              aria-controls="site-menu"
             >
               <span className="text-sm font-medium tracking-wider uppercase">{t('header.menu') as string}</span>
               <div className="flex flex-col justify-center items-center w-7 h-7">
@@ -129,10 +149,12 @@ const Header: React.FC = () => {
             </button>
           </div>
         </div>
+        <LanguageSwitcher stretch />
       </header>
 
       {/* Fullscreen Menu Overlay */}
       <div
+        id="site-menu"
         className={`fixed inset-0 z-40 bg-black transition-all duration-500 ease-in-out ${
           isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}

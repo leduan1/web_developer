@@ -5,8 +5,6 @@ import { Resend } from 'resend';
 // each incoming email to the personal inbox. Reply-To is set to the
 // original sender so replying from Gmail goes straight back to them.
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const FORWARD_TO = process.env.INBOUND_FORWARD_TO || 'jirka.leanh@gmail.com';
 const FORWARD_FROM_ADDRESS = 'info@ledu.cz';
 const OWN_DOMAIN = '@ledu.cz';
@@ -24,6 +22,7 @@ function displayNameOf(v: string): string {
 }
 
 export async function POST(request: NextRequest) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   const secret = process.env.RESEND_WEBHOOK_SECRET;
   if (!secret) {
     console.error('Inbound: RESEND_WEBHOOK_SECRET is not set');

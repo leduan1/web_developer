@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-/* eslint-disable @next/next/no-img-element */
+import Image from 'next/image';
 import { Header, SideLabels, Footer } from '@/components';
 import PageTitle from '@/components/PageTitle';
 import { useTranslation } from '@/i18n/LanguageContext';
@@ -19,7 +19,7 @@ export default function AboutPage() {
       <SideLabels />
 
       {/* Hero section */}
-      <div className="pt-32 pb-20 px-6 md:px-12">
+      <div className="pt-40 md:pt-32 pb-20 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
           <p className="text-white/60 text-sm uppercase tracking-wider mb-4">{po.briefHeading as string}</p>
           <h1 className="font-condensed text-5xl md:text-7xl lg:text-8xl text-white uppercase leading-none mb-4">
@@ -38,9 +38,12 @@ export default function AboutPage() {
             {/* Photo */}
             <div className="flex justify-center">
               <div className="w-full max-w-md">
-                <img
+                <Image
                   src="/images/me.jpg"
-                  alt="Duy - Web Developer"
+                  alt={t('aboutMe.photoAlt') as string}
+                  width={1280}
+                  height={1920}
+                  sizes="(max-width: 1024px) 100vw, 448px"
                   className="w-full h-auto rounded-lg"
                 />
               </div>

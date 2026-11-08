@@ -1,10 +1,30 @@
 /**
+ * Canonical host is https://www.ledu.cz.
+ * Apex https://ledu.cz only redirects; never use it as a canonical.
+ * A non-www NEXT_PUBLIC_SITE_URL is normalized so a stale env var
+ * cannot point canonicals, sitemap and robots back at the apex.
+ */
+function resolveSiteUrl(): string {
+  const fallback = 'https://www.ledu.cz';
+  const raw = process.env.NEXT_PUBLIC_SITE_URL || fallback;
+  try {
+    const url = new URL(raw);
+    if (url.hostname === 'ledu.cz' || url.hostname === 'www.ledu.cz') {
+      return fallback;
+    }
+    return url.origin;
+  } catch {
+    return fallback;
+  }
+}
+
+/**
  * Central site configuration.
  * When renaming the site or moving to a new domain, update these values.
  */
 export const siteConfig = {
   /** Production domain (no trailing slash) */
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://ledu.cz',
+  url: resolveSiteUrl(),
 
   /** Site name used in meta tags & structured data */
   name: 'LEDU',
@@ -27,6 +47,16 @@ export const siteConfig = {
     '/kontakt',
   ],
 
+  /**
+   * Blog article slugs that exist in the translation files.
+   * Same slug in every language; only the title and excerpt are translated.
+   */
+  blogSlugs: [
+    'jak-vytvorit-kvalitni-web',
+    'seo-optimalizace-male-firmy',
+    'trendy-web-design-2025',
+  ],
+
   /** Social links */
   social: {
     instagram: 'https://www.instagram.com/ledu.cz/',
@@ -39,20 +69,19 @@ export const siteConfig = {
 
 export type Locale = (typeof siteConfig.locales)[number];
 
-/**
- * Get full URL for a page in a given locale.
- * cs: https://domain.com/page
- * en: https://domain.com/en/page
- */
-export function getCanonicalUrl(path: string, locale?: Locale): string {
-  const base = siteConfig.url;
-  const cleanPath = path === '/' ? '' : path;
-
-  if (!locale || locale === siteConfig.defaultLocale) {
-    return `${base}${cleanPath || '/'}`;
+/** Path with locale prefix. Czech stays unprefixed. */
+export function localizedPath(path: string, locale: Locale = siteConfig.defaultLocale): string {
+  const clean = path === '/' ? '' : path;
+  if (locale === siteConfig.defaultLocale) {
+    return path === '/' ? '/' : path;
   }
+  return `/${locale}${clean}`;
+}
 
-  return `${base}/${locale}${cleanPath}`;
+export function getCanonicalUrl(path: string, locale?: Locale): string {
+  const localized = localizedPath(path, locale ?? siteConfig.defaultLocale);
+  if (localized === '/') return siteConfig.url;
+  return `${siteConfig.url}${localized}`;
 }
 
 /**

@@ -179,12 +179,14 @@ const ContactForm: React.FC<{
 
           {/* Name */}
           <div>
-            <label className="block text-white text-sm font-bold mb-2">
+            <label htmlFor="inquiry-name" className="block text-white text-sm font-bold mb-2">
               {t('contactForm.nameLabel')}
             </label>
             <input
+              id="inquiry-name"
               type="text"
               name="name"
+              autoComplete="name"
               value={formData.name}
               onChange={handleInputChange}
               className="w-full bg-white/5 border border-white/10 rounded px-4 py-2 text-white placeholder-white/40 focus:outline-none focus:border-red-500"
@@ -195,12 +197,14 @@ const ContactForm: React.FC<{
 
           {/* Email */}
           <div>
-            <label className="block text-white text-sm font-bold mb-2">
+            <label htmlFor="inquiry-email" className="block text-white text-sm font-bold mb-2">
               {t('contactForm.emailLabel')}
             </label>
             <input
+              id="inquiry-email"
               type="email"
               name="email"
+              autoComplete="email"
               value={formData.email}
               onChange={handleInputChange}
               className="w-full bg-white/5 border border-white/10 rounded px-4 py-2 text-white placeholder-white/40 focus:outline-none focus:border-red-500"
@@ -211,11 +215,13 @@ const ContactForm: React.FC<{
 
           {/* Phone */}
           <div>
-            <label className="block text-white text-sm font-bold mb-2">
+            <label htmlFor="inquiry-phone" className="block text-white text-sm font-bold mb-2">
               {t('contactForm.phoneLabel')}
             </label>
             <div className="flex gap-2">
               <select
+                aria-label={t('contactForm.phoneLabel') as string}
+                autoComplete="tel-country-code"
                 value={formData.countryCode}
                 onChange={handleCountryCodeChange}
                 className="bg-white/5 border border-white/10 rounded px-3 py-2 text-white focus:outline-none focus:border-red-500"
@@ -227,8 +233,10 @@ const ContactForm: React.FC<{
                 ))}
               </select>
               <input
+                id="inquiry-phone"
                 type="tel"
                 name="phone"
+                autoComplete="tel-national"
                 value={formData.phone}
                 onChange={handleInputChange}
                 className="flex-1 bg-white/5 border border-white/10 rounded px-4 py-2 text-white placeholder-white/40 focus:outline-none focus:border-red-500"
@@ -260,10 +268,11 @@ const ContactForm: React.FC<{
 
           {/* Message */}
           <div>
-            <label className="block text-white text-sm font-bold mb-2">
+            <label htmlFor="inquiry-message" className="block text-white text-sm font-bold mb-2">
               {t('contactForm.messageLabel')}
             </label>
             <textarea
+              id="inquiry-message"
               name="message"
               value={formData.message}
               onChange={handleInputChange}
@@ -276,10 +285,11 @@ const ContactForm: React.FC<{
 
           {/* File upload */}
           <div>
-            <label className="block text-white text-sm font-bold mb-2">
+            <label htmlFor="inquiry-file" className="block text-white text-sm font-bold mb-2">
               {t('contactForm.fileLabel')}
             </label>
             <input
+              id="inquiry-file"
               type="file"
               onChange={handleFileChange}
               className="w-full bg-white/5 border border-white/10 rounded px-4 py-2 text-white/70 focus:outline-none focus:border-red-500"

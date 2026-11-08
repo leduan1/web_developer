@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useTranslation } from '@/i18n/LanguageContext';
+import LocalizedLink from './LocalizedLink';
 import ScrollReveal from './ScrollReveal';
 
 const tabImages: Record<string, string> = {
@@ -17,7 +18,6 @@ const Services: React.FC = () => {
   const [activeTab, setActiveTab] = useState('vyvoj');
 
   const tabs = t('services.tabs') as { id: string; label: string }[];
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const content = t(`services.${activeTab}`) as any;
   const heading = t('services.heading') as string;
   const ctaButton = t('services.ctaButton') as string;
@@ -101,9 +101,9 @@ const Services: React.FC = () => {
                 </ul>
               )}
 
-              <a
+              <LocalizedLink
                 href="/kontakt"
-                className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white px-8 py-3 font-bold uppercase text-sm transition-colors rounded-none"
+                className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white px-8 py-3 min-h-[44px] font-bold uppercase text-sm transition-colors rounded-none"
               >
                 {ctaButton}
                 <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center">
@@ -111,7 +111,7 @@ const Services: React.FC = () => {
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </span>
-              </a>
+              </LocalizedLink>
             </div>
 
             {/* SVG illustration - right */}
@@ -119,7 +119,7 @@ const Services: React.FC = () => {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={`/images/${tabImages[activeTab]}`}
-                alt={content.title as string}
+                alt={`${t('services.illustrationAlt') as string}: ${content.title as string}`}
                 className="w-full max-w-sm"
                 style={{ animation: 'float 6s ease-in-out infinite' }}
               />
