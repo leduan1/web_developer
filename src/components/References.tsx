@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useRef, useEffect, useState, useCallback } from 'react';
+import Image from 'next/image';
 import LocalizedLink from './LocalizedLink';
 import { useTranslation } from '@/i18n/LanguageContext';
 import ScrollReveal from './ScrollReveal';
@@ -339,14 +340,15 @@ const ScrollableThumbnail: React.FC<{ src: string; alt: string; website: string 
         }
       }}
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         ref={imgRef}
         src={src}
         alt={alt}
-        className="w-full h-full object-cover pointer-events-none"
+        fill
+        sizes="(max-width: 1024px) 100vw, 640px"
+        quality={65}
+        className="object-cover pointer-events-none"
         style={{ objectPosition: 'center top' }}
-        loading="lazy"
       />
       {/* Scroll hint on hover */}
       {isHovered && canScroll && (
@@ -515,7 +517,7 @@ const References: React.FC<{ projects?: Project[] }> = ({ projects = homepagePro
                 <ScrollReveal animation={isEven ? 'left' : 'right'} className={isEven ? 'lg:order-1' : 'lg:order-2'}>
                   <ScrollableThumbnail
                     src={`/images/${project.image}`}
-                    alt={translatedProject.title}
+                    alt={`${translatedProject.title} — ${t('references.imageAlt') as string}`}
                     website={project.website}
                   />
                 </ScrollReveal>

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "LEDU - Web Developer | Tvorba webů a e-shopů",
-    "description": "Jsem web developer a designér specializující se na vytváření moderních, výkonných webů a e-shopů. Tvorba na míru vašemu podnikání."
+    "title": "Tvorba webů, SEO a PPC | LEDU",
+    "description": "Tvorba webů a e-shopů na WordPressu, Next.js a Reactu. SEO, PPC, grafický design a automatizace (n8n, Supabase, AI) pro firmy."
   },
   "common": {
     "scroll": "SCROLL"
@@ -15,11 +15,15 @@
       "kontakt": "Kontakt"
     },
     "kontaktButton": "Kontakt",
-    "menu": "Menu"
+    "menu": "Menu",
+    "languageLabel": "Výběr jazyka"
   },
   "hero": {
     "outline": "POSOUVÁM HRANICE",
     "main": "PŘI TVORBĚ",
+    "seoTitle": "Tvorba webů, SEO a PPC pro firmy",
+    "cta": "Nezávazná konzultace",
+    "posterAlt": "Člověk navrhuje web na počítači, notebooku a tabletu",
     "rotatingWords": [
       "WEBOVÝCH STRÁNEK",
       "WORDPRESS WEBŮ",
@@ -118,10 +122,12 @@
         }
       ]
     },
-    "ctaButton": "Mám zájem"
+    "ctaButton": "Mám zájem",
+    "illustrationAlt": "Ilustrace služby"
   },
   "references": {
     "heading": "REFERENCE",
+    "imageAlt": "náhled webu",
     "visitWebButton": "Navštívit web",
     "contactButton": "KONTAKT",
     "allReferencesButton": "VŠECHNY REFERENCE",
@@ -477,6 +483,7 @@
   },
   "aboutMe": {
     "heading": "O MNĚ",
+    "photoAlt": "Portrét Duy, web developer a designér LEDU",
     "greeting": "AHOJ 👋 JMENUJI SE DUY",
     "bio": "Tvorbě kompletních webů nebo jejich částí se profesionálně věnuji již šestým rokem. Zkušenosti jsem získal ve velkých korporátních firmách, kde jsem pracoval jako kodér/front-end developer, programátor a designér. Později jsem se také začal specializovat na PPC reklamy s přesahem do webové analytiky a SEO. Tyto zkušenosti nyní využívám jako freelancer v Praze.",
     "faqHeading": "FAQ",
@@ -561,7 +568,8 @@
   },
   "pages": {
     "kontakt": {
-      "title": "Kontakt | LEDU",
+      "title": "Kontakt — nezávazná konzultace | LEDU",
+      "seoDescription": "Domluvte si nezávaznou konzultaci. Tvorba webů, e-shopů, SEO, PPC, grafický design a automatizace (n8n, Supabase, AI).",
       "heading": "NAPIŠTE",
       "headingContinued": "MI",
       "nameLabel": "JMÉNO *",
@@ -577,7 +585,8 @@
       "phone": "+420 777 224 577"
     },
     "oMne": {
-      "title": "O mně | LEDU",
+      "title": "O mně — web developer a designér | LEDU",
+      "seoDescription": "Jsem Duy, web developer a designér. Tvorba webů na WordPressu, Next.js a Reactu, SEO, PPC, grafika a automatizace pro firmy.",
       "heading": "O MNĚ",
       "subheading1": "WEBY, DESIGN,",
       "subheading2": "STREET WORKOUT",
@@ -606,12 +615,15 @@
       ]
     },
     "reference": {
-      "title": "Reference | LEDU",
+      "title": "Reference — weby a e-shopy | LEDU",
+      "seoDescription": "Weby a e-shopy, které jsem navrhl a naprogramoval. WordPress, Next.js, React, prezentační stránky i webové aplikace.",
       "heading1": "MÉ PRÁCE",
       "heading2": "PRO KLIENTY"
     },
     "blog": {
-      "title": "Blog | LEDU",
+      "title": "Blog o tvorbě webů a SEO | LEDU",
+      "seoDescription": "Články a postřehy o tvorbě webů, SEO, webdesignu, PPC a online marketingu.",
+      "backToBlog": "Zpět na blog",
       "heading": "Blog",
       "description": "Články, tipy a postřehy z oblasti webového designu a vývoje.",
       "posts": [

@@ -67,7 +67,7 @@ export default function ContactPage() {
       <Header />
       <SideLabels />
 
-      <div className="pt-32 pb-32 px-6 md:px-12">
+      <div className="pt-40 md:pt-32 pb-32 px-6 md:px-12">
         <div className="max-w-2xl mx-auto">
           <h1 className="font-condensed text-5xl md:text-7xl text-white uppercase mb-8 leading-none">
             {pk.heading}<br />{pk.headingContinued}
@@ -92,11 +92,14 @@ export default function ContactPage() {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name */}
             <div>
-              <label className="block text-white text-xs font-bold uppercase tracking-wider mb-2">
+              <label htmlFor="contact-name" className="block text-white text-xs font-bold uppercase tracking-wider mb-2">
                 {pk.nameLabel}
               </label>
               <input
+                id="contact-name"
+                name="name"
                 type="text"
+                autoComplete="name"
                 value={formData.name}
                 onChange={(e) => setFormData((p) => ({ ...p, name: e.target.value }))}
                 className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white placeholder-white/30 focus:outline-none focus:border-red-500 transition"
@@ -106,11 +109,14 @@ export default function ContactPage() {
 
             {/* Email */}
             <div>
-              <label className="block text-white text-xs font-bold uppercase tracking-wider mb-2">
+              <label htmlFor="contact-email" className="block text-white text-xs font-bold uppercase tracking-wider mb-2">
                 {pk.emailLabel}
               </label>
               <input
+                id="contact-email"
+                name="email"
                 type="email"
+                autoComplete="email"
                 value={formData.email}
                 onChange={(e) => setFormData((p) => ({ ...p, email: e.target.value }))}
                 className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white placeholder-white/30 focus:outline-none focus:border-red-500 transition"
@@ -120,11 +126,14 @@ export default function ContactPage() {
 
             {/* Phone */}
             <div>
-              <label className="block text-white text-xs font-bold uppercase tracking-wider mb-2">
+              <label htmlFor="contact-phone" className="block text-white text-xs font-bold uppercase tracking-wider mb-2">
                 {pk.phoneLabel}
               </label>
               <input
+                id="contact-phone"
+                name="phone"
                 type="tel"
+                autoComplete="tel"
                 value={formData.phone}
                 onChange={(e) => setFormData((p) => ({ ...p, phone: e.target.value }))}
                 className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white placeholder-white/30 focus:outline-none focus:border-red-500 transition"
@@ -133,33 +142,39 @@ export default function ContactPage() {
 
             {/* Services */}
             <div>
-              <label className="block text-white text-xs font-bold uppercase tracking-wider mb-4">
+              <p id="contact-services-label" className="block text-white text-xs font-bold uppercase tracking-wider mb-4">
                 {pk.servicesLabel}
-              </label>
-              <div className="flex flex-wrap gap-3">
-                {serviceOptions.map((service) => (
-                  <button
-                    key={service}
-                    type="button"
-                    onClick={() => handleServiceToggle(service)}
-                    className={`px-4 py-2 border rounded-full text-sm transition ${
-                      formData.services.includes(service)
-                        ? 'bg-red-500 border-red-500 text-white'
-                        : 'border-white/20 text-white/60 hover:border-white/40'
-                    }`}
-                  >
-                    {service}
-                  </button>
-                ))}
+              </p>
+              <div className="flex flex-wrap gap-3" role="group" aria-labelledby="contact-services-label">
+                {serviceOptions.map((service) => {
+                  const pressed = formData.services.includes(service);
+                  return (
+                    <button
+                      key={service}
+                      type="button"
+                      aria-pressed={pressed}
+                      onClick={() => handleServiceToggle(service)}
+                      className={`px-4 py-2 min-h-[44px] border rounded-full text-sm font-semibold transition ${
+                        pressed
+                          ? 'bg-red-600 border-red-600 text-white'
+                          : 'border-white/30 text-[#e6e6e6] hover:border-white/60'
+                      }`}
+                    >
+                      {service}
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
             {/* Message */}
             <div>
-              <label className="block text-white text-xs font-bold uppercase tracking-wider mb-2">
+              <label htmlFor="contact-message" className="block text-white text-xs font-bold uppercase tracking-wider mb-2">
                 {pk.messageLabel}
               </label>
               <textarea
+                id="contact-message"
+                name="message"
                 value={formData.message}
                 onChange={(e) => setFormData((p) => ({ ...p, message: e.target.value }))}
                 className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white placeholder-white/30 focus:outline-none focus:border-red-500 transition resize-none"
@@ -168,26 +183,29 @@ export default function ContactPage() {
               />
             </div>
 
-            {/* File upload */}
+            {/* File upload — not part of the JSON payload; the control stays optional. */}
             <div>
-              <label className="block text-white text-xs font-bold uppercase tracking-wider mb-2">
+              <p className="block text-white text-xs font-bold uppercase tracking-wider mb-2">
                 {pk.fileLabel}
+              </p>
+              <label
+                htmlFor="contact-file"
+                className="border border-dashed border-white/20 rounded-lg p-6 text-center cursor-pointer hover:border-white/40 transition block"
+              >
+                <span className="text-white/40 text-sm">{pk.fileLabel}</span>
+                <span className="block text-white/30 text-xs mt-1">{pk.fileHint}</span>
+                <input id="contact-file" name="attachment" type="file" className="sr-only" />
               </label>
-              <div className="border border-dashed border-white/20 rounded-lg p-6 text-center cursor-pointer hover:border-white/40 transition">
-                <p className="text-white/40 text-sm">{t('pages.kontakt.fileLabel') as string}</p>
-                <p className="text-white/30 text-xs mt-1">{pk.fileHint}</p>
-                <input type="file" className="hidden" />
-              </div>
             </div>
 
             {/* Status messages */}
             {submitStatus === 'success' && (
-              <div className="bg-green-500/20 border border-green-500 rounded p-4 text-green-400">
+              <div role="status" className="bg-green-500/20 border border-green-500 rounded p-4 text-green-400">
                 {cf.successMessage}
               </div>
             )}
             {submitStatus === 'error' && (
-              <div className="bg-red-500/20 border border-red-500 rounded p-4 text-red-400">
+              <div role="alert" className="bg-red-500/20 border border-red-500 rounded p-4 text-red-400">
                 {cf.errorMessage}
               </div>
             )}

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "LEDU - Web Developer | Website & E-shop Creation",
-    "description": "I'm a web developer and designer specializing in creating modern, high-performance websites and e-shops. Custom work tailored to your business."
+    "title": "Web development, SEO and PPC | LEDU",
+    "description": "Websites and e-shops built with WordPress, Next.js and React. SEO, PPC, graphic design and automation (n8n, Supabase, AI) for businesses."
   },
   "common": {
     "scroll": "SCROLL"
@@ -15,11 +15,15 @@
       "kontakt": "Contact"
     },
     "kontaktButton": "Contact",
-    "menu": "Menu"
+    "menu": "Menu",
+    "languageLabel": "Language"
   },
   "hero": {
     "outline": "PUSHING BOUNDARIES",
     "main": "IN CREATING",
+    "seoTitle": "Web development, SEO and PPC for businesses",
+    "cta": "No-obligation consultation",
+    "posterAlt": "A person designing a website on a desktop, laptop and tablet",
     "rotatingWords": [
       "WEBSITES",
       "WORDPRESS SITES",
@@ -118,10 +122,12 @@
         }
       ]
     },
-    "ctaButton": "I'm Interested"
+    "ctaButton": "I'm Interested",
+    "illustrationAlt": "Illustration of"
   },
   "references": {
     "heading": "REFERENCES",
+    "imageAlt": "website preview",
     "visitWebButton": "Visit Website",
     "contactButton": "CONTACT",
     "allReferencesButton": "ALL REFERENCES",
@@ -477,6 +483,7 @@
   },
   "aboutMe": {
     "heading": "ABOUT ME",
+    "photoAlt": "Portrait of Duy, web developer and designer at LEDU",
     "greeting": "HI 👋 MY NAME IS DUY",
     "bio": "I have been professionally creating complete websites or parts of them for six years. I gained experience at large corporations where I worked as a coder/front-end developer, programmer, and designer. Later, I specialized in PPC advertising with expertise in web analytics and SEO. I now use these experiences as a freelancer in Prague.",
     "faqHeading": "FAQ",
@@ -561,7 +568,8 @@
   },
   "pages": {
     "kontakt": {
-      "title": "Contact | LEDU",
+      "title": "Contact — no-obligation consultation | LEDU",
+      "seoDescription": "Book a no-obligation consultation. Websites, e-shops, SEO, PPC, graphic design and automation (n8n, Supabase, AI).",
       "heading": "MESSAGE",
       "headingContinued": "ME",
       "nameLabel": "NAME *",
@@ -577,7 +585,8 @@
       "phone": "+420 777 224 577"
     },
     "oMne": {
-      "title": "About Me | LEDU",
+      "title": "About me — web developer and designer | LEDU",
+      "seoDescription": "I'm Duy, a web developer and designer. Websites on WordPress, Next.js and React, plus SEO, PPC, graphic design and automation.",
       "heading": "ABOUT ME",
       "subheading1": "WEBSITES, DESIGN,",
       "subheading2": "STREET WORKOUT",
@@ -606,12 +615,15 @@
       ]
     },
     "reference": {
-      "title": "References | LEDU",
+      "title": "References — websites and e-shops | LEDU",
+      "seoDescription": "Websites and e-shops I designed and built. WordPress, Next.js, React, presentation sites and web applications.",
       "heading1": "MY WORK",
       "heading2": "FOR CLIENTS"
     },
     "blog": {
-      "title": "Blog | LEDU",
+      "title": "Blog on web development and SEO | LEDU",
+      "seoDescription": "Articles and notes on building websites, SEO, web design, PPC and online marketing.",
+      "backToBlog": "Back to blog",
       "heading": "Blog",
       "description": "Articles, tips, and insights from web design and development.",
       "posts": [

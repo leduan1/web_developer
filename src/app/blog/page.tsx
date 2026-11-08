@@ -1,6 +1,7 @@
 'use client';
 
 import { Header, SideLabels, Footer } from '@/components';
+import LocalizedLink from '@/components/LocalizedLink';
 import PageTitle from '@/components/PageTitle';
 import { useTranslation } from '@/i18n/LanguageContext';
 
@@ -15,7 +16,7 @@ export default function BlogPage() {
       <PageTitle translationKey="pages.blog.title" />
       <Header />
       <SideLabels />
-      <div className="pt-32 pb-20">
+      <div className="pt-40 md:pt-32 pb-20">
         <div className="max-w-6xl mx-auto px-6 md:px-12">
           <h1 className="font-condensed text-5xl md:text-6xl text-white uppercase mb-4">{pb.heading as string}</h1>
           <p className="text-white/70 mb-16 text-lg">
@@ -33,13 +34,13 @@ export default function BlogPage() {
                   {post.title}
                 </h2>
                 <p className="text-white/70 mb-6 leading-relaxed">{post.excerpt}</p>
-                <a
+                <LocalizedLink
                   href={`/blog/${post.slug}`}
                   className="text-red-500 hover:text-red-400 font-bold uppercase text-xs flex items-center gap-2 transition"
                 >
                   {readMore}
                   <span>→</span>
-                </a>
+                </LocalizedLink>
               </article>
             ))}
           </div>

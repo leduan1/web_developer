@@ -4,7 +4,12 @@ import { siteConfig, getCanonicalUrl, Locale } from '@/config/site';
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
-  for (const page of siteConfig.pages) {
+  const paths = [
+    ...siteConfig.pages,
+    ...siteConfig.blogSlugs.map((slug) => `/blog/${slug}`),
+  ];
+
+  for (const page of paths) {
     // Build alternates for all locales
     const languages: Record<string, string> = {};
     for (const locale of siteConfig.locales) {
@@ -19,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: getCanonicalUrl(page, locale as Locale),
         lastModified: new Date(),
         changeFrequency: page === '/' ? 'weekly' : 'monthly',
-        priority: page === '/' ? 1.0 : 0.8,
+        priority: page === '/' ? 1.0 : page.startsWith('/blog/') ? 0.6 : 0.8,
         alternates: {
           languages,
         },

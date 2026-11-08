@@ -1,86 +1,21 @@
 import type { Metadata, Viewport } from 'next';
+import { headers } from 'next/headers';
 import './globals.css';
 import { LanguageProvider } from '@/i18n/LanguageContext';
 import { siteConfig } from '@/config/site';
+import { getDictionary } from '@/i18n/dictionaries';
+import { buildMetadata, parseLocale } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
-  title: {
-    default: 'LEDU - Web Developer | Tvorba webů a e-shopů',
-    template: '%s | LEDU',
-  },
-  description:
-    'Jsem web developer a designér specializující se na vytváření moderních, výkonných webů a e-shopů. Tvorba na míru vašemu podnikání.',
-  keywords: [
-    'web developer',
-    'webový designér',
-    'tvorba webů',
-    'e-shop',
-    'web design',
-    'Praha',
-    'website creation',
-    'e-commerce',
-  ],
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'cs_CZ',
-    alternateLocale: ['en_US', 'vi_VN', 'ru_RU'],
-    url: siteConfig.url,
-    siteName: siteConfig.name,
-    title: 'LEDU - Web Developer | Tvorba webů a e-shopů',
-    description:
-      'Jsem web developer a designér specializující se na vytváření moderních, výkonných webů a e-shopů.',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'LEDU - Web Developer',
-    description:
-      'Web developer a designér specializující se na vytváření moderních, výkonných webů a e-shopů.',
-  },
-  alternates: {
-    canonical: siteConfig.url,
-    languages: {
-      'cs': siteConfig.url,
-      'en': `${siteConfig.url}/en`,
-      'vi': `${siteConfig.url}/vi`,
-      'ru': `${siteConfig.url}/ru`,
-      'x-default': siteConfig.url,
-    },
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headerList = headers();
+  const locale = parseLocale(headerList.get('x-locale'));
+  const pathname = headerList.get('x-pathname') || '/';
+  return buildMetadata(locale, pathname);
+}
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-};
-
-// JSON-LD structured data
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'ProfessionalService',
-  name: siteConfig.name,
-  url: siteConfig.url,
-  email: siteConfig.email,
-  description:
-    'Web developer a designér specializující se na vytváření moderních, výkonných webů a e-shopů.',
-  sameAs: [siteConfig.social.instagram, siteConfig.social.linkedin],
-  areaServed: {
-    '@type': 'Country',
-    name: 'Czech Republic',
-  },
-  knowsLanguage: ['cs', 'en', 'vi', 'ru'],
-  serviceType: ['Web Development', 'Web Design', 'E-commerce Development'],
 };
 
 export default function RootLayout({
@@ -88,8 +23,29 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const headerList = headers();
+  const locale = parseLocale(headerList.get('x-locale'));
+  const dict = getDictionary(locale);
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    name: siteConfig.name,
+    url: siteConfig.url,
+    email: siteConfig.email,
+    description: dict.meta.description,
+    inLanguage: locale,
+    sameAs: [siteConfig.social.instagram, siteConfig.social.linkedin],
+    areaServed: {
+      '@type': 'Country',
+      name: 'Czech Republic',
+    },
+    knowsLanguage: ['cs', 'en', 'vi', 'ru'],
+    serviceType: ['Web Development', 'Web Design', 'E-commerce', 'SEO', 'PPC'],
+  };
+
   return (
-    <html lang="cs" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -107,7 +63,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-black text-white">
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider initialLanguage={locale}>{children}</LanguageProvider>
       </body>
     </html>
   );

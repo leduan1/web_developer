@@ -1,7 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect, useCallback, useMemo, useRef } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import cs from './translations/cs.json';
 import en from './translations/en.json';
 import vi from './translations/vi.json';
@@ -12,11 +12,9 @@ export type Language = 'cs' | 'en' | 'vi' | 'ru';
 const translations: Record<Language, Record<string, unknown>> = { cs, en, vi, ru };
 const LOCALE_PREFIXES: Language[] = ['en', 'vi', 'ru'];
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   t: (key: string) => any;
   getLocalizedHref: (href: string) => string;
 }
@@ -49,22 +47,26 @@ function stripLocalePrefix(pathname: string): string {
   return stripped || '/';
 }
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
+export function LanguageProvider({
+  children,
+  initialLanguage = 'cs',
+}: {
+  children: React.ReactNode;
+  initialLanguage?: Language;
+}) {
   const router = useRouter();
-  const nextPathname = usePathname();
 
-  const [language, setLanguageState] = useState<Language>('cs');
-  const [mounted, setMounted] = useState(false);
-  const languageRef = useRef<Language>('cs');
+  const [language, setLanguageState] = useState<Language>(initialLanguage);
+  const languageRef = useRef<Language>(initialLanguage);
 
-  // 1) On INITIAL MOUNT only: read language from the actual browser URL
+  // Keep state aligned with the real URL (back/forward and the first paint).
+  // The server already rendered `initialLanguage`, so the first paint matches.
   useEffect(() => {
     const browserPath = window.location.pathname;
     const urlLang = getLanguageFromPathname(browserPath);
     setLanguageState(urlLang);
     languageRef.current = urlLang;
     document.documentElement.lang = urlLang;
-    setMounted(true);
 
     // Handle browser back/forward — re-read language from URL
     const handlePopState = () => {
@@ -77,7 +79,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   // Switch language = navigate to new URL
   const setLanguage = useCallback((lang: Language) => {
@@ -117,7 +119,6 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     return `/${lang}${href === '/' ? '' : href}`;
   }, []); // stable — reads from ref
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const t = useCallback((key: string): any => {
     const value = getNestedValue(translations[language], key);
     if (value !== undefined) return value;
@@ -129,20 +130,6 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const contextValue = useMemo(() => ({
     language, setLanguage, t, getLocalizedHref,
   }), [language, setLanguage, t, getLocalizedHref]);
-
-  // Hydration guard: render Czech on first server render
-  if (!mounted) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const csT = (key: string): any => {
-      const value = getNestedValue(translations.cs, key);
-      return value !== undefined ? value : key;
-    };
-    return (
-      <LanguageContext.Provider value={{ language: 'cs', setLanguage, t: csT, getLocalizedHref: (h) => h }}>
-        {children}
-      </LanguageContext.Provider>
-    );
-  }
 
   return (
     <LanguageContext.Provider value={contextValue}>

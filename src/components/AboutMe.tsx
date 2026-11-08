@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { useTranslation } from '@/i18n/LanguageContext';
 import ScrollReveal from './ScrollReveal';
 
@@ -45,10 +46,12 @@ const AboutMe: React.FC = () => {
           {/* Left side - Photo */}
           <ScrollReveal animation="left" className="flex items-center justify-center">
             <div className="w-full max-w-md">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src="/images/me.jpg"
-                alt="Duy - Web Designer"
+                alt={t('aboutMe.photoAlt') as string}
+                width={1280}
+                height={1920}
+                sizes="(max-width: 1024px) 100vw, 448px"
                 className="w-full h-auto"
               />
             </div>

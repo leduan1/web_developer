@@ -2,7 +2,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { saveContactSubmission } from '@/lib/supabase';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY);
+}
 
 // Best-effort in-memory rate limit (per warm serverless instance)
 const RATE_LIMIT = 3; // submissions
@@ -99,7 +101,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email notification
-    const { data: emailData, error: emailError } = await resend.emails.send({
+    const { data: emailData, error: emailError } = await getResend().emails.send({
       from: 'LEDU web <web@ledu.cz>',
       to: ['info@ledu.cz', 'jirka.leanh@gmail.com'],
       replyTo: email,

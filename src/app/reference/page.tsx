@@ -14,7 +14,7 @@ export default function ReferencePage() {
       <PageTitle translationKey="pages.reference.title" />
       <Header />
       <SideLabels />
-      <div className="pt-32 pb-12 px-6 md:px-12">
+      <div className="pt-40 md:pt-32 pb-12 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
           <h1 className="font-condensed text-5xl md:text-7xl lg:text-8xl text-white uppercase leading-none mb-4">
             {t('pages.reference.heading1') as string}
