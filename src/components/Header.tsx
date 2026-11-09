@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useId, useRef, useState } from 'react';
 import LocalizedLink from './LocalizedLink';
 import { useTranslation, Language } from '@/i18n/LanguageContext';
 
@@ -11,40 +11,172 @@ const languages: { code: Language; label: string; name: string }[] = [
   { code: 'ru', label: 'RU', name: 'Русский' },
 ];
 
-function LanguageSwitcher({ stretch = false }: { stretch?: boolean }) {
+function LanguageSwitcher({
+  inMenu = false,
+  forceClose = false,
+}: {
+  inMenu?: boolean;
+  forceClose?: boolean;
+}) {
   const { t, language, setLanguage } = useTranslation();
+  const [open, setOpen] = useState(false);
+  const [focusIndex, setFocusIndex] = useState<number | null>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const optionRefs = useRef<Array<HTMLButtonElement | null>>([]);
+  const reactId = useId();
+  const listId = `${reactId}-list`;
+  const label = t('header.languageLabel') as string;
+  const current = languages.find((lang) => lang.code === language) ?? languages[0];
+
+  useEffect(() => {
+    if (!forceClose) return;
+    setOpen(false);
+    setFocusIndex(null);
+  }, [forceClose]);
+
+  useEffect(() => {
+    if (!open || focusIndex === null) return;
+    optionRefs.current[focusIndex]?.focus();
+  }, [open, focusIndex]);
+
+  useEffect(() => {
+    if (!open) return;
+
+    const onPointerDown = (event: PointerEvent) => {
+      if (!rootRef.current?.contains(event.target as Node)) {
+        setOpen(false);
+        setFocusIndex(null);
+      }
+    };
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return;
+      event.preventDefault();
+      setOpen(false);
+      setFocusIndex(null);
+      buttonRef.current?.focus();
+    };
+
+    document.addEventListener('pointerdown', onPointerDown);
+    document.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.removeEventListener('pointerdown', onPointerDown);
+      document.removeEventListener('keydown', onKeyDown);
+    };
+  }, [open]);
+
+  const openAt = (index: number) => {
+    setFocusIndex(index);
+    setOpen(true);
+  };
+
+  const close = () => {
+    setOpen(false);
+    setFocusIndex(null);
+  };
+
+  const activeIndex = Math.max(
+    0,
+    languages.findIndex((lang) => lang.code === language)
+  );
+
+  const onButtonKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
+    if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      openAt(activeIndex);
+    } else if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      openAt(languages.length - 1);
+    }
+  };
+
+  const onOptionKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>, index: number) => {
+    if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      setFocusIndex((index + 1) % languages.length);
+    } else if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      setFocusIndex((index - 1 + languages.length) % languages.length);
+    } else if (event.key === 'Home') {
+      event.preventDefault();
+      setFocusIndex(0);
+    } else if (event.key === 'End') {
+      event.preventDefault();
+      setFocusIndex(languages.length - 1);
+    } else if (event.key === 'Tab') {
+      close();
+    }
+  };
+
+  const choose = (code: Language) => {
+    close();
+    setLanguage(code);
+  };
 
   return (
-    <div
-      role="group"
-      aria-label={t('header.languageLabel') as string}
-      className={
-        stretch
-          ? 'flex md:hidden w-full border-t border-white/10'
-          : 'hidden md:flex items-center'
-      }
-    >
-      {languages.map((lang) => {
-        const active = language === lang.code;
-        return (
-          <button
-            key={lang.code}
-            type="button"
-            onClick={() => setLanguage(lang.code)}
-            aria-pressed={active}
-            aria-label={lang.name}
-            className={`inline-flex items-center justify-center min-h-[44px] min-w-[44px] px-2 text-sm font-semibold tracking-wider focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${
-              stretch ? 'flex-1' : ''
-            } ${
-              active
-                ? 'text-white underline decoration-[#ED0D32] decoration-2 underline-offset-4'
-                : 'text-[#e6e6e6] hover:text-white'
-            }`}
-          >
-            {lang.label}
-          </button>
-        );
-      })}
+    <div ref={rootRef} className={`relative ${inMenu ? 'flex flex-col items-center' : ''}`}>
+      <button
+        ref={buttonRef}
+        type="button"
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-controls={listId}
+        aria-label={`${label}: ${current.name}`}
+        onClick={() => (open ? close() : openAt(activeIndex))}
+        onKeyDown={onButtonKeyDown}
+        className="inline-flex items-center justify-center gap-1.5 min-h-[44px] min-w-[44px] px-2 text-sm font-semibold tracking-wider text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+      >
+        <span>{current.label}</span>
+        <svg
+          viewBox="0 0 12 12"
+          aria-hidden="true"
+          className={`h-3 w-3 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+        >
+          <path d="M2.2 4.2 6 8l3.8-3.8" fill="none" stroke="currentColor" strokeWidth="1.4" />
+        </svg>
+      </button>
+
+      {open && (
+        <div
+          id={listId}
+          role="listbox"
+          aria-label={label}
+          className={`absolute z-50 min-w-[220px] border border-white/15 bg-[#0a0a0a] py-1 shadow-[0_12px_40px_rgba(0,0,0,0.45)] ${
+            inMenu
+              ? 'bottom-full left-1/2 mb-2 -translate-x-1/2'
+              : 'right-0 top-full mt-1'
+          }`}
+        >
+          {languages.map((lang, index) => {
+            const active = language === lang.code;
+            return (
+              <button
+                key={lang.code}
+                ref={(node) => {
+                  optionRefs.current[index] = node;
+                }}
+                type="button"
+                role="option"
+                aria-selected={active}
+                aria-label={lang.name}
+                lang={lang.code}
+                tabIndex={-1}
+                onClick={() => choose(lang.code)}
+                onKeyDown={(event) => onOptionKeyDown(event, index)}
+                className={`flex w-full items-center gap-3 min-h-[44px] border-l-2 px-3 text-left text-sm focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-white ${
+                  active
+                    ? 'border-[#ED0D32] bg-white/[0.06] text-white'
+                    : 'border-transparent text-[#e6e6e6] hover:bg-white/[0.06] hover:text-white'
+                }`}
+              >
+                <span className="w-7 font-semibold tracking-wider">{lang.label}</span>
+                <span className="font-medium">{lang.name}</span>
+              </button>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
@@ -113,7 +245,7 @@ const Header: React.FC = () => {
           </LocalizedLink>
 
           <div className="flex items-center gap-4 md:gap-6 z-50 relative">
-            <LanguageSwitcher />
+            <LanguageSwitcher forceClose={isMenuOpen} />
 
             {/* Kontakt button */}
             <LocalizedLink
@@ -151,7 +283,6 @@ const Header: React.FC = () => {
             </button>
           </div>
         </div>
-        <LanguageSwitcher stretch />
       </header>
 
       {/* Fullscreen Menu Overlay */}
@@ -179,22 +310,25 @@ const Header: React.FC = () => {
               </LocalizedLink>
             ))}
           </div>
-          <nav aria-label={servicesLabel} className="pt-6 flex flex-col items-center gap-2">
-            <p className="text-white/40 text-xs font-bold uppercase tracking-widest">{servicesLabel}</p>
-            <ul className="flex flex-wrap justify-center gap-x-5">
-              {services.map((service) => (
-                <li key={service.href}>
-                  <LocalizedLink
-                    href={service.href}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="inline-flex items-center min-h-[44px] text-sm font-bold uppercase tracking-widest text-white/70 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                  >
-                    {service.label}
-                  </LocalizedLink>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <div className="pt-6 flex flex-col items-center gap-2">
+            {isMenuOpen && <LanguageSwitcher inMenu />}
+            <nav aria-label={servicesLabel} className="flex flex-col items-center gap-2">
+              <p className="text-white/40 text-xs font-bold uppercase tracking-widest">{servicesLabel}</p>
+              <ul className="flex flex-wrap justify-center gap-x-5">
+                {services.map((service) => (
+                  <li key={service.href}>
+                    <LocalizedLink
+                      href={service.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="inline-flex items-center min-h-[44px] text-sm font-bold uppercase tracking-widest text-white/70 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    >
+                      {service.label}
+                    </LocalizedLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </>

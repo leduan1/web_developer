@@ -17,7 +17,6 @@ type ServiceCopy = {
   ctaText: string;
   related: string[];
   articles: string[];
-  cases: string[];
 };
 
 type ServiceUi = {
@@ -26,7 +25,6 @@ type ServiceUi = {
   faqHeading: string;
   relatedHeading: string;
   articlesHeading: string;
-  casesHeading: string;
   ctaButton: string;
 };
 
@@ -61,7 +59,6 @@ export default function ServiceLanding({ slug }: { slug: string }) {
   const ui = t('pages.serviceUi') as ServiceUi;
   const nav = t('header.services') as { href: string; label: string }[];
   const posts = t('pages.blog.posts') as { title: string; slug: string }[];
-  const studies = t('pages.caseStudies.items') as { slug: string; h1: string }[];
 
   useEffect(() => {
     if (service?.title) document.title = service.title;
@@ -82,11 +79,6 @@ export default function ServiceLanding({ slug }: { slug: string }) {
     articles.length > 0
       ? articles
       : [{ href: '/blog', label: t('pages.blog.heading') as string }];
-
-  const caseLinks = service.cases
-    .map((caseSlug) => studies.find((item) => item.slug === caseSlug))
-    .filter((item): item is { slug: string; h1: string } => Boolean(item))
-    .map((item) => ({ href: `/reference/${item.slug}`, label: item.h1 }));
 
   return (
     <main className="min-h-screen bg-black text-white overflow-x-hidden">
@@ -155,7 +147,6 @@ export default function ServiceLanding({ slug }: { slug: string }) {
             </section>
           )}
 
-          <LinkList title={ui.casesHeading} links={caseLinks} />
           <LinkList title={ui.relatedHeading} links={related} />
           <LinkList title={ui.articlesHeading} links={articleLinks} />
 

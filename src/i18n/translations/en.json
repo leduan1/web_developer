@@ -176,7 +176,7 @@
       },
       {
         "title": "PAADEL.CZ",
-        "description": "For the Czech padel community I designed and developed a web app with an ELO ranking and a WhatsApp bot, where players log their matches, track their rating and find teammates at their level.",
+        "description": "For the Czech padel community I designed and developed a web app with an ELO ranking where players log their matches, track their rating and find teammates at their level.",
         "tags": [
           "WEB DESIGN",
           "PROGRAMMING",
@@ -391,7 +391,7 @@
       },
       {
         "title": "CRYPTOSVĚT",
-        "description": "Management and redesign of Cryptosvet.cz. 250,000 visits per month.",
+        "description": "I created an online magazine covering cryptocurrencies and investing.",
         "tags": [
           "WEB DESIGN",
           "PROGRAMMING",
@@ -692,7 +692,6 @@
       "faqHeading": "Common questions",
       "relatedHeading": "Other services",
       "articlesHeading": "From the blog",
-      "casesHeading": "Related work",
       "ctaButton": "No-obligation consultation"
     },
     "servicePages": [
@@ -757,11 +756,6 @@
         "articles": [
           "jak-vytvorit-kvalitni-web",
           "trendy-web-design-2025"
-        ],
-        "cases": [
-          "schlieger",
-          "paadel",
-          "cryptosvet"
         ]
       },
       {
@@ -821,9 +815,6 @@
         ],
         "articles": [
           "seo-optimalizace-male-firmy"
-        ],
-        "cases": [
-          "schlieger"
         ]
       },
       {
@@ -883,8 +874,7 @@
         ],
         "articles": [
           "seo-optimalizace-male-firmy"
-        ],
-        "cases": []
+        ]
       },
       {
         "slug": "graficky-design",
@@ -939,8 +929,7 @@
         ],
         "articles": [
           "trendy-web-design-2025"
-        ],
-        "cases": []
+        ]
       },
       {
         "slug": "automatizace",
@@ -996,116 +985,9 @@
         "related": [
           "/tvorba-webu"
         ],
-        "articles": [],
-        "cases": [
-          "leadhunter"
-        ]
+        "articles": []
       }
-    ],
-    "caseStudies": {
-      "back": "Back to work",
-      "indexHeading": "Case studies",
-      "linkLabel": "Case study",
-      "clientLabel": "Client",
-      "fieldLabel": "Field",
-      "roleLabel": "Our role",
-      "techLabel": "Technologies",
-      "websiteLabel": "Website",
-      "serviceLabel": "Service",
-      "solutionHeading": "Solution",
-      "resultsHeading": "Results",
-      "imageAlt": "Screenshot of the current website",
-      "moreHeading": "Other case studies",
-      "ctaTitle": "Want to talk about a similar project?",
-      "ctaText": "Tell me what you need. I will get back to you about a no-obligation consultation.",
-      "ctaButton": "No-obligation consultation",
-      "items": [
-        {
-          "slug": "schlieger",
-          "title": "Schlieger.cz — website redesign | LEDU",
-          "seoDescription": "Redesign of Schlieger.cz. The client’s turnover is 4 billion CZK. Top 3 rankings for photovoltaics and heat pumps.",
-          "h1": "Schlieger.cz",
-          "client": "Schlieger.cz",
-          "field": "Photovoltaics and heat pumps",
-          "website": "https://schlieger.cz",
-          "websiteLabel": "schlieger.cz",
-          "role": "Website redesign",
-          "technologies": [
-            "WordPress"
-          ],
-          "serviceHref": "/tvorba-webu",
-          "solution": [
-            "The job was a redesign of the Schlieger.cz website."
-          ],
-          "results": [
-            "The client’s turnover is 4 billion CZK.",
-            "Top 3 rankings for photovoltaics and heat pumps."
-          ]
-        },
-        {
-          "slug": "cryptosvet",
-          "title": "Cryptosvet.cz — management and redesign | LEDU",
-          "seoDescription": "Management and redesign of Cryptosvet.cz. 250,000 visits per month.",
-          "h1": "Cryptosvet.cz",
-          "client": "Cryptosvet.cz",
-          "field": "Cryptocurrencies and investing",
-          "website": "https://cryptosvet.cz",
-          "websiteLabel": "cryptosvet.cz",
-          "role": "Management and redesign",
-          "technologies": [
-            "WordPress"
-          ],
-          "serviceHref": "/tvorba-webu",
-          "solution": [
-            "For Cryptosvet.cz I redesigned the website and kept managing it."
-          ],
-          "results": [
-            "250,000 visits per month."
-          ]
-        },
-        {
-          "slug": "paadel",
-          "title": "Paadel.cz — community platform | LEDU",
-          "seoDescription": "Paadel.cz community platform with an ELO leaderboard and a WhatsApp bot.",
-          "h1": "Paadel.cz",
-          "client": "Paadel.cz",
-          "field": "Padel community",
-          "website": "https://paadel.cz",
-          "websiteLabel": "paadel.cz",
-          "role": "Design and development of a community platform",
-          "technologies": [],
-          "serviceHref": "/tvorba-webu",
-          "solution": [
-            "Paadel.cz is a community platform with an ELO leaderboard.",
-            "The platform includes a WhatsApp bot."
-          ],
-          "results": []
-        },
-        {
-          "slug": "leadhunter",
-          "title": "LeadHunter — internal lead pipeline | LEDU",
-          "seoDescription": "Internal LeadHunter pipeline on n8n, Supabase and Claude. It finds leads and has no public address.",
-          "h1": "LeadHunter",
-          "client": "Internal LEDU tool",
-          "field": "Finding leads",
-          "website": "",
-          "websiteLabel": "",
-          "role": "Internal pipeline",
-          "technologies": [
-            "n8n",
-            "Supabase",
-            "Claude"
-          ],
-          "serviceHref": "/automatizace",
-          "solution": [
-            "LeadHunter is an internal pipeline that finds leads.",
-            "It runs on n8n, Supabase and Claude.",
-            "It has no public address."
-          ],
-          "results": []
-        }
-      ]
-    }
+    ]
   },
   "person": {
     "name": "Duy Le",

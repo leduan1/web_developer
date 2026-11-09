@@ -176,7 +176,7 @@
       },
       {
         "title": "PAADEL.CZ",
-        "description": "Cho cộng đồng padel Séc, tôi đã thiết kế và lập trình một ứng dụng web với bảng xếp hạng ELO và bot WhatsApp, nơi người chơi ghi lại các trận đấu, theo dõi thứ hạng và tìm đồng đội cùng trình độ.",
+        "description": "Cho cộng đồng padel Séc, tôi đã thiết kế và lập trình một ứng dụng web với bảng xếp hạng ELO, nơi người chơi ghi lại các trận đấu, theo dõi thứ hạng và tìm đồng đội cùng trình độ.",
         "tags": [
           "THIẾT KẾ WEB",
           "LẬP TRÌNH",
@@ -391,7 +391,7 @@
       },
       {
         "title": "CRYPTOSVĚT",
-        "description": "Quản lý và thiết kế lại Cryptosvet.cz. 250.000 lượt truy cập mỗi tháng.",
+        "description": "Cho một khách hàng, tôi đã tạo tạp chí trực tuyến về tiền điện tử và đầu tư.",
         "tags": [
           "THIẾT KẾ WEB",
           "LẬP TRÌNH",
@@ -692,7 +692,6 @@
       "faqHeading": "Câu hỏi thường gặp",
       "relatedHeading": "Dịch vụ khác",
       "articlesHeading": "Từ blog",
-      "casesHeading": "Dự án liên quan",
       "ctaButton": "Tư vấn không ràng buộc"
     },
     "servicePages": [
@@ -757,11 +756,6 @@
         "articles": [
           "jak-vytvorit-kvalitni-web",
           "trendy-web-design-2025"
-        ],
-        "cases": [
-          "schlieger",
-          "paadel",
-          "cryptosvet"
         ]
       },
       {
@@ -821,9 +815,6 @@
         ],
         "articles": [
           "seo-optimalizace-male-firmy"
-        ],
-        "cases": [
-          "schlieger"
         ]
       },
       {
@@ -883,8 +874,7 @@
         ],
         "articles": [
           "seo-optimalizace-male-firmy"
-        ],
-        "cases": []
+        ]
       },
       {
         "slug": "graficky-design",
@@ -939,8 +929,7 @@
         ],
         "articles": [
           "trendy-web-design-2025"
-        ],
-        "cases": []
+        ]
       },
       {
         "slug": "automatizace",
@@ -996,116 +985,9 @@
         "related": [
           "/tvorba-webu"
         ],
-        "articles": [],
-        "cases": [
-          "leadhunter"
-        ]
+        "articles": []
       }
-    ],
-    "caseStudies": {
-      "back": "Về trang dự án",
-      "indexHeading": "Nghiên cứu dự án",
-      "linkLabel": "Xem dự án",
-      "clientLabel": "Khách hàng",
-      "fieldLabel": "Lĩnh vực",
-      "roleLabel": "Vai trò của chúng tôi",
-      "techLabel": "Công nghệ",
-      "websiteLabel": "Website",
-      "serviceLabel": "Dịch vụ",
-      "solutionHeading": "Giải pháp",
-      "resultsHeading": "Kết quả",
-      "imageAlt": "Ảnh website hiện tại",
-      "moreHeading": "Dự án khác",
-      "ctaTitle": "Muốn trao đổi một dự án tương tự?",
-      "ctaText": "Viết cho tôi bạn cần gì. Tôi sẽ trả lời để hẹn tư vấn không ràng buộc.",
-      "ctaButton": "Tư vấn không ràng buộc",
-      "items": [
-        {
-          "slug": "schlieger",
-          "title": "Schlieger.cz — thiết kế lại website | LEDU",
-          "seoDescription": "Thiết kế lại Schlieger.cz. Doanh thu của khách hàng là 4 tỷ CZK. Vị trí top 3 cho điện mặt trời và máy bơm nhiệt.",
-          "h1": "Schlieger.cz",
-          "client": "Schlieger.cz",
-          "field": "Điện mặt trời và máy bơm nhiệt",
-          "website": "https://schlieger.cz",
-          "websiteLabel": "schlieger.cz",
-          "role": "Thiết kế lại website",
-          "technologies": [
-            "WordPress"
-          ],
-          "serviceHref": "/tvorba-webu",
-          "solution": [
-            "Công việc là thiết kế lại website Schlieger.cz."
-          ],
-          "results": [
-            "Doanh thu của khách hàng là 4 tỷ CZK.",
-            "Vị trí top 3 cho điện mặt trời và máy bơm nhiệt."
-          ]
-        },
-        {
-          "slug": "cryptosvet",
-          "title": "Cryptosvet.cz — quản lý và thiết kế lại | LEDU",
-          "seoDescription": "Quản lý và thiết kế lại Cryptosvet.cz. 250.000 lượt truy cập mỗi tháng.",
-          "h1": "Cryptosvet.cz",
-          "client": "Cryptosvet.cz",
-          "field": "Tiền điện tử và đầu tư",
-          "website": "https://cryptosvet.cz",
-          "websiteLabel": "cryptosvet.cz",
-          "role": "Quản lý và thiết kế lại",
-          "technologies": [
-            "WordPress"
-          ],
-          "serviceHref": "/tvorba-webu",
-          "solution": [
-            "Với Cryptosvet.cz tôi thiết kế lại website và tiếp tục quản lý nó."
-          ],
-          "results": [
-            "250.000 lượt truy cập mỗi tháng."
-          ]
-        },
-        {
-          "slug": "paadel",
-          "title": "Paadel.cz — nền tảng cộng đồng | LEDU",
-          "seoDescription": "Nền tảng cộng đồng Paadel.cz với bảng xếp hạng ELO và bot WhatsApp.",
-          "h1": "Paadel.cz",
-          "client": "Paadel.cz",
-          "field": "Cộng đồng padel",
-          "website": "https://paadel.cz",
-          "websiteLabel": "paadel.cz",
-          "role": "Thiết kế và phát triển nền tảng cộng đồng",
-          "technologies": [],
-          "serviceHref": "/tvorba-webu",
-          "solution": [
-            "Paadel.cz là nền tảng cộng đồng với bảng xếp hạng ELO.",
-            "Nền tảng có bot WhatsApp."
-          ],
-          "results": []
-        },
-        {
-          "slug": "leadhunter",
-          "title": "LeadHunter — pipeline nội bộ tìm lead | LEDU",
-          "seoDescription": "Pipeline nội bộ LeadHunter trên n8n, Supabase và Claude. Tìm lead và không có địa chỉ công khai.",
-          "h1": "LeadHunter",
-          "client": "Công cụ nội bộ của LEDU",
-          "field": "Tìm lead",
-          "website": "",
-          "websiteLabel": "",
-          "role": "Pipeline nội bộ",
-          "technologies": [
-            "n8n",
-            "Supabase",
-            "Claude"
-          ],
-          "serviceHref": "/automatizace",
-          "solution": [
-            "LeadHunter là pipeline nội bộ dùng để tìm lead.",
-            "Chạy trên n8n, Supabase và Claude.",
-            "Không có địa chỉ công khai."
-          ],
-          "results": []
-        }
-      ]
-    }
+    ]
   },
   "person": {
     "name": "Duy Le",
