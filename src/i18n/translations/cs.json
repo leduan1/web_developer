@@ -176,7 +176,7 @@
       },
       {
         "title": "PAADEL.CZ",
-        "description": "Pro českou padelovou komunitu jsem navrhl a naprogramoval webovou aplikaci s ELO žebříčkem a WhatsApp botem, kde hráči zaznamenávají zápasy, sledují svůj ranking a hledají spoluhráče na své úrovni.",
+        "description": "Pro českou padelovou komunitu jsem navrhl a naprogramoval webovou aplikaci s ELO žebříčkem, kde hráči zaznamenávají zápasy, sledují svůj ranking a hledají spoluhráče na své úrovni.",
         "tags": [
           "NÁVRH WEBU",
           "PROGRAMOVÁNÍ",
@@ -391,7 +391,7 @@
       },
       {
         "title": "CRYPTOSVĚT",
-        "description": "Správa a redesign webu Cryptosvet.cz. 250 000 návštěv měsíčně.",
+        "description": "Pro klienta jsem vytvořil online magazín zabývající se kryptoměnami a investováním.",
         "tags": [
           "NÁVRH WEBU",
           "PROGRAMOVÁNÍ",
@@ -692,7 +692,6 @@
       "faqHeading": "Časté otázky",
       "relatedHeading": "Další služby",
       "articlesHeading": "Z blogu",
-      "casesHeading": "Související reference",
       "ctaButton": "Nezávazná konzultace"
     },
     "servicePages": [
@@ -757,11 +756,6 @@
         "articles": [
           "jak-vytvorit-kvalitni-web",
           "trendy-web-design-2025"
-        ],
-        "cases": [
-          "schlieger",
-          "paadel",
-          "cryptosvet"
         ]
       },
       {
@@ -821,9 +815,6 @@
         ],
         "articles": [
           "seo-optimalizace-male-firmy"
-        ],
-        "cases": [
-          "schlieger"
         ]
       },
       {
@@ -883,8 +874,7 @@
         ],
         "articles": [
           "seo-optimalizace-male-firmy"
-        ],
-        "cases": []
+        ]
       },
       {
         "slug": "graficky-design",
@@ -939,8 +929,7 @@
         ],
         "articles": [
           "trendy-web-design-2025"
-        ],
-        "cases": []
+        ]
       },
       {
         "slug": "automatizace",
@@ -996,116 +985,9 @@
         "related": [
           "/tvorba-webu"
         ],
-        "articles": [],
-        "cases": [
-          "leadhunter"
-        ]
+        "articles": []
       }
-    ],
-    "caseStudies": {
-      "back": "Zpět na reference",
-      "indexHeading": "Případové studie",
-      "linkLabel": "Případová studie",
-      "clientLabel": "Klient",
-      "fieldLabel": "Obor",
-      "roleLabel": "Naše role",
-      "techLabel": "Technologie",
-      "websiteLabel": "Web",
-      "serviceLabel": "Služba",
-      "solutionHeading": "Řešení",
-      "resultsHeading": "Výsledky",
-      "imageAlt": "Náhled současného webu",
-      "moreHeading": "Další případové studie",
-      "ctaTitle": "Chcete probrat podobný projekt?",
-      "ctaText": "Napište, co potřebujete. Ozvu se k nezávazné konzultaci.",
-      "ctaButton": "Nezávazná konzultace",
-      "items": [
-        {
-          "slug": "schlieger",
-          "title": "Schlieger.cz — redesign webu | LEDU",
-          "seoDescription": "Redesign webu Schlieger.cz. Obrat klienta je 4 miliardy Kč. Top 3 ve vyhledávání pro fotovoltaiku a tepelná čerpadla.",
-          "h1": "Schlieger.cz",
-          "client": "Schlieger.cz",
-          "field": "Fotovoltaika a tepelná čerpadla",
-          "website": "https://schlieger.cz",
-          "websiteLabel": "schlieger.cz",
-          "role": "Redesign webu",
-          "technologies": [
-            "WordPress"
-          ],
-          "serviceHref": "/tvorba-webu",
-          "solution": [
-            "Zakázka byla redesign webu Schlieger.cz."
-          ],
-          "results": [
-            "Obrat klienta je 4 miliardy Kč.",
-            "Ve vyhledávání je v top 3 pro fotovoltaiku a tepelná čerpadla."
-          ]
-        },
-        {
-          "slug": "cryptosvet",
-          "title": "Cryptosvet.cz — správa a redesign | LEDU",
-          "seoDescription": "Správa a redesign Cryptosvet.cz. 250 000 návštěv měsíčně.",
-          "h1": "Cryptosvet.cz",
-          "client": "Cryptosvet.cz",
-          "field": "Kryptoměny a investování",
-          "website": "https://cryptosvet.cz",
-          "websiteLabel": "cryptosvet.cz",
-          "role": "Správa a redesign",
-          "technologies": [
-            "WordPress"
-          ],
-          "serviceHref": "/tvorba-webu",
-          "solution": [
-            "U Cryptosvet.cz jsem dělal redesign webu a jeho další správu."
-          ],
-          "results": [
-            "250 000 návštěv měsíčně."
-          ]
-        },
-        {
-          "slug": "paadel",
-          "title": "Paadel.cz — komunitní platforma | LEDU",
-          "seoDescription": "Komunitní platforma Paadel.cz s ELO žebříčkem a WhatsApp botem.",
-          "h1": "Paadel.cz",
-          "client": "Paadel.cz",
-          "field": "Padelová komunita",
-          "website": "https://paadel.cz",
-          "websiteLabel": "paadel.cz",
-          "role": "Návrh a vývoj komunitní platformy",
-          "technologies": [],
-          "serviceHref": "/tvorba-webu",
-          "solution": [
-            "Paadel.cz je komunitní platforma s ELO žebříčkem.",
-            "Součástí platformy je WhatsApp bot."
-          ],
-          "results": []
-        },
-        {
-          "slug": "leadhunter",
-          "title": "LeadHunter — interní pipeline na leady | LEDU",
-          "seoDescription": "Interní pipeline LeadHunter na n8n, Supabase a Claude. Vyhledává leady a nemá veřejnou adresu.",
-          "h1": "LeadHunter",
-          "client": "Interní nástroj LEDU",
-          "field": "Vyhledávání leadů",
-          "website": "",
-          "websiteLabel": "",
-          "role": "Interní pipeline",
-          "technologies": [
-            "n8n",
-            "Supabase",
-            "Claude"
-          ],
-          "serviceHref": "/automatizace",
-          "solution": [
-            "LeadHunter je interní pipeline, která vyhledává leady.",
-            "Běží na n8n, Supabase a Claude.",
-            "Veřejnou adresu nemá."
-          ],
-          "results": []
-        }
-      ]
-    }
+    ]
   },
   "person": {
     "name": "Duy Le",

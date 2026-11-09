@@ -56,14 +56,6 @@ export const siteConfig = {
     '/automatizace',
   ],
 
-  /** Case studies that have a public page. LeadHunter has no screenshot tile. */
-  caseStudySlugs: [
-    'schlieger',
-    'cryptosvet',
-    'paadel',
-    'leadhunter',
-  ],
-
   /**
    * Blog article slugs that exist in the translation files.
    * Same slug in every language; only the title and excerpt are translated.

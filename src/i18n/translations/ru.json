@@ -176,7 +176,7 @@
       },
       {
         "title": "PAADEL.CZ",
-        "description": "Для чешского падел-сообщества я спроектировал и разработал веб-приложение с рейтингом ELO и WhatsApp-ботом, где игроки записывают матчи, отслеживают свой рейтинг и находят партнёров своего уровня.",
+        "description": "Для чешского падел-сообщества я спроектировал и разработал веб-приложение с рейтингом ELO, где игроки записывают матчи, отслеживают свой рейтинг и находят партнёров своего уровня.",
         "tags": [
           "ДИЗАЙН САЙТА",
           "ПРОГРАММИРОВАНИЕ",
@@ -391,7 +391,7 @@
       },
       {
         "title": "CRYPTOSVĚT",
-        "description": "Ведение и редизайн Cryptosvet.cz. 250 000 визитов в месяц.",
+        "description": "Для клиента я создал онлайн-журнал о криптовалютах и инвестировании.",
         "tags": [
           "ДИЗАЙН САЙТА",
           "ПРОГРАММИРОВАНИЕ",
@@ -692,7 +692,6 @@
       "faqHeading": "Частые вопросы",
       "relatedHeading": "Другие услуги",
       "articlesHeading": "Из блога",
-      "casesHeading": "Связанные работы",
       "ctaButton": "Консультация без обязательств"
     },
     "servicePages": [
@@ -757,11 +756,6 @@
         "articles": [
           "jak-vytvorit-kvalitni-web",
           "trendy-web-design-2025"
-        ],
-        "cases": [
-          "schlieger",
-          "paadel",
-          "cryptosvet"
         ]
       },
       {
@@ -821,9 +815,6 @@
         ],
         "articles": [
           "seo-optimalizace-male-firmy"
-        ],
-        "cases": [
-          "schlieger"
         ]
       },
       {
@@ -883,8 +874,7 @@
         ],
         "articles": [
           "seo-optimalizace-male-firmy"
-        ],
-        "cases": []
+        ]
       },
       {
         "slug": "graficky-design",
@@ -939,8 +929,7 @@
         ],
         "articles": [
           "trendy-web-design-2025"
-        ],
-        "cases": []
+        ]
       },
       {
         "slug": "automatizace",
@@ -996,116 +985,9 @@
         "related": [
           "/tvorba-webu"
         ],
-        "articles": [],
-        "cases": [
-          "leadhunter"
-        ]
+        "articles": []
       }
-    ],
-    "caseStudies": {
-      "back": "Назад к работам",
-      "indexHeading": "Кейсы",
-      "linkLabel": "Кейс",
-      "clientLabel": "Клиент",
-      "fieldLabel": "Область",
-      "roleLabel": "Наша роль",
-      "techLabel": "Технологии",
-      "websiteLabel": "Сайт",
-      "serviceLabel": "Услуга",
-      "solutionHeading": "Решение",
-      "resultsHeading": "Результаты",
-      "imageAlt": "Снимок текущего сайта",
-      "moreHeading": "Другие кейсы",
-      "ctaTitle": "Хотите обсудить похожий проект?",
-      "ctaText": "Напишите, что вам нужно. Я отвечу насчёт консультации без обязательств.",
-      "ctaButton": "Консультация без обязательств",
-      "items": [
-        {
-          "slug": "schlieger",
-          "title": "Schlieger.cz — редизайн сайта | LEDU",
-          "seoDescription": "Редизайн Schlieger.cz. Оборот клиента — 4 миллиарда чешских крон. Топ-3 по фотовольтаике и тепловым насосам.",
-          "h1": "Schlieger.cz",
-          "client": "Schlieger.cz",
-          "field": "Фотовольтаика и тепловые насосы",
-          "website": "https://schlieger.cz",
-          "websiteLabel": "schlieger.cz",
-          "role": "Редизайн сайта",
-          "technologies": [
-            "WordPress"
-          ],
-          "serviceHref": "/tvorba-webu",
-          "solution": [
-            "Задача была редизайном сайта Schlieger.cz."
-          ],
-          "results": [
-            "Оборот клиента — 4 миллиарда чешских крон.",
-            "Топ-3 в поиске по фотовольтаике и тепловым насосам."
-          ]
-        },
-        {
-          "slug": "cryptosvet",
-          "title": "Cryptosvet.cz — ведение и редизайн | LEDU",
-          "seoDescription": "Ведение и редизайн Cryptosvet.cz. 250 000 визитов в месяц.",
-          "h1": "Cryptosvet.cz",
-          "client": "Cryptosvet.cz",
-          "field": "Криптовалюты и инвестиции",
-          "website": "https://cryptosvet.cz",
-          "websiteLabel": "cryptosvet.cz",
-          "role": "Ведение и редизайн",
-          "technologies": [
-            "WordPress"
-          ],
-          "serviceHref": "/tvorba-webu",
-          "solution": [
-            "Для Cryptosvet.cz я сделал редизайн сайта и дальше его вёл."
-          ],
-          "results": [
-            "250 000 визитов в месяц."
-          ]
-        },
-        {
-          "slug": "paadel",
-          "title": "Paadel.cz — платформа сообщества | LEDU",
-          "seoDescription": "Платформа сообщества Paadel.cz с рейтингом ELO и WhatsApp-ботом.",
-          "h1": "Paadel.cz",
-          "client": "Paadel.cz",
-          "field": "Сообщество падела",
-          "website": "https://paadel.cz",
-          "websiteLabel": "paadel.cz",
-          "role": "Проектирование и разработка платформы сообщества",
-          "technologies": [],
-          "serviceHref": "/tvorba-webu",
-          "solution": [
-            "Paadel.cz — платформа сообщества с рейтингом ELO.",
-            "В платформу входит WhatsApp-бот."
-          ],
-          "results": []
-        },
-        {
-          "slug": "leadhunter",
-          "title": "LeadHunter — внутренний pipeline для лидов | LEDU",
-          "seoDescription": "Внутренний pipeline LeadHunter на n8n, Supabase и Claude. Ищет лиды и не имеет публичного адреса.",
-          "h1": "LeadHunter",
-          "client": "Внутренний инструмент LEDU",
-          "field": "Поиск лидов",
-          "website": "",
-          "websiteLabel": "",
-          "role": "Внутренний pipeline",
-          "technologies": [
-            "n8n",
-            "Supabase",
-            "Claude"
-          ],
-          "serviceHref": "/automatizace",
-          "solution": [
-            "LeadHunter — внутренний pipeline, который ищет лиды.",
-            "Он работает на n8n, Supabase и Claude.",
-            "Публичного адреса у него нет."
-          ],
-          "results": []
-        }
-      ]
-    }
+    ]
   },
   "person": {
     "name": "Duy Le",

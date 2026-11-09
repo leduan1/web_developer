@@ -55,14 +55,6 @@ function resolvePage(locale: Locale, path: string): PageCopy | null {
     return { title: service.title, description: service.seoDescription };
   }
 
-  if (path.startsWith('/reference/')) {
-    const slug = decodeURIComponent(path.slice('/reference/'.length));
-    if (!slug || slug.includes('/')) return null;
-    const study = dict.pages.caseStudies.items.find((item) => item.slug === slug);
-    if (!study) return null;
-    return { title: study.title, description: study.seoDescription };
-  }
-
   switch (path) {
     case '/':
       return { title: dict.meta.title, description: dict.meta.description };

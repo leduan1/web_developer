@@ -7,7 +7,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [
     ...siteConfig.pages,
     ...siteConfig.servicePages,
-    ...siteConfig.caseStudySlugs.map((slug) => `/reference/${slug}`),
     ...siteConfig.blogSlugs.map((slug) => `/blog/${slug}`),
   ];
 
@@ -26,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: getCanonicalUrl(page, locale as Locale),
         lastModified: new Date(),
         changeFrequency: page === '/' ? 'weekly' : 'monthly',
-        priority: page === '/' ? 1.0 : page.startsWith('/blog/') ? 0.6 : page.startsWith('/reference/') ? 0.7 : 0.8,
+        priority: page === '/' ? 1.0 : page.startsWith('/blog/') ? 0.6 : 0.8,
         alternates: {
           languages,
         },
