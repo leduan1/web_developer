@@ -47,15 +47,39 @@ export const siteConfig = {
     '/kontakt',
   ],
 
+  /** Service landing pages. Czech slugs in every language, same as the rest of the site. */
+  servicePages: [
+    '/tvorba-webu',
+    '/seo',
+    '/ppc',
+    '/graficky-design',
+    '/automatizace',
+  ],
+
+  /** Case studies that have a public page. LeadHunter has no screenshot tile. */
+  caseStudySlugs: [
+    'schlieger',
+    'cryptosvet',
+    'paadel',
+    'leadhunter',
+  ],
+
   /**
    * Blog article slugs that exist in the translation files.
    * Same slug in every language; only the title and excerpt are translated.
+   * Dates are the calendar days already shown on the articles.
    */
   blogSlugs: [
     'jak-vytvorit-kvalitni-web',
     'seo-optimalizace-male-firmy',
     'trendy-web-design-2025',
   ],
+
+  blogPublished: {
+    'jak-vytvorit-kvalitni-web': '2025-02-15',
+    'seo-optimalizace-male-firmy': '2025-02-10',
+    'trendy-web-design-2025': '2025-02-01',
+  },
 
   /** Social links */
   social: {

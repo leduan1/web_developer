@@ -13,6 +13,13 @@ const tabImages: Record<string, string> = {
   marketing: 'SEO_SVG.svg',
 };
 
+const tabServiceHrefs: Record<string, string[]> = {
+  vyvoj: ['/tvorba-webu'],
+  eshop: ['/tvorba-webu'],
+  design: ['/graficky-design'],
+  marketing: ['/seo', '/ppc'],
+};
+
 const Services: React.FC = () => {
   const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState('vyvoj');
@@ -21,6 +28,10 @@ const Services: React.FC = () => {
   const content = t(`services.${activeTab}`) as any;
   const heading = t('services.heading') as string;
   const ctaButton = t('services.ctaButton') as string;
+  const serviceNav = t('header.services') as { href: string; label: string }[];
+  const detailLinks = (tabServiceHrefs[activeTab] ?? [])
+    .map((href) => serviceNav.find((item) => item.href === href))
+    .filter((item): item is { href: string; label: string } => Boolean(item));
 
   return (
     <section className="relative w-full bg-black py-20 md:py-32 px-6 md:px-12">
@@ -101,17 +112,29 @@ const Services: React.FC = () => {
                 </ul>
               )}
 
-              <LocalizedLink
-                href="/kontakt"
-                className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white px-8 py-3 min-h-[44px] font-bold uppercase text-sm transition-colors rounded-none"
-              >
-                {ctaButton}
-                <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center">
-                  <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </span>
-              </LocalizedLink>
+              <div className="flex flex-wrap items-center gap-4">
+                <LocalizedLink
+                  href="/kontakt"
+                  className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white px-8 py-3 min-h-[44px] font-bold uppercase text-sm transition-colors rounded-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  {ctaButton}
+                  <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center">
+                    <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </LocalizedLink>
+                {detailLinks.map((link) => (
+                  <LocalizedLink
+                    key={link.href}
+                    href={link.href}
+                    className="inline-flex items-center min-h-[44px] text-white/80 hover:text-white font-bold uppercase text-sm tracking-wider focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  >
+                    {link.label}
+                    <span aria-hidden="true" className="ml-2">→</span>
+                  </LocalizedLink>
+                ))}
+              </div>
             </div>
 
             {/* SVG illustration - right */}

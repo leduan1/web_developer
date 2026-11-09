@@ -82,6 +82,8 @@ const Header: React.FC = () => {
     { label: nav.blog || 'Blog', href: '/blog' },
     { label: nav.kontakt || 'Kontakt', href: '/kontakt' },
   ];
+  const servicesLabel = t('header.servicesLabel') as string;
+  const services = t('header.services') as { href: string; label: string }[];
 
   return (
     <>
@@ -155,26 +157,44 @@ const Header: React.FC = () => {
       {/* Fullscreen Menu Overlay */}
       <div
         id="site-menu"
-        className={`fixed inset-0 z-40 bg-black transition-all duration-500 ease-in-out ${
+        className={`fixed inset-0 z-[45] bg-black transition-all duration-500 ease-in-out ${
           isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
-        <div className="flex flex-col items-center justify-center h-full gap-6 md:gap-8">
-          {menuItems.map((item, i) => (
-            <LocalizedLink
-              key={item.href}
-              href={item.href}
-              onClick={() => setIsMenuOpen(false)}
-              className={`font-condensed text-5xl md:text-7xl lg:text-8xl text-white/60 hover:text-white transition-all duration-500 uppercase tracking-wider transform ${
-                isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-              }`}
-              style={{
-                transitionDelay: isMenuOpen ? `${150 + i * 80}ms` : '0ms',
-              }}
-            >
-              {item.label}
-            </LocalizedLink>
-          ))}
+        <div className="flex flex-col h-full pt-24 pb-8 px-6">
+          <div className="flex-1 flex flex-col items-center justify-center gap-5 md:gap-7 overflow-y-auto">
+            {menuItems.map((item, i) => (
+              <LocalizedLink
+                key={item.href}
+                href={item.href}
+                onClick={() => setIsMenuOpen(false)}
+                className={`font-condensed text-4xl md:text-6xl lg:text-7xl text-white/60 hover:text-white transition-all duration-500 uppercase tracking-wider transform focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white ${
+                  isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+                }`}
+                style={{
+                  transitionDelay: isMenuOpen ? `${150 + i * 80}ms` : '0ms',
+                }}
+              >
+                {item.label}
+              </LocalizedLink>
+            ))}
+          </div>
+          <nav aria-label={servicesLabel} className="pt-6 flex flex-col items-center gap-2">
+            <p className="text-white/40 text-xs font-bold uppercase tracking-widest">{servicesLabel}</p>
+            <ul className="flex flex-wrap justify-center gap-x-5">
+              {services.map((service) => (
+                <li key={service.href}>
+                  <LocalizedLink
+                    href={service.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="inline-flex items-center min-h-[44px] text-sm font-bold uppercase tracking-widest text-white/70 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  >
+                    {service.label}
+                  </LocalizedLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </div>
     </>

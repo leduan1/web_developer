@@ -13,6 +13,7 @@ export interface Project {
   website: string;
   image: string;
   bgColor: string;
+  caseStudySlug?: string;
 }
 
 export const homepageProjects: Project[] = [
@@ -37,6 +38,7 @@ export const homepageProjects: Project[] = [
     tags: ['NÁVRH WEBU', 'PROGRAMOVÁNÍ', 'KÓDOVÁNÍ', 'WEBOVÁ APLIKACE'],
     description: 'Pro českou padelovou komunitu jsem navrhl a naprogramoval webovou aplikaci s ELO žebříčkem, kde hráči zaznamenávají zápasy, sledují svůj ranking a hledají spoluhráče na své úrovni.',
     website: 'https://paadel.cz',
+    caseStudySlug: 'paadel',
     image: 'paadel-cz.jpg',
     bgColor: '#0E2A1E',
   },
@@ -61,6 +63,7 @@ export const homepageProjects: Project[] = [
     tags: ['NÁVRH WEBU', 'PROGRAMOVÁNÍ', 'KÓDOVÁNÍ', 'WORDPRESS', 'E-SHOP'],
     description: 'Pro firmu Schlieger.cz jsem kompletně redesignoval web od A do Z, včetně všech funkcionalit a designu, což pomohlo firmě vydělat v roce 2024 přes 4 miliardy korun.',
     website: 'https://schlieger.cz',
+    caseStudySlug: 'schlieger',
     image: 'screencapture-schlieger-cz-2025-08-08-12_34_35-1.png',
     bgColor: '#DC2626',
   },
@@ -209,6 +212,7 @@ export const allProjects: Project[] = [
     tags: ['NÁVRH WEBU', 'PROGRAMOVÁNÍ', 'KÓDOVÁNÍ', 'WORDPRESS'],
     description: 'Pro klienta jsem vytvořil aktuálně jeden z nejčtenějších online magazínů zabývajících se kryptoměnami a investováním.',
     website: 'https://cryptosvet.cz',
+    caseStudySlug: 'cryptosvet',
     image: 'cryptosvet-2.png',
     bgColor: '#0D1B2A',
   },
@@ -462,6 +466,11 @@ const References: React.FC<{ projects?: Project[] }> = ({ projects = homepagePro
   const visitWebButton = t('references.visitWebButton') as string;
   const contactButton = t('references.contactButton') as string;
   const allReferencesButton = t('references.allReferencesButton') as string;
+  const caseStudies = t('pages.caseStudies') as {
+    indexHeading: string;
+    linkLabel: string;
+    items: { slug: string; h1: string }[];
+  };
 
   // Get translated projects data
   const translatedProjects = t('references.projects') as {
@@ -493,6 +502,24 @@ const References: React.FC<{ projects?: Project[] }> = ({ projects = homepagePro
             {heading}
           </h2>
         </ScrollReveal>
+
+        <nav aria-label={caseStudies.indexHeading} className="mb-16 md:mb-24">
+          <p className="text-white/50 text-xs font-bold uppercase tracking-widest mb-3">
+            {caseStudies.indexHeading}
+          </p>
+          <ul className="flex flex-wrap gap-x-6">
+            {caseStudies.items.map((study) => (
+              <li key={study.slug}>
+                <LocalizedLink
+                  href={`/reference/${study.slug}`}
+                  className="inline-flex items-center min-h-[44px] text-white font-bold uppercase text-sm border-b border-white/30 hover:text-red-200 hover:border-red-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  {study.h1}
+                </LocalizedLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
         {/* Projects */}
         <div className="space-y-20 md:space-y-32">
@@ -546,18 +573,28 @@ const References: React.FC<{ projects?: Project[] }> = ({ projects = homepagePro
                     {translatedProject.description}
                   </p>
 
-                  {/* Visit Link */}
-                  <a
-                    href={project.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 text-white font-bold uppercase text-sm border-l-2 border-white pl-4 hover:text-red-300 hover:border-red-300 transition-colors duration-300"
-                  >
-                    {visitWebButton}
-                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M7 17L17 7M17 7H7M17 7v10" />
-                    </svg>
-                  </a>
+                  <div className="flex flex-col items-start gap-4">
+                    {project.caseStudySlug && (
+                      <LocalizedLink
+                        href={`/reference/${project.caseStudySlug}`}
+                        className="inline-flex items-center min-h-[44px] gap-3 text-white font-bold uppercase text-sm border-l-2 border-white pl-4 hover:text-red-300 hover:border-red-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      >
+                        {caseStudies.linkLabel}
+                        <span aria-hidden="true">→</span>
+                      </LocalizedLink>
+                    )}
+                    <a
+                      href={project.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center min-h-[44px] gap-3 text-white font-bold uppercase text-sm border-l-2 border-white pl-4 hover:text-red-300 hover:border-red-300 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    >
+                      {visitWebButton}
+                      <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M7 17L17 7M17 7H7M17 7v10" />
+                      </svg>
+                    </a>
+                  </div>
                 </ScrollReveal>
               </div>
             );

@@ -19,9 +19,23 @@ export default function BlogPage() {
       <div className="pt-40 md:pt-32 pb-20">
         <div className="max-w-6xl mx-auto px-6 md:px-12">
           <h1 className="font-condensed text-5xl md:text-6xl text-white uppercase mb-4">{pb.heading as string}</h1>
-          <p className="text-white/70 mb-16 text-lg">
+          <p className="text-white/70 mb-8 text-lg">
             {pb.description as string}
           </p>
+          <nav aria-label={t('header.servicesLabel') as string} className="mb-16">
+            <ul className="flex flex-wrap gap-x-6">
+              {(t('header.services') as { href: string; label: string }[]).map((service) => (
+                <li key={service.href}>
+                  <LocalizedLink
+                    href={service.href}
+                    className="inline-flex items-center min-h-[44px] text-white/70 hover:text-white text-sm font-bold uppercase tracking-widest focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  >
+                    {service.label}
+                  </LocalizedLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map((post, index) => (
