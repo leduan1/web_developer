@@ -5,6 +5,7 @@ import { LanguageProvider } from '@/i18n/LanguageContext';
 import { siteConfig } from '@/config/site';
 import { getDictionary } from '@/i18n/dictionaries';
 import { buildMetadata, parseLocale } from '@/lib/seo';
+import { buildPersonJsonLd } from '@/lib/structured-data';
 
 export async function generateMetadata(): Promise<Metadata> {
   const headerList = headers();
@@ -41,8 +42,10 @@ export default function RootLayout({
       name: 'Czech Republic',
     },
     knowsLanguage: ['cs', 'en', 'vi', 'ru'],
-    serviceType: ['Web Development', 'Web Design', 'E-commerce', 'SEO', 'PPC'],
+    serviceType: ['Web Development', 'Web Design', 'E-commerce', 'SEO', 'PPC', 'Graphic Design', 'Automation'],
   };
+
+  const personJsonLd = buildPersonJsonLd(dict.person.jobTitle);
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -60,6 +63,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd).replace(/</g, '\\u003c') }}
         />
       </head>
       <body className="bg-black text-white">

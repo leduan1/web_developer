@@ -16,7 +16,30 @@
     },
     "kontaktButton": "Contact",
     "menu": "Menu",
-    "languageLabel": "Language"
+    "languageLabel": "Language",
+    "servicesLabel": "Services",
+    "services": [
+      {
+        "href": "/tvorba-webu",
+        "label": "Websites"
+      },
+      {
+        "href": "/seo",
+        "label": "SEO"
+      },
+      {
+        "href": "/ppc",
+        "label": "PPC"
+      },
+      {
+        "href": "/graficky-design",
+        "label": "Graphic design"
+      },
+      {
+        "href": "/automatizace",
+        "label": "Automation"
+      }
+    ]
   },
   "hero": {
     "outline": "PUSHING BOUNDARIES",
@@ -153,7 +176,7 @@
       },
       {
         "title": "PAADEL.CZ",
-        "description": "For the Czech padel community I designed and developed a web app with an ELO ranking where players log their matches, track their rating and find teammates at their level.",
+        "description": "For the Czech padel community I designed and developed a web app with an ELO ranking and a WhatsApp bot, where players log their matches, track their rating and find teammates at their level.",
         "tags": [
           "WEB DESIGN",
           "PROGRAMMING",
@@ -182,7 +205,7 @@
       },
       {
         "title": "SCHLIEGER.CZ, SCHLIEGER.DE",
-        "description": "I completely redesigned the website for Schlieger.cz from scratch, including all functionality and design. This helped the company earn over 4 billion CZK in 2024.",
+        "description": "Redesign of the Schlieger.cz website. The client’s turnover is 4 billion CZK. Top 3 rankings for photovoltaics and heat pumps.",
         "tags": [
           "WEB DESIGN",
           "PROGRAMMING",
@@ -368,7 +391,7 @@
       },
       {
         "title": "CRYPTOSVĚT",
-        "description": "I created one of the most widely-read online magazine/news websites covering cryptocurrencies and investing.",
+        "description": "Management and redesign of Cryptosvet.cz. 250,000 visits per month.",
         "tags": [
           "WEB DESIGN",
           "PROGRAMMING",
@@ -631,22 +654,461 @@
           "title": "How to Create a Quality Website",
           "date": "February 15, 2025",
           "excerpt": "A comprehensive guide to creating a website that delivers real results for your business.",
-          "slug": "jak-vytvorit-kvalitni-web"
+          "slug": "jak-vytvorit-kvalitni-web",
+          "relatedServices": [
+            "/tvorba-webu",
+            "/seo",
+            "/graficky-design"
+          ]
         },
         {
           "title": "SEO Optimization for Small Businesses",
           "date": "February 10, 2025",
           "excerpt": "Practical tips for search engine optimization without large investments.",
-          "slug": "seo-optimalizace-male-firmy"
+          "slug": "seo-optimalizace-male-firmy",
+          "relatedServices": [
+            "/seo",
+            "/ppc",
+            "/tvorba-webu"
+          ]
         },
         {
           "title": "Web Design Trends 2025",
           "date": "February 1, 2025",
           "excerpt": "What are the latest web design trends and how to apply them to your project.",
-          "slug": "trendy-web-design-2025"
+          "slug": "trendy-web-design-2025",
+          "relatedServices": [
+            "/graficky-design",
+            "/tvorba-webu"
+          ]
         }
       ],
-      "readMoreButton": "Read Article"
+      "readMoreButton": "Read Article",
+      "relatedHeading": "Related services"
+    },
+    "serviceUi": {
+      "includedHeading": "What is included",
+      "processHeading": "How the work proceeds",
+      "faqHeading": "Common questions",
+      "relatedHeading": "Other services",
+      "articlesHeading": "From the blog",
+      "casesHeading": "Related work",
+      "ctaButton": "No-obligation consultation"
+    },
+    "servicePages": [
+      {
+        "slug": "tvorba-webu",
+        "title": "Website and e-shop development | LEDU",
+        "seoDescription": "Brochure websites and e-shops on WordPress, Next.js and React. Design, build and handover of a site you can continue with SEO or PPC.",
+        "h1": "Web development",
+        "lead": "I design and build websites and e-shops for companies. Depending on the brief I use WordPress, Next.js or React. I hand the site over so it can be edited and followed by further work, such as SEO or PPC.",
+        "included": [
+          "Page structure and visual design",
+          "Development on WordPress, Next.js or React",
+          "Layout for phone, tablet and desktop",
+          "An e-shop when it is part of the brief",
+          "Basic search setup: addresses, titles and descriptions",
+          "Handover of access and the site for further care"
+        ],
+        "process": [
+          {
+            "title": "Consultation",
+            "text": "We go through what the site must do, who it is for, and what you already have."
+          },
+          {
+            "title": "Design",
+            "text": "I prepare the page structure and the look."
+          },
+          {
+            "title": "Build",
+            "text": "I develop the site, add the content you supply, and check it on common devices."
+          },
+          {
+            "title": "Handover",
+            "text": "I launch the site, hand over access, and we agree any further edits."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What do you build websites with?",
+            "answer": "WordPress, Next.js or React. The choice follows the brief: an editorial site, an e-shop, or an application that has to do more than static pages."
+          },
+          {
+            "question": "Do you build e-shops?",
+            "answer": "Yes, when an e-shop is part of the brief. The scope, such as a catalogue and ordering, follows what the shop needs to do."
+          },
+          {
+            "question": "Can the site be edited after handover?",
+            "answer": "On WordPress, text is edited in the admin. On Next.js or React it depends whether the content lives in code or in an admin. How edits work is part of the brief."
+          },
+          {
+            "question": "Do you also handle SEO and PPC for the site?",
+            "answer": "Basic technical search setup is part of the handover. Ongoing SEO and PPC campaigns are separate services."
+          }
+        ],
+        "ctaTitle": "A site shaped by the brief",
+        "ctaText": "Tell me what the site needs to do. I will get back to you about a no-obligation consultation.",
+        "related": [
+          "/seo",
+          "/ppc",
+          "/graficky-design",
+          "/automatizace"
+        ],
+        "articles": [
+          "jak-vytvorit-kvalitni-web",
+          "trendy-web-design-2025"
+        ],
+        "cases": [
+          "schlieger",
+          "paadel",
+          "cryptosvet"
+        ]
+      },
+      {
+        "slug": "seo",
+        "title": "SEO for company websites | LEDU",
+        "seoDescription": "SEO for companies: technical state of the site, page structure and content edits. No guarantee of a specific ranking.",
+        "h1": "SEO",
+        "lead": "I adjust a website so a search engine can crawl it and relate it to the topics of your field. I work on the technical side, the page structure and the text. I do not guarantee a specific position.",
+        "included": [
+          "Review of indexing, titles, headings and internal links",
+          "A page structure based on the topics of the field",
+          "Edits to titles, descriptions and headings",
+          "Notes on text that is missing or unclear",
+          "Technical edits that can be made on the current site"
+        ],
+        "process": [
+          {
+            "title": "Consultation",
+            "text": "I look at the current site and at what people should be able to find there."
+          },
+          {
+            "title": "List of edits",
+            "text": "I write down what gets in the way of search and what is worth doing first."
+          },
+          {
+            "title": "Implementation",
+            "text": "I make the edits on the site, or I prepare them for whoever maintains it."
+          },
+          {
+            "title": "Check",
+            "text": "After the edits I check whether the search engine can see the pages. Rankings move with a delay, and I do not promise a position."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is SEO?",
+            "answer": "Changes to a website and its content so a search engine can find the pages and show them to people looking for that topic."
+          },
+          {
+            "question": "Do you guarantee the top positions?",
+            "answer": "No. The search engine decides the order. It depends on competition, content and links from other sites. I make the changes that give you a basis for that. A place in the results cannot be promised."
+          },
+          {
+            "question": "When does a change show up?",
+            "answer": "Search engines react with a delay. It often takes months, not days. I do not name a date when a page will move."
+          },
+          {
+            "question": "Does the website have to be new?",
+            "answer": "No. SEO can be done on the site you already have. If the site is still being built, I handle the edits together with the build."
+          }
+        ],
+        "ctaTitle": "SEO without a ranking promise",
+        "ctaText": "Tell me what site you have and what people should find on it.",
+        "related": [
+          "/tvorba-webu",
+          "/ppc"
+        ],
+        "articles": [
+          "seo-optimalizace-male-firmy"
+        ],
+        "cases": [
+          "schlieger"
+        ]
+      },
+      {
+        "slug": "ppc",
+        "title": "PPC advertising in Google Ads and Sklik | LEDU",
+        "seoDescription": "PPC campaigns in Google Ads and Sklik. Campaign structure, ad copy and ongoing management based on what the account shows.",
+        "h1": "PPC advertising",
+        "lead": "I set up and manage search ads in Google Ads and Sklik. The ad leads to a page where the visitor can write or call. I adjust campaigns based on what the account shows.",
+        "included": [
+          "Campaign structure in Google Ads or Sklik",
+          "Ad copy",
+          "A link to the page that should turn a visit into an enquiry",
+          "Ongoing management: copy edits and pausing ad groups that do not bring enquiries",
+          "Enquiry measurement where the website allows it"
+        ],
+        "process": [
+          {
+            "title": "Consultation",
+            "text": "What should be advertised, and which page the click should open."
+          },
+          {
+            "title": "Proposal",
+            "text": "Campaign structure and copy for approval."
+          },
+          {
+            "title": "Launch",
+            "text": "I start the campaign after it is approved in the ads account."
+          },
+          {
+            "title": "Management",
+            "text": "I adjust copy and ad groups based on the data in the account."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is PPC?",
+            "answer": "Advertising where you pay per click. The ad appears in search or on another network depending on how the campaign is set up."
+          },
+          {
+            "question": "Which systems do you use?",
+            "answer": "Google Ads and Sklik."
+          },
+          {
+            "question": "Does PPC fit with SEO?",
+            "answer": "They are two different things. PPC brings visits after the campaign starts. SEO works on unpaid results and takes longer. They can run side by side."
+          },
+          {
+            "question": "Do I need a new website?",
+            "answer": "I need a page the ad can open. It can be the site you already have. If that page is unclear or missing, we adjust the site first."
+          }
+        ],
+        "ctaTitle": "A page first, then the campaign",
+        "ctaText": "Tell me what you want to advertise. We will go through it in a consultation.",
+        "related": [
+          "/seo",
+          "/tvorba-webu"
+        ],
+        "articles": [
+          "seo-optimalizace-male-firmy"
+        ],
+        "cases": []
+      },
+      {
+        "slug": "graficky-design",
+        "title": "Graphic design and website design | LEDU",
+        "seoDescription": "Graphic design for companies: website look, identity, banners, social assets and print. The design can be part of the website build.",
+        "h1": "Graphic design",
+        "lead": "I design the look of a website and the graphics that belong with it. That covers page layout, identity elements, banners and print assets when they are part of the brief.",
+        "included": [
+          "Look and layout of the website",
+          "Wireframes and a page prototype",
+          "Branding and identity when it is part of the brief",
+          "Banners and assets for social networks",
+          "Print materials",
+          "Animation and a mobile app interface when they are part of the brief"
+        ],
+        "process": [
+          {
+            "title": "Materials",
+            "text": "We go through what you already have: logo, text, photos and examples you like."
+          },
+          {
+            "title": "Design",
+            "text": "I prepare a direction and the specific pages or materials."
+          },
+          {
+            "title": "Revisions",
+            "text": "I apply your comments."
+          },
+          {
+            "title": "Handover",
+            "text": "You receive the files. If I also build the site, I put the design into it."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Is the design part of building the website?",
+            "answer": "It can be. I do design and development as one job, or only the graphics when someone else builds the site."
+          },
+          {
+            "question": "Do you also deliver a logo?",
+            "answer": "Yes, when identity is part of the brief. If you already have a logo, I work from it."
+          },
+          {
+            "question": "What do I get at the end?",
+            "answer": "Files for the website and for the materials that were in the brief. The handover format depends on whether I implement the graphics or someone else does."
+          }
+        ],
+        "ctaTitle": "The brief first, then the visual",
+        "ctaText": "Tell me whether you need a website design, an identity, or both.",
+        "related": [
+          "/tvorba-webu"
+        ],
+        "articles": [
+          "trendy-web-design-2025"
+        ],
+        "cases": []
+      },
+      {
+        "slug": "automatizace",
+        "title": "Process automation with n8n, Supabase and AI | LEDU",
+        "seoDescription": "Automation of repeated steps in n8n and Supabase, with AI at a specific point in the workflow. Connecting data and the actions that follow.",
+        "h1": "Automation",
+        "lead": "I build a workflow that carries out repeated steps. n8n connects the steps, Supabase holds the data, and I use AI only where a model should read, sort or draft something.",
+        "included": [
+          "Design and setup of a workflow in n8n",
+          "A Supabase database for records the workflow stores and reads",
+          "A connection to the channel in the brief, such as a form or email",
+          "An AI step when the process has a specific task for a model",
+          "Handover of a scenario that runs on your side"
+        ],
+        "process": [
+          {
+            "title": "The manual work",
+            "text": "We write down the steps that are done by hand today and where the data comes from."
+          },
+          {
+            "title": "Design",
+            "text": "What should start the workflow, where the data is stored, and where a model steps in."
+          },
+          {
+            "title": "Build",
+            "text": "I build it in n8n and Supabase and connect the inputs we agreed."
+          },
+          {
+            "title": "Trial",
+            "text": "We walk through a real case and I hand over what the workflow needs to run."
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is n8n?",
+            "answer": "A tool for automatic processes. One step starts the next, for example receiving data and writing it to a database."
+          },
+          {
+            "question": "What is Supabase doing there?",
+            "answer": "It is the database and backend. The workflow stores records there and reads them back."
+          },
+          {
+            "question": "Where does AI come in?",
+            "answer": "In one step of the process, not as a replacement for the whole process. The model typically reads, sorts or drafts text. Which model depends on the brief. In the internal LeadHunter tool it is Claude."
+          },
+          {
+            "question": "Is LeadHunter a client project?",
+            "answer": "No. It is an internal LEDU pipeline on n8n, Supabase and Claude that finds leads. It has no public address."
+          }
+        ],
+        "ctaTitle": "The manual process first, then automation",
+        "ctaText": "Describe the step that keeps repeating. In a consultation we will see whether a workflow can take it.",
+        "related": [
+          "/tvorba-webu"
+        ],
+        "articles": [],
+        "cases": [
+          "leadhunter"
+        ]
+      }
+    ],
+    "caseStudies": {
+      "back": "Back to work",
+      "indexHeading": "Case studies",
+      "linkLabel": "Case study",
+      "clientLabel": "Client",
+      "fieldLabel": "Field",
+      "roleLabel": "Our role",
+      "techLabel": "Technologies",
+      "websiteLabel": "Website",
+      "serviceLabel": "Service",
+      "solutionHeading": "Solution",
+      "resultsHeading": "Results",
+      "imageAlt": "Screenshot of the current website",
+      "moreHeading": "Other case studies",
+      "ctaTitle": "Want to talk about a similar project?",
+      "ctaText": "Tell me what you need. I will get back to you about a no-obligation consultation.",
+      "ctaButton": "No-obligation consultation",
+      "items": [
+        {
+          "slug": "schlieger",
+          "title": "Schlieger.cz — website redesign | LEDU",
+          "seoDescription": "Redesign of Schlieger.cz. The client’s turnover is 4 billion CZK. Top 3 rankings for photovoltaics and heat pumps.",
+          "h1": "Schlieger.cz",
+          "client": "Schlieger.cz",
+          "field": "Photovoltaics and heat pumps",
+          "website": "https://schlieger.cz",
+          "websiteLabel": "schlieger.cz",
+          "role": "Website redesign",
+          "technologies": [
+            "WordPress"
+          ],
+          "serviceHref": "/tvorba-webu",
+          "solution": [
+            "The job was a redesign of the Schlieger.cz website."
+          ],
+          "results": [
+            "The client’s turnover is 4 billion CZK.",
+            "Top 3 rankings for photovoltaics and heat pumps."
+          ]
+        },
+        {
+          "slug": "cryptosvet",
+          "title": "Cryptosvet.cz — management and redesign | LEDU",
+          "seoDescription": "Management and redesign of Cryptosvet.cz. 250,000 visits per month.",
+          "h1": "Cryptosvet.cz",
+          "client": "Cryptosvet.cz",
+          "field": "Cryptocurrencies and investing",
+          "website": "https://cryptosvet.cz",
+          "websiteLabel": "cryptosvet.cz",
+          "role": "Management and redesign",
+          "technologies": [
+            "WordPress"
+          ],
+          "serviceHref": "/tvorba-webu",
+          "solution": [
+            "For Cryptosvet.cz I redesigned the website and kept managing it."
+          ],
+          "results": [
+            "250,000 visits per month."
+          ]
+        },
+        {
+          "slug": "paadel",
+          "title": "Paadel.cz — community platform | LEDU",
+          "seoDescription": "Paadel.cz community platform with an ELO leaderboard and a WhatsApp bot.",
+          "h1": "Paadel.cz",
+          "client": "Paadel.cz",
+          "field": "Padel community",
+          "website": "https://paadel.cz",
+          "websiteLabel": "paadel.cz",
+          "role": "Design and development of a community platform",
+          "technologies": [],
+          "serviceHref": "/tvorba-webu",
+          "solution": [
+            "Paadel.cz is a community platform with an ELO leaderboard.",
+            "The platform includes a WhatsApp bot."
+          ],
+          "results": []
+        },
+        {
+          "slug": "leadhunter",
+          "title": "LeadHunter — internal lead pipeline | LEDU",
+          "seoDescription": "Internal LeadHunter pipeline on n8n, Supabase and Claude. It finds leads and has no public address.",
+          "h1": "LeadHunter",
+          "client": "Internal LEDU tool",
+          "field": "Finding leads",
+          "website": "",
+          "websiteLabel": "",
+          "role": "Internal pipeline",
+          "technologies": [
+            "n8n",
+            "Supabase",
+            "Claude"
+          ],
+          "serviceHref": "/automatizace",
+          "solution": [
+            "LeadHunter is an internal pipeline that finds leads.",
+            "It runs on n8n, Supabase and Claude.",
+            "It has no public address."
+          ],
+          "results": []
+        }
+      ]
     }
+  },
+  "person": {
+    "name": "Duy Le",
+    "jobTitle": "Web developer and designer"
   }
 }

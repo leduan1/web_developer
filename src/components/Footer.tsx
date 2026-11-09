@@ -75,8 +75,24 @@ const Footer: React.FC = () => {
           </ScrollReveal>
         </div>
 
-        {/* Bottom bar */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-white/10 pt-8 flex flex-col gap-6">
+          <nav aria-label={t('header.servicesLabel') as string}>
+            <p className="text-white/40 text-xs font-bold uppercase tracking-widest mb-2">
+              {t('header.servicesLabel') as string}
+            </p>
+            <ul className="flex flex-wrap gap-x-6">
+              {(t('header.services') as { href: string; label: string }[]).map((service) => (
+                <li key={service.href}>
+                  <LocalizedLink
+                    href={service.href}
+                    className="inline-flex items-center min-h-[44px] text-white/60 hover:text-white text-xs font-bold uppercase tracking-widest focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  >
+                    {service.label}
+                  </LocalizedLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
           <p className="text-white/30 text-xs">
             {t('footer.copyright') as string}
           </p>

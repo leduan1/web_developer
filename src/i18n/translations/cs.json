@@ -16,7 +16,30 @@
     },
     "kontaktButton": "Kontakt",
     "menu": "Menu",
-    "languageLabel": "Výběr jazyka"
+    "languageLabel": "Výběr jazyka",
+    "servicesLabel": "Služby",
+    "services": [
+      {
+        "href": "/tvorba-webu",
+        "label": "Tvorba webů"
+      },
+      {
+        "href": "/seo",
+        "label": "SEO"
+      },
+      {
+        "href": "/ppc",
+        "label": "PPC"
+      },
+      {
+        "href": "/graficky-design",
+        "label": "Grafický design"
+      },
+      {
+        "href": "/automatizace",
+        "label": "Automatizace"
+      }
+    ]
   },
   "hero": {
     "outline": "POSOUVÁM HRANICE",
@@ -153,7 +176,7 @@
       },
       {
         "title": "PAADEL.CZ",
-        "description": "Pro českou padelovou komunitu jsem navrhl a naprogramoval webovou aplikaci s ELO žebříčkem, kde hráči zaznamenávají zápasy, sledují svůj ranking a hledají spoluhráče na své úrovni.",
+        "description": "Pro českou padelovou komunitu jsem navrhl a naprogramoval webovou aplikaci s ELO žebříčkem a WhatsApp botem, kde hráči zaznamenávají zápasy, sledují svůj ranking a hledají spoluhráče na své úrovni.",
         "tags": [
           "NÁVRH WEBU",
           "PROGRAMOVÁNÍ",
@@ -182,7 +205,7 @@
       },
       {
         "title": "SCHLIEGER.CZ, SCHLIEGER.DE",
-        "description": "Pro firmu Schlieger.cz jsem kompletně redesignoval web od A do Z, včetně všech funkcionalit a designu, což pomohlo firmě vydělat v roce 2024 přes 4 miliardy korun.",
+        "description": "Redesign webu Schlieger.cz. Obrat klienta je 4 miliardy Kč. Ve vyhledávání je v top 3 pro fotovoltaiku a tepelná čerpadla.",
         "tags": [
           "NÁVRH WEBU",
           "PROGRAMOVÁNÍ",
@@ -368,7 +391,7 @@
       },
       {
         "title": "CRYPTOSVĚT",
-        "description": "Pro klienta jsem vytvořil aktuálně jeden z nejčtenějších online magazínů zabývajících se kryptoměnami a investováním.",
+        "description": "Správa a redesign webu Cryptosvet.cz. 250 000 návštěv měsíčně.",
         "tags": [
           "NÁVRH WEBU",
           "PROGRAMOVÁNÍ",
@@ -631,22 +654,461 @@
           "title": "Jak vytvořit kvalitní web",
           "date": "15. února 2025",
           "excerpt": "Komplexní průvodce tvorbou webu, který přinese vašemu podnikání skutečné výsledky.",
-          "slug": "jak-vytvorit-kvalitni-web"
+          "slug": "jak-vytvorit-kvalitni-web",
+          "relatedServices": [
+            "/tvorba-webu",
+            "/seo",
+            "/graficky-design"
+          ]
         },
         {
           "title": "SEO optimalizace pro malé firmy",
           "date": "10. února 2025",
           "excerpt": "Praktické tipy na optimalizaci pro vyhledávače bez velkých investic.",
-          "slug": "seo-optimalizace-male-firmy"
+          "slug": "seo-optimalizace-male-firmy",
+          "relatedServices": [
+            "/seo",
+            "/ppc",
+            "/tvorba-webu"
+          ]
         },
         {
           "title": "Trendy ve web designu 2025",
           "date": "1. února 2025",
           "excerpt": "Jaké jsou nejnovější trendy ve web designu a jak je aplikovat do vašeho projektu.",
-          "slug": "trendy-web-design-2025"
+          "slug": "trendy-web-design-2025",
+          "relatedServices": [
+            "/graficky-design",
+            "/tvorba-webu"
+          ]
         }
       ],
-      "readMoreButton": "Přečíst článek"
+      "readMoreButton": "Přečíst článek",
+      "relatedHeading": "Související služby"
+    },
+    "serviceUi": {
+      "includedHeading": "Co je součástí",
+      "processHeading": "Jak spolupráce probíhá",
+      "faqHeading": "Časté otázky",
+      "relatedHeading": "Další služby",
+      "articlesHeading": "Z blogu",
+      "casesHeading": "Související reference",
+      "ctaButton": "Nezávazná konzultace"
+    },
+    "servicePages": [
+      {
+        "slug": "tvorba-webu",
+        "title": "Tvorba webů a e-shopů | LEDU",
+        "seoDescription": "Tvorba prezentačních webů a e-shopů na WordPressu, Next.js a Reactu. Návrh, programování a předání webu, na kterém jde dál dělat SEO nebo PPC.",
+        "h1": "Tvorba webů",
+        "lead": "Navrhuji a programuji weby a e-shopy pro firmy. Podle zadání stavím na WordPressu, Next.js nebo Reactu. Web předávám tak, aby šel upravovat a navázat na něj další práci, třeba SEO nebo PPC.",
+        "included": [
+          "Návrh struktury stránek a vzhledu",
+          "Programování na WordPressu, Next.js nebo Reactu",
+          "Zobrazení na mobilu, tabletu a počítači",
+          "E-shop, pokud je v zadání",
+          "Základní technické nastavení pro vyhledávače: adresy, titulky a popisy",
+          "Předání přístupů a webu k další správě"
+        ],
+        "process": [
+          {
+            "title": "Konzultace",
+            "text": "Projdeme, co má web umět, pro koho je a co už máte připravené."
+          },
+          {
+            "title": "Návrh",
+            "text": "Připravím strukturu stránek a vzhled."
+          },
+          {
+            "title": "Vývoj",
+            "text": "Naprogramuji web, doplním obsah, který dodáte, a projdu ho na běžných zařízeních."
+          },
+          {
+            "title": "Předání",
+            "text": "Spustím web, předám přístupy a domluvíme další úpravy."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Na čem weby stavíte?",
+            "answer": "Na WordPressu, Next.js nebo Reactu. Volbu beru podle zadání: redakční web, e-shop, nebo aplikace, která má umět víc než statické stránky."
+          },
+          {
+            "question": "Děláte i e-shopy?",
+            "answer": "Ano, když je e-shop součást zadání. Rozsah, třeba katalog a objednávka, domluvíme podle toho, co má obchod umět."
+          },
+          {
+            "question": "Je web po předání upravitelný?",
+            "answer": "U WordPressu se texty upravují v administraci. U webu na Next.js nebo Reactu záleží na tom, jestli je obsah v kódu, nebo v administraci. Způsob úprav je součást zadání."
+          },
+          {
+            "question": "Řešíte k webu i SEO a PPC?",
+            "answer": "Základní technické nastavení pro vyhledávače je součást předání. Samostatná SEO spolupráce a PPC kampaně jsou navázané služby."
+          }
+        ],
+        "ctaTitle": "Web podle zadání",
+        "ctaText": "Napište, co má web umět. Ozvu se k nezávazné konzultaci.",
+        "related": [
+          "/seo",
+          "/ppc",
+          "/graficky-design",
+          "/automatizace"
+        ],
+        "articles": [
+          "jak-vytvorit-kvalitni-web",
+          "trendy-web-design-2025"
+        ],
+        "cases": [
+          "schlieger",
+          "paadel",
+          "cryptosvet"
+        ]
+      },
+      {
+        "slug": "seo",
+        "title": "SEO optimalizace webu | LEDU",
+        "seoDescription": "SEO pro firmy: technický stav webu, struktura stránek a úpravy obsahu. Bez garance konkrétní pozice ve vyhledávači.",
+        "h1": "SEO",
+        "lead": "Upravím web tak, aby ho vyhledávač mohl projít a zařadit k tématům vašeho oboru. Pracuji s technikou, strukturou stránek a texty. Konkrétní pozici negarantuji.",
+        "included": [
+          "Kontrola indexace, titulků, nadpisů a interních odkazů",
+          "Návrh struktury stránek podle témat oboru",
+          "Úpravy titulků, popisů a nadpisů",
+          "Doporučení k textům, které na webu chybí nebo jsou nejasné",
+          "Technické úpravy, které jdou udělat na stávajícím webu"
+        ],
+        "process": [
+          {
+            "title": "Konzultace",
+            "text": "Podívám se na současný web a na to, co na něm lidé mají najít."
+          },
+          {
+            "title": "Seznam úprav",
+            "text": "Sepíšu, co stránkám ve vyhledávání překáží a co dává smysl udělat dřív."
+          },
+          {
+            "title": "Zapracování",
+            "text": "Úpravy udělám na webu, nebo připravím podklady, když web spravuje někdo jiný."
+          },
+          {
+            "title": "Kontrola",
+            "text": "Po úpravách ověřím, jestli stránky vyhledávač vidí. Pořadí se mění se zpožděním a bez slibu místa."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Co je SEO?",
+            "answer": "Úpravy webu a obsahu, aby vyhledávač stránky našel a mohl je ukázat lidem, kteří hledají dané téma."
+          },
+          {
+            "question": "Garantujete první pozice?",
+            "answer": "Ne. Pořadí určuje vyhledávač. Závisí na konkurenci, obsahu i na odkazech z jiných webů. Dělám úpravy, které k tomu dávají podklad. Místo ve výsledcích slíbit nejde."
+          },
+          {
+            "question": "Kdy je vidět změna?",
+            "answer": "Vyhledávače reagují se zpožděním. Často to trvá měsíce, ne dny. Termín, kdy se stránka posune, dopředu neříkám."
+          },
+          {
+            "question": "Musí být web nový?",
+            "answer": "Ne. SEO jde dělat na stávajícím webu. Když web teprve vzniká, úpravy řeším spolu s jeho tvorbou."
+          }
+        ],
+        "ctaTitle": "SEO bez slibu pozic",
+        "ctaText": "Napište, jaký web máte a co na něm lidé mají najít.",
+        "related": [
+          "/tvorba-webu",
+          "/ppc"
+        ],
+        "articles": [
+          "seo-optimalizace-male-firmy"
+        ],
+        "cases": [
+          "schlieger"
+        ]
+      },
+      {
+        "slug": "ppc",
+        "title": "PPC reklama v Google Ads a Skliku | LEDU",
+        "seoDescription": "PPC kampaně v Google Ads a Skliku. Návrh struktury, texty inzerátů a průběžná správa podle toho, co je vidět v účtu.",
+        "h1": "PPC reklama",
+        "lead": "Připravím a spravuji reklamu ve vyhledávání v Google Ads a Skliku. Inzerát vede na stránku, kde má návštěvník napsat nebo zavolat. Kampaně upravuji podle toho, co je v účtu vidět.",
+        "included": [
+          "Návrh kampaní v Google Ads nebo Skliku",
+          "Texty inzerátů",
+          "Napojení na stránku, která má z návštěvy udělat poptávku",
+          "Průběžná správa: úpravy textů a pozastavení sestav, které poptávky nedávají",
+          "Nastavení měření poptávek tam, kde to web umožní"
+        ],
+        "process": [
+          {
+            "title": "Konzultace",
+            "text": "Co se má inzerovat a na jakou stránku má proklik vést."
+          },
+          {
+            "title": "Návrh",
+            "text": "Struktura kampaní a texty ke schválení."
+          },
+          {
+            "title": "Spuštění",
+            "text": "Kampaň spustím po odsouhlasení v reklamním účtu."
+          },
+          {
+            "title": "Správa",
+            "text": "Podle dat v účtu upravuji texty a sestavy."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Co je PPC?",
+            "answer": "Reklama, u které se platí za proklik. Inzerát se zobrazí ve vyhledávání nebo v další síti podle nastavení kampaně."
+          },
+          {
+            "question": "V jakých systémech kampaně připravujete?",
+            "answer": "V Google Ads a ve Skliku."
+          },
+          {
+            "question": "Hodí se PPC k SEO?",
+            "answer": "Jsou to dvě různé věci. PPC přivede návštěvy po spuštění kampaně. SEO pracuje s neplacenými výsledky a trvá déle. Jdou dělat vedle sebe."
+          },
+          {
+            "question": "Potřebuji nový web?",
+            "answer": "Potřebuji stránku, na kterou inzerát vede. Může to být stávající web. Když je stránka nepřehledná nebo chybí, nejdřív upravíme web."
+          }
+        ],
+        "ctaTitle": "Nejdřív stránka, potom kampaň",
+        "ctaText": "Napište, co chcete inzerovat. Projdeme to na konzultaci.",
+        "related": [
+          "/seo",
+          "/tvorba-webu"
+        ],
+        "articles": [
+          "seo-optimalizace-male-firmy"
+        ],
+        "cases": []
+      },
+      {
+        "slug": "graficky-design",
+        "title": "Grafický design a návrh webu | LEDU",
+        "seoDescription": "Grafický design pro firmy: vzhled webu, identita, bannery, podklady pro sociální sítě a tisk. Návrh jde spojit s tvorbou webu.",
+        "h1": "Grafický design",
+        "lead": "Navrhuji vzhled webu a grafiku, která k němu patří. Patří sem rozvržení stránek, prvky identity, bannery i podklady pro tisk, pokud jsou v zadání.",
+        "included": [
+          "Vzhled a rozvržení webu",
+          "Wireframy a prototyp stránek",
+          "Branding a firemní identita, pokud je v zadání",
+          "Bannery a podklady pro sociální sítě",
+          "Tiskové materiály",
+          "Animace a návrh rozhraní mobilní aplikace, pokud jsou v zadání"
+        ],
+        "process": [
+          {
+            "title": "Podklady",
+            "text": "Projdeme, co už máte: logo, texty, fotky a příklady, které se vám líbí."
+          },
+          {
+            "title": "Návrh",
+            "text": "Připravím směr a konkrétní stránky nebo materiály."
+          },
+          {
+            "title": "Úpravy",
+            "text": "Zapracuji připomínky."
+          },
+          {
+            "title": "Předání",
+            "text": "Dostanete podklady. Když dělám i web, nasadím návrh rovnou do něj."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Je návrh součástí tvorby webu?",
+            "answer": "Může být. Návrh a programování dělám jako jednu zakázku, nebo jen grafiku, když web staví někdo jiný."
+          },
+          {
+            "question": "Dodáte i logo?",
+            "answer": "Ano, pokud je identita součást zadání. Když logo už máte, vycházím z něj."
+          },
+          {
+            "question": "Co dostanu na konci?",
+            "answer": "Podklady k webu a k materiálům, které byly v zadání. Formát předání domluvíme podle toho, jestli grafiku nasazuji já, nebo někdo další."
+          }
+        ],
+        "ctaTitle": "Nejdřív zadání, potom vizuál",
+        "ctaText": "Napište, jestli potřebujete návrh webu, identitu, nebo obojí.",
+        "related": [
+          "/tvorba-webu"
+        ],
+        "articles": [
+          "trendy-web-design-2025"
+        ],
+        "cases": []
+      },
+      {
+        "slug": "automatizace",
+        "title": "Automatizace procesů (n8n, Supabase, AI) | LEDU",
+        "seoDescription": "Automatizace opakovaných kroků v n8n a Supabase, s AI v konkrétním místě workflow. Propojení dat a navazujících akcí.",
+        "h1": "Automatizace",
+        "lead": "Sestavím workflow, které opakované kroky udělá samo. n8n spojuje kroky, Supabase drží data a AI použiju jen v místě, kde má model něco přečíst, roztřídit nebo navrhnout.",
+        "included": [
+          "Návrh a sestavení workflow v n8n",
+          "Databáze v Supabase pro záznamy, které workflow ukládá a čte",
+          "Napojení na kanál ze zadání, třeba formulář nebo e-mail",
+          "Krok s AI modelem, když má v postupu konkrétní úkol",
+          "Předání scénáře, který běží u vás"
+        ],
+        "process": [
+          {
+            "title": "Popis ruční práce",
+            "text": "Sepíšeme kroky, které se dnes dělají ručně, a odkud se berou data."
+          },
+          {
+            "title": "Návrh",
+            "text": "Co má workflow spustit, kam se data uloží a kde případně vstoupí model."
+          },
+          {
+            "title": "Sestavení",
+            "text": "Postavím to v n8n a Supabase a napojím domluvené vstupy."
+          },
+          {
+            "title": "Zkouška",
+            "text": "Projdeme reálný postup a předám, co je potřeba k provozu."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Co je n8n?",
+            "answer": "Nástroj na automatické postupy. Jeden krok spustí další, třeba příjem dat a jejich zápis do databáze."
+          },
+          {
+            "question": "K čemu je v tom Supabase?",
+            "answer": "Je to databáze a backend. Workflow do ní ukládá záznamy a znovu je čte."
+          },
+          {
+            "question": "Kde se používá AI?",
+            "answer": "V jednom kroku postupu, ne jako náhrada celého procesu. Model má typicky text přečíst, roztřídit nebo navrhnout. Jaký model, záleží na zadání. V interním nástroji LeadHunter je to Claude."
+          },
+          {
+            "question": "Je LeadHunter klientská zakázka?",
+            "answer": "Ne. Je to interní pipeline LEDU na n8n, Supabase a Claude, která vyhledává leady. Veřejnou adresu nemá."
+          }
+        ],
+        "ctaTitle": "Nejdřív ruční postup, potom automatizace",
+        "ctaText": "Popište krok, který se pořád opakuje. Na konzultaci projdeme, jestli ho jde předat workflow.",
+        "related": [
+          "/tvorba-webu"
+        ],
+        "articles": [],
+        "cases": [
+          "leadhunter"
+        ]
+      }
+    ],
+    "caseStudies": {
+      "back": "Zpět na reference",
+      "indexHeading": "Případové studie",
+      "linkLabel": "Případová studie",
+      "clientLabel": "Klient",
+      "fieldLabel": "Obor",
+      "roleLabel": "Naše role",
+      "techLabel": "Technologie",
+      "websiteLabel": "Web",
+      "serviceLabel": "Služba",
+      "solutionHeading": "Řešení",
+      "resultsHeading": "Výsledky",
+      "imageAlt": "Náhled současného webu",
+      "moreHeading": "Další případové studie",
+      "ctaTitle": "Chcete probrat podobný projekt?",
+      "ctaText": "Napište, co potřebujete. Ozvu se k nezávazné konzultaci.",
+      "ctaButton": "Nezávazná konzultace",
+      "items": [
+        {
+          "slug": "schlieger",
+          "title": "Schlieger.cz — redesign webu | LEDU",
+          "seoDescription": "Redesign webu Schlieger.cz. Obrat klienta je 4 miliardy Kč. Top 3 ve vyhledávání pro fotovoltaiku a tepelná čerpadla.",
+          "h1": "Schlieger.cz",
+          "client": "Schlieger.cz",
+          "field": "Fotovoltaika a tepelná čerpadla",
+          "website": "https://schlieger.cz",
+          "websiteLabel": "schlieger.cz",
+          "role": "Redesign webu",
+          "technologies": [
+            "WordPress"
+          ],
+          "serviceHref": "/tvorba-webu",
+          "solution": [
+            "Zakázka byla redesign webu Schlieger.cz."
+          ],
+          "results": [
+            "Obrat klienta je 4 miliardy Kč.",
+            "Ve vyhledávání je v top 3 pro fotovoltaiku a tepelná čerpadla."
+          ]
+        },
+        {
+          "slug": "cryptosvet",
+          "title": "Cryptosvet.cz — správa a redesign | LEDU",
+          "seoDescription": "Správa a redesign Cryptosvet.cz. 250 000 návštěv měsíčně.",
+          "h1": "Cryptosvet.cz",
+          "client": "Cryptosvet.cz",
+          "field": "Kryptoměny a investování",
+          "website": "https://cryptosvet.cz",
+          "websiteLabel": "cryptosvet.cz",
+          "role": "Správa a redesign",
+          "technologies": [
+            "WordPress"
+          ],
+          "serviceHref": "/tvorba-webu",
+          "solution": [
+            "U Cryptosvet.cz jsem dělal redesign webu a jeho další správu."
+          ],
+          "results": [
+            "250 000 návštěv měsíčně."
+          ]
+        },
+        {
+          "slug": "paadel",
+          "title": "Paadel.cz — komunitní platforma | LEDU",
+          "seoDescription": "Komunitní platforma Paadel.cz s ELO žebříčkem a WhatsApp botem.",
+          "h1": "Paadel.cz",
+          "client": "Paadel.cz",
+          "field": "Padelová komunita",
+          "website": "https://paadel.cz",
+          "websiteLabel": "paadel.cz",
+          "role": "Návrh a vývoj komunitní platformy",
+          "technologies": [],
+          "serviceHref": "/tvorba-webu",
+          "solution": [
+            "Paadel.cz je komunitní platforma s ELO žebříčkem.",
+            "Součástí platformy je WhatsApp bot."
+          ],
+          "results": []
+        },
+        {
+          "slug": "leadhunter",
+          "title": "LeadHunter — interní pipeline na leady | LEDU",
+          "seoDescription": "Interní pipeline LeadHunter na n8n, Supabase a Claude. Vyhledává leady a nemá veřejnou adresu.",
+          "h1": "LeadHunter",
+          "client": "Interní nástroj LEDU",
+          "field": "Vyhledávání leadů",
+          "website": "",
+          "websiteLabel": "",
+          "role": "Interní pipeline",
+          "technologies": [
+            "n8n",
+            "Supabase",
+            "Claude"
+          ],
+          "serviceHref": "/automatizace",
+          "solution": [
+            "LeadHunter je interní pipeline, která vyhledává leady.",
+            "Běží na n8n, Supabase a Claude.",
+            "Veřejnou adresu nemá."
+          ],
+          "results": []
+        }
+      ]
     }
+  },
+  "person": {
+    "name": "Duy Le",
+    "jobTitle": "Web developer a designér"
   }
 }

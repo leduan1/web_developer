@@ -16,7 +16,30 @@
     },
     "kontaktButton": "Liên hệ",
     "menu": "Menu",
-    "languageLabel": "Ngôn ngữ"
+    "languageLabel": "Ngôn ngữ",
+    "servicesLabel": "Dịch vụ",
+    "services": [
+      {
+        "href": "/tvorba-webu",
+        "label": "Thiết kế website"
+      },
+      {
+        "href": "/seo",
+        "label": "SEO"
+      },
+      {
+        "href": "/ppc",
+        "label": "PPC"
+      },
+      {
+        "href": "/graficky-design",
+        "label": "Thiết kế đồ họa"
+      },
+      {
+        "href": "/automatizace",
+        "label": "Tự động hóa"
+      }
+    ]
   },
   "hero": {
     "outline": "TÔI ĐẨY GIỚI HẠN",
@@ -153,7 +176,7 @@
       },
       {
         "title": "PAADEL.CZ",
-        "description": "Cho cộng đồng padel Séc, tôi đã thiết kế và lập trình một ứng dụng web với bảng xếp hạng ELO, nơi người chơi ghi lại các trận đấu, theo dõi thứ hạng và tìm đồng đội cùng trình độ.",
+        "description": "Cho cộng đồng padel Séc, tôi đã thiết kế và lập trình một ứng dụng web với bảng xếp hạng ELO và bot WhatsApp, nơi người chơi ghi lại các trận đấu, theo dõi thứ hạng và tìm đồng đội cùng trình độ.",
         "tags": [
           "THIẾT KẾ WEB",
           "LẬP TRÌNH",
@@ -182,7 +205,7 @@
       },
       {
         "title": "SCHLIEGER.CZ, SCHLIEGER.DE",
-        "description": "Cho công ty Schlieger.cz, tôi đã thiết kế lại hoàn toàn trang web từ A đến Z, bao gồm tất cả các chức năng và thiết kế, giúp công ty kiếm được hơn 4 tỷ korun vào năm 2024.",
+        "description": "Thiết kế lại website Schlieger.cz. Doanh thu của khách hàng là 4 tỷ CZK. Vị trí top 3 cho điện mặt trời và máy bơm nhiệt.",
         "tags": [
           "THIẾT KẾ WEB",
           "LẬP TRÌNH",
@@ -368,7 +391,7 @@
       },
       {
         "title": "CRYPTOSVĚT",
-        "description": "Cho một khách hàng, tôi đã tạo một trong những tạp chí trực tuyến được đọc nhiều nhất hiện nay về tiền điện tử và đầu tư.",
+        "description": "Quản lý và thiết kế lại Cryptosvet.cz. 250.000 lượt truy cập mỗi tháng.",
         "tags": [
           "THIẾT KẾ WEB",
           "LẬP TRÌNH",
@@ -628,25 +651,464 @@
           "title": "Cách tạo một trang web chất lượng",
           "date": "15. tháng 2 năm 2025",
           "excerpt": "Hướng dẫn toàn diện để tạo một trang web sẽ mang lại kết quả thực sự cho doanh nghiệp của bạn.",
-          "slug": "jak-vytvorit-kvalitni-web"
+          "slug": "jak-vytvorit-kvalitni-web",
+          "relatedServices": [
+            "/tvorba-webu",
+            "/seo",
+            "/graficky-design"
+          ]
         },
         {
           "title": "Tối ưu hóa SEO cho các công ty nhỏ",
           "date": "10. tháng 2 năm 2025",
           "excerpt": "Các mẹo thực tế để tối ưu hóa cho các công cụ tìm kiếm mà không cần đầu tư lớn.",
-          "slug": "seo-optimalizace-male-firmy"
+          "slug": "seo-optimalizace-male-firmy",
+          "relatedServices": [
+            "/seo",
+            "/ppc",
+            "/tvorba-webu"
+          ]
         },
         {
           "title": "Xu hướng trong thiết kế web 2025",
           "date": "1. tháng 2 năm 2025",
           "excerpt": "Những xu hướng mới nhất trong thiết kế web là gì và cách áp dụng chúng cho dự án của bạn.",
-          "slug": "trendy-web-design-2025"
+          "slug": "trendy-web-design-2025",
+          "relatedServices": [
+            "/graficky-design",
+            "/tvorba-webu"
+          ]
         }
       ],
       "readMoreButton": "Đọc bài viết",
       "title": "Blog về thiết kế website và SEO | LEDU",
       "seoDescription": "Bài viết về thiết kế website, SEO, web design, PPC và marketing trực tuyến.",
-      "backToBlog": "Quay lại blog"
+      "backToBlog": "Quay lại blog",
+      "relatedHeading": "Dịch vụ liên quan"
+    },
+    "serviceUi": {
+      "includedHeading": "Phần việc gồm những gì",
+      "processHeading": "Cách làm việc",
+      "faqHeading": "Câu hỏi thường gặp",
+      "relatedHeading": "Dịch vụ khác",
+      "articlesHeading": "Từ blog",
+      "casesHeading": "Dự án liên quan",
+      "ctaButton": "Tư vấn không ràng buộc"
+    },
+    "servicePages": [
+      {
+        "slug": "tvorba-webu",
+        "title": "Thiết kế website và e-shop | LEDU",
+        "seoDescription": "Website giới thiệu và e-shop trên WordPress, Next.js và React. Thiết kế, lập trình và bàn giao website để làm tiếp SEO hoặc PPC.",
+        "h1": "Thiết kế website",
+        "lead": "Tôi thiết kế và lập trình website và e-shop cho doanh nghiệp. Tùy yêu cầu, tôi dùng WordPress, Next.js hoặc React. Website được bàn giao để chỉnh sửa và nối tiếp bằng việc khác, chẳng hạn SEO hoặc PPC.",
+        "included": [
+          "Cấu trúc trang và phần nhìn",
+          "Lập trình trên WordPress, Next.js hoặc React",
+          "Hiển thị trên điện thoại, máy tính bảng và máy tính",
+          "E-shop nếu nằm trong yêu cầu",
+          "Thiết lập kỹ thuật cơ bản cho công cụ tìm kiếm: địa chỉ, tiêu đề và mô tả",
+          "Bàn giao quyền truy cập và website để quản lý tiếp"
+        ],
+        "process": [
+          {
+            "title": "Trao đổi",
+            "text": "Chúng ta xem website cần làm gì, cho ai, và bạn đã có sẵn những gì."
+          },
+          {
+            "title": "Thiết kế",
+            "text": "Tôi chuẩn bị cấu trúc trang và phần nhìn."
+          },
+          {
+            "title": "Lập trình",
+            "text": "Tôi lập trình website, đưa nội dung bạn cung cấp vào và kiểm tra trên các thiết bị thông dụng."
+          },
+          {
+            "title": "Bàn giao",
+            "text": "Tôi đưa website lên, bàn giao quyền truy cập và thống nhất các chỉnh sửa tiếp theo."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Website được làm bằng gì?",
+            "answer": "WordPress, Next.js hoặc React. Cách chọn phụ thuộc yêu cầu: website nội dung, e-shop, hoặc ứng dụng cần nhiều hơn các trang tĩnh."
+          },
+          {
+            "question": "Bạn có làm e-shop không?",
+            "answer": "Có, khi e-shop nằm trong yêu cầu. Phạm vi, ví dụ danh mục và đặt hàng, phụ thuộc vào việc cửa hàng cần làm gì."
+          },
+          {
+            "question": "Sau khi bàn giao có sửa được nội dung không?",
+            "answer": "Với WordPress, chữ được sửa trong trang quản trị. Với Next.js hoặc React, còn tùy nội dung nằm trong mã hay trong trang quản trị. Cách sửa là một phần của yêu cầu."
+          },
+          {
+            "question": "SEO và PPC có đi cùng website không?",
+            "answer": "Thiết lập kỹ thuật cơ bản cho công cụ tìm kiếm là một phần của bàn giao. SEO riêng và chiến dịch PPC là dịch vụ nối tiếp."
+          }
+        ],
+        "ctaTitle": "Website theo đúng yêu cầu",
+        "ctaText": "Viết cho tôi website cần làm gì. Tôi sẽ trả lời để hẹn tư vấn không ràng buộc.",
+        "related": [
+          "/seo",
+          "/ppc",
+          "/graficky-design",
+          "/automatizace"
+        ],
+        "articles": [
+          "jak-vytvorit-kvalitni-web",
+          "trendy-web-design-2025"
+        ],
+        "cases": [
+          "schlieger",
+          "paadel",
+          "cryptosvet"
+        ]
+      },
+      {
+        "slug": "seo",
+        "title": "SEO cho website doanh nghiệp | LEDU",
+        "seoDescription": "SEO cho doanh nghiệp: tình trạng kỹ thuật của website, cấu trúc trang và chỉnh nội dung. Không cam kết một vị trí cụ thể.",
+        "h1": "SEO",
+        "lead": "Tôi chỉnh website để công cụ tìm kiếm đọc được và gắn nó với chủ đề của ngành. Tôi làm phần kỹ thuật, cấu trúc trang và chữ. Tôi không cam kết một vị trí cụ thể.",
+        "included": [
+          "Kiểm tra lập chỉ mục, tiêu đề, đề mục và liên kết nội bộ",
+          "Cấu trúc trang theo chủ đề của ngành",
+          "Chỉnh tiêu đề, mô tả và đề mục",
+          "Góp ý cho đoạn chữ còn thiếu hoặc chưa rõ",
+          "Chỉnh kỹ thuật làm được trên website hiện tại"
+        ],
+        "process": [
+          {
+            "title": "Trao đổi",
+            "text": "Tôi xem website hiện tại và những gì người ta cần tìm thấy ở đó."
+          },
+          {
+            "title": "Danh sách việc",
+            "text": "Tôi ghi lại điều gì đang cản trở tìm kiếm và việc nào nên làm trước."
+          },
+          {
+            "title": "Thực hiện",
+            "text": "Tôi sửa trên website, hoặc soạn nội dung nếu người khác đang quản trị."
+          },
+          {
+            "title": "Kiểm tra",
+            "text": "Sau khi sửa, tôi kiểm tra công cụ tìm kiếm có thấy trang hay không. Thứ hạng đổi chậm và tôi không hứa một vị trí."
+          }
+        ],
+        "faq": [
+          {
+            "question": "SEO là gì?",
+            "answer": "Việc chỉnh website và nội dung để công cụ tìm kiếm tìm thấy trang và có thể hiện chúng cho người đang tìm chủ đề đó."
+          },
+          {
+            "question": "Bạn có cam kết vị trí đầu không?",
+            "answer": "Không. Công cụ tìm kiếm quyết định thứ tự. Nó phụ thuộc đối thủ, nội dung và liên kết từ website khác. Tôi làm những chỉnh sửa tạo nền cho việc đó. Không thể hứa một chỗ trong kết quả."
+          },
+          {
+            "question": "Khi nào thấy thay đổi?",
+            "answer": "Công cụ tìm kiếm phản hồi chậm. Thường là nhiều tháng, không phải vài ngày. Tôi không nêu ngày trang sẽ nhích lên."
+          },
+          {
+            "question": "Website có phải làm mới không?",
+            "answer": "Không. SEO làm được trên website đang có. Nếu website còn đang làm, tôi xử lý các chỉnh sửa cùng lúc với phần xây dựng."
+          }
+        ],
+        "ctaTitle": "SEO không hứa vị trí",
+        "ctaText": "Cho tôi biết bạn đang có website nào và người ta cần tìm gì trên đó.",
+        "related": [
+          "/tvorba-webu",
+          "/ppc"
+        ],
+        "articles": [
+          "seo-optimalizace-male-firmy"
+        ],
+        "cases": [
+          "schlieger"
+        ]
+      },
+      {
+        "slug": "ppc",
+        "title": "Quảng cáo PPC trên Google Ads và Sklik | LEDU",
+        "seoDescription": "Chiến dịch PPC trên Google Ads và Sklik. Cấu trúc chiến dịch, nội dung quảng cáo và quản lý theo những gì thấy trong tài khoản.",
+        "h1": "Quảng cáo PPC",
+        "lead": "Tôi dựng và quản lý quảng cáo tìm kiếm trên Google Ads và Sklik. Quảng cáo dẫn tới trang nơi khách có thể viết hoặc gọi. Tôi chỉnh chiến dịch theo những gì thấy trong tài khoản.",
+        "included": [
+          "Cấu trúc chiến dịch trên Google Ads hoặc Sklik",
+          "Nội dung quảng cáo",
+          "Dẫn tới trang cần biến lượt xem thành liên hệ",
+          "Quản lý tiếp: sửa nội dung và tạm dừng nhóm không mang lại liên hệ",
+          "Đo liên hệ ở những chỗ website cho phép"
+        ],
+        "process": [
+          {
+            "title": "Trao đổi",
+            "text": "Cần quảng cáo gì và lượt nhấp mở trang nào."
+          },
+          {
+            "title": "Đề xuất",
+            "text": "Cấu trúc chiến dịch và nội dung để duyệt."
+          },
+          {
+            "title": "Chạy",
+            "text": "Tôi bật chiến dịch sau khi được duyệt trong tài khoản quảng cáo."
+          },
+          {
+            "title": "Quản lý",
+            "text": "Tôi sửa nội dung và nhóm quảng cáo theo dữ liệu trong tài khoản."
+          }
+        ],
+        "faq": [
+          {
+            "question": "PPC là gì?",
+            "answer": "Quảng cáo trả tiền theo lượt nhấp. Quảng cáo hiện trên tìm kiếm hoặc mạng khác tùy cách chiến dịch được đặt."
+          },
+          {
+            "question": "Bạn làm trên hệ thống nào?",
+            "answer": "Google Ads và Sklik."
+          },
+          {
+            "question": "PPC có đi cùng SEO không?",
+            "answer": "Đó là hai việc khác nhau. PPC mang lượt xem sau khi chiến dịch chạy. SEO làm với kết quả không trả phí và lâu hơn. Hai việc có thể chạy song song."
+          },
+          {
+            "question": "Tôi có cần website mới không?",
+            "answer": "Tôi cần một trang để quảng cáo mở ra. Có thể là website đang có. Nếu trang đó khó hiểu hoặc chưa có, chúng ta sửa website trước."
+          }
+        ],
+        "ctaTitle": "Có trang trước, rồi mới đến chiến dịch",
+        "ctaText": "Viết cho tôi bạn muốn quảng cáo gì. Chúng ta xem lại trong buổi tư vấn.",
+        "related": [
+          "/seo",
+          "/tvorba-webu"
+        ],
+        "articles": [
+          "seo-optimalizace-male-firmy"
+        ],
+        "cases": []
+      },
+      {
+        "slug": "graficky-design",
+        "title": "Thiết kế đồ họa và thiết kế website | LEDU",
+        "seoDescription": "Thiết kế đồ họa cho doanh nghiệp: giao diện website, nhận diện, banner, tài liệu mạng xã hội và in ấn. Thiết kế có thể đi cùng việc làm website.",
+        "h1": "Thiết kế đồ họa",
+        "lead": "Tôi thiết kế phần nhìn của website và đồ họa đi cùng nó. Gồm bố cục trang, yếu tố nhận diện, banner và tài liệu in nếu nằm trong yêu cầu.",
+        "included": [
+          "Phần nhìn và bố cục website",
+          "Wireframe và bản mẫu trang",
+          "Nhận diện thương hiệu nếu nằm trong yêu cầu",
+          "Banner và tài liệu cho mạng xã hội",
+          "Ấn phẩm in",
+          "Hoạt họa và giao diện ứng dụng di động nếu nằm trong yêu cầu"
+        ],
+        "process": [
+          {
+            "title": "Tài liệu",
+            "text": "Chúng ta xem những gì bạn đã có: logo, chữ, ảnh và ví dụ bạn thích."
+          },
+          {
+            "title": "Thiết kế",
+            "text": "Tôi chuẩn bị hướng đi và các trang hoặc ấn phẩm cụ thể."
+          },
+          {
+            "title": "Chỉnh",
+            "text": "Tôi đưa góp ý của bạn vào."
+          },
+          {
+            "title": "Bàn giao",
+            "text": "Bạn nhận file. Nếu tôi cũng làm website, tôi đưa thiết kế thẳng vào đó."
+          }
+        ],
+        "faq": [
+          {
+            "question": "Thiết kế có nằm trong việc làm website không?",
+            "answer": "Có thể. Tôi làm thiết kế và lập trình như một việc, hoặc chỉ đồ họa khi người khác lập trình website."
+          },
+          {
+            "question": "Bạn có làm logo không?",
+            "answer": "Có, khi nhận diện nằm trong yêu cầu. Nếu đã có logo, tôi đi từ logo đó."
+          },
+          {
+            "question": "Cuối cùng tôi nhận được gì?",
+            "answer": "File cho website và cho những ấn phẩm đã có trong yêu cầu. Cách bàn giao tùy việc tôi đưa đồ họa lên website hay người khác làm việc đó."
+          }
+        ],
+        "ctaTitle": "Yêu cầu trước, hình ảnh sau",
+        "ctaText": "Cho tôi biết bạn cần thiết kế website, nhận diện, hay cả hai.",
+        "related": [
+          "/tvorba-webu"
+        ],
+        "articles": [
+          "trendy-web-design-2025"
+        ],
+        "cases": []
+      },
+      {
+        "slug": "automatizace",
+        "title": "Tự động hóa quy trình với n8n, Supabase và AI | LEDU",
+        "seoDescription": "Tự động hóa các bước lặp lại trong n8n và Supabase, với AI ở một chỗ cụ thể trong workflow. Nối dữ liệu và việc làm tiếp theo.",
+        "h1": "Tự động hóa",
+        "lead": "Tôi dựng workflow để các bước lặp lại tự chạy. n8n nối các bước, Supabase giữ dữ liệu, và tôi dùng AI chỉ ở chỗ mô hình cần đọc, phân loại hoặc soạn.",
+        "included": [
+          "Thiết kế và dựng workflow trong n8n",
+          "Cơ sở dữ liệu Supabase cho bản ghi mà workflow ghi và đọc",
+          "Nối với kênh trong yêu cầu, ví dụ biểu mẫu hoặc email",
+          "Một bước AI khi quy trình có việc cụ thể cho mô hình",
+          "Bàn giao kịch bản chạy phía bạn"
+        ],
+        "process": [
+          {
+            "title": "Việc đang làm tay",
+            "text": "Chúng ta ghi các bước đang làm tay và dữ liệu lấy từ đâu."
+          },
+          {
+            "title": "Thiết kế",
+            "text": "Cái gì khởi chạy workflow, dữ liệu để ở đâu, và mô hình vào chỗ nào."
+          },
+          {
+            "title": "Dựng",
+            "text": "Tôi dựng trong n8n và Supabase rồi nối các đầu vào đã thống nhất."
+          },
+          {
+            "title": "Chạy thử",
+            "text": "Chúng ta đi qua một trường hợp thật và tôi bàn giao những gì workflow cần để chạy."
+          }
+        ],
+        "faq": [
+          {
+            "question": "n8n là gì?",
+            "answer": "Công cụ cho quy trình tự động. Một bước gọi bước tiếp theo, ví dụ nhận dữ liệu và ghi vào cơ sở dữ liệu."
+          },
+          {
+            "question": "Supabase làm gì ở đây?",
+            "answer": "Đó là cơ sở dữ liệu và backend. Workflow ghi bản ghi vào đó và đọc lại."
+          },
+          {
+            "question": "AI vào ở đâu?",
+            "answer": "Ở một bước của quy trình, không thay cả quy trình. Mô hình thường đọc, phân loại hoặc soạn chữ. Mô hình nào tùy yêu cầu. Trong công cụ nội bộ LeadHunter thì đó là Claude."
+          },
+          {
+            "question": "LeadHunter có phải dự án của khách không?",
+            "answer": "Không. Đó là pipeline nội bộ của LEDU trên n8n, Supabase và Claude, dùng để tìm lead. Nó không có địa chỉ công khai."
+          }
+        ],
+        "ctaTitle": "Quy trình tay trước, tự động hóa sau",
+        "ctaText": "Mô tả bước cứ lặp lại. Trong buổi tư vấn chúng ta xem workflow có nhận được việc đó không.",
+        "related": [
+          "/tvorba-webu"
+        ],
+        "articles": [],
+        "cases": [
+          "leadhunter"
+        ]
+      }
+    ],
+    "caseStudies": {
+      "back": "Về trang dự án",
+      "indexHeading": "Nghiên cứu dự án",
+      "linkLabel": "Xem dự án",
+      "clientLabel": "Khách hàng",
+      "fieldLabel": "Lĩnh vực",
+      "roleLabel": "Vai trò của chúng tôi",
+      "techLabel": "Công nghệ",
+      "websiteLabel": "Website",
+      "serviceLabel": "Dịch vụ",
+      "solutionHeading": "Giải pháp",
+      "resultsHeading": "Kết quả",
+      "imageAlt": "Ảnh website hiện tại",
+      "moreHeading": "Dự án khác",
+      "ctaTitle": "Muốn trao đổi một dự án tương tự?",
+      "ctaText": "Viết cho tôi bạn cần gì. Tôi sẽ trả lời để hẹn tư vấn không ràng buộc.",
+      "ctaButton": "Tư vấn không ràng buộc",
+      "items": [
+        {
+          "slug": "schlieger",
+          "title": "Schlieger.cz — thiết kế lại website | LEDU",
+          "seoDescription": "Thiết kế lại Schlieger.cz. Doanh thu của khách hàng là 4 tỷ CZK. Vị trí top 3 cho điện mặt trời và máy bơm nhiệt.",
+          "h1": "Schlieger.cz",
+          "client": "Schlieger.cz",
+          "field": "Điện mặt trời và máy bơm nhiệt",
+          "website": "https://schlieger.cz",
+          "websiteLabel": "schlieger.cz",
+          "role": "Thiết kế lại website",
+          "technologies": [
+            "WordPress"
+          ],
+          "serviceHref": "/tvorba-webu",
+          "solution": [
+            "Công việc là thiết kế lại website Schlieger.cz."
+          ],
+          "results": [
+            "Doanh thu của khách hàng là 4 tỷ CZK.",
+            "Vị trí top 3 cho điện mặt trời và máy bơm nhiệt."
+          ]
+        },
+        {
+          "slug": "cryptosvet",
+          "title": "Cryptosvet.cz — quản lý và thiết kế lại | LEDU",
+          "seoDescription": "Quản lý và thiết kế lại Cryptosvet.cz. 250.000 lượt truy cập mỗi tháng.",
+          "h1": "Cryptosvet.cz",
+          "client": "Cryptosvet.cz",
+          "field": "Tiền điện tử và đầu tư",
+          "website": "https://cryptosvet.cz",
+          "websiteLabel": "cryptosvet.cz",
+          "role": "Quản lý và thiết kế lại",
+          "technologies": [
+            "WordPress"
+          ],
+          "serviceHref": "/tvorba-webu",
+          "solution": [
+            "Với Cryptosvet.cz tôi thiết kế lại website và tiếp tục quản lý nó."
+          ],
+          "results": [
+            "250.000 lượt truy cập mỗi tháng."
+          ]
+        },
+        {
+          "slug": "paadel",
+          "title": "Paadel.cz — nền tảng cộng đồng | LEDU",
+          "seoDescription": "Nền tảng cộng đồng Paadel.cz với bảng xếp hạng ELO và bot WhatsApp.",
+          "h1": "Paadel.cz",
+          "client": "Paadel.cz",
+          "field": "Cộng đồng padel",
+          "website": "https://paadel.cz",
+          "websiteLabel": "paadel.cz",
+          "role": "Thiết kế và phát triển nền tảng cộng đồng",
+          "technologies": [],
+          "serviceHref": "/tvorba-webu",
+          "solution": [
+            "Paadel.cz là nền tảng cộng đồng với bảng xếp hạng ELO.",
+            "Nền tảng có bot WhatsApp."
+          ],
+          "results": []
+        },
+        {
+          "slug": "leadhunter",
+          "title": "LeadHunter — pipeline nội bộ tìm lead | LEDU",
+          "seoDescription": "Pipeline nội bộ LeadHunter trên n8n, Supabase và Claude. Tìm lead và không có địa chỉ công khai.",
+          "h1": "LeadHunter",
+          "client": "Công cụ nội bộ của LEDU",
+          "field": "Tìm lead",
+          "website": "",
+          "websiteLabel": "",
+          "role": "Pipeline nội bộ",
+          "technologies": [
+            "n8n",
+            "Supabase",
+            "Claude"
+          ],
+          "serviceHref": "/automatizace",
+          "solution": [
+            "LeadHunter là pipeline nội bộ dùng để tìm lead.",
+            "Chạy trên n8n, Supabase và Claude.",
+            "Không có địa chỉ công khai."
+          ],
+          "results": []
+        }
+      ]
     }
+  },
+  "person": {
+    "name": "Duy Le",
+    "jobTitle": "Lập trình viên web và nhà thiết kế"
   }
 }
